@@ -1,0 +1,174 @@
+body {
+  background-color: #f8fefd;
+}
+.container {
+  margin: 10px;
+}
+#A_B {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  /*모든 a태그 밑줄데코를 없앰*/
+}
+.main_text {
+  margin-top: 20px;
+}
+#logo {
+  color: #767171;
+  font-size: 100px;
+  width: 500px;
+}
+p {
+  margin: 0;
+}
+.search_wrap {
+  margin-top: 10px;
+}
+.search {
+  display: inline-block;
+  border: 3px solid #78a6a4;
+  border-radius: 10px;
+}
+#search_text {
+  height: 1cm;
+  width: 400px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 25px;
+  color: #d9d9d9;
+  background: none;
+}
+::placeholder {
+  color: #d9d9d9;
+}
+#search_btn {
+  font-size: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #78a6a4;
+  transform: scaleX(-1);
+}
+#B {
+  margin-top: 50px;
+  margin-left: 90px;
+}
+#title_wrap {
+  display: flex;
+}
+.title {
+  display: block;
+}
+.b_title {
+  margin: 10px;
+  margin-left: 20px;
+  display: inline-block;
+  background-color: #ccdedd;
+  width: 4.5cm;
+  height: 3cm;
+  border-radius: 20px;
+  overflow: hidden;
+}
+h4 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.one_line {
+  margin-top: 35px;
+}
+.two_lines {
+  margin-top: 20px;
+}
+.three_lines {
+  margin-top: 7px;
+}
+#C {
+}
+h3,
+#search_result {
+  margin: 10px;
+  font-size: 30px;
+  color: #3d5d5b;
+}
+.FAQ {
+  height: 430px;
+  width: 1650px;
+  border-top: solid 1.5px #d9d9d9;
+  border-bottom: solid 1.5px #d9d9d9;
+  background-color: white;
+  overflow: auto;
+  font-size: 20px;
+}
+#q_list {
+  margin: 0;
+  padding: 0;
+}
+.q_item {
+  list-style: none;
+  font-size: 25px;
+  color: #767171;
+  display: grid;
+}
+.Q {
+  margin-top: 10px;
+  height: 50px;
+  border-bottom: 1px solid #d9d9d9;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 6fr 0.3fr;
+  cursor: pointer;
+}
+.icon_Q {
+  color: #78a6a4;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.title_name {
+  color: #969090;
+  text-align: center;
+}
+.question {
+}
+.Q_btn {
+  margin-top: 30px;
+  color: #78a6a4;
+  transform: rotate(90deg);
+  font-size: 30px;
+}
+.A {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  background: #f2f2f2;
+  display: grid;
+  grid-template-columns: 0.25fr 6fr;
+  display: none;
+  font-size: 20px;
+}
+
+table {
+  text-align: center;
+  font-size: 20px;
+}
+.icon_A {
+  font-size: 25px;
+  color: #aecac9;
+  margin-left: 20px;
+}
+#Consultation_info_and_COVID_Vaccine {
+  margin-top: 0;
+}
+#Consultation_info {
+  margin-top: 10px;
+  float: left;
+}
+#COVID_Vaccine {
+  float: right;
+  font-size: 30px;
+}
+#COVID_Vaccine a {
+  color: #767171;
+}

@@ -1,0 +1,2168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_titles.css" rel = "stylesheet">
+    <title>검색창</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../COVID.js">
+        
+    </script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../index.html" id = "logo">
+                        <p>코로나19에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3D5D5B'" onkeydown="enterSearch()">
+                        <input id="search_btn" type="button" value="⌕" onclick="SearchValue()">
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Pathogen_info.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pathogen_information">병원체정보</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Symptom.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Symptom">증상</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Test.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Test">검사</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Treatment_prevention.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Treatment_prevention">치료 및 예방</h4> 
+                        </div>
+                    </a>
+                    <a href = "e_COVID_Contacts.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "contacts" >접촉자 및<br>확진환자</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Isolation.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Isolation">격리 및<br>격리해제</h4> 
+                        </div>
+                    </a>  
+
+                    <br>
+                    <a href = "g_COVID_Treatment_cost.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Treatment_cost">격리입원<br>치료비</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Managemen.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Management">의사환자 및<br>조사대상<br>유증상자 관리</h4> 
+                        </div>
+                    </a>
+                    <a href = "i_COVID_Sanitize.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Sanitize">청소 및 소독</h4> 
+                        </div>
+                    </a>
+                    <a href = "j_COVID_Pregnant.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pregnant">임신과 출산</h4> 
+                        </div>
+                    </a>
+                    <a href = "k_COVID_Quarantine_rule.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Quarantine_rule">방역수칙</h4> 
+                        </div>
+                    </a>
+                    <a href = "l_COVID_so_on.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line"id = "so_on">기타</h4> 
+                        </div>
+                    </a> 
+
+                    
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <div id = "search_result"></div>
+            <div class = "FAQ" id = "FAQ_search">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a01" value = "1" onclick = "showView(this,'A_a01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나바이러스감염증-19는 어떤 질병</span>인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나바이러스감염증-19(코로나19)는 과거에 발견되지 않았던 
+                                        새로운 코로나 바이러스인 SARS-CoV-2에 의해 발생하는 호흡기 감염병입니다. 
+                                        이 바이러스에 감염되면 무증상부터 중증에 이르기까지 다양한 임상증상이 나타날 수 있습니다.
+                                    </li>
+                                    <li>
+                                        이 새로운 바이러스와 질병은 2019년 12월 중국 우한에서 처음 보고되었고, 현재 전 세계에 확산되었습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a02" value = "2" onclick = "showView(this,'A_a02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나바이러스는 어떤 바이러스</span>인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나바이러스는 동물 및 사람에게 전파될 수 있는 바이러스로 그 중 사람에게 전파가능한 사람 코로나바이러스는 기존에 6종이 알려져 있습니다.
+                                    </li>
+                                    <li>
+                                        이 중 4종은 감기와 같은 질병을 일으키는 바이러스이며, 나머지 2종은 각각 MERS-CoV와 SARS-CoV로 알려져 있습니다.
+                                    </li>
+                                    <li>
+                                        이번 유행의 원인 바이러스는 새로운 코로나바이러스(SARS-CoV-2)로 공개된 염기서열 분석을 통해 코로나19 바이러스가 박쥐유래 사스유사 바이러스와 89.1% 일치하는 것을 확인하였습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a03" value = "3" onclick = "showView(this,'A_a03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나바이러스감염증-19, 코로나19(COVID-19)</span>의 이름은 어떻게 지어졌나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        2020년 2월 11일, 세계보건기구(WHO)에서는 중국 우한에서 최초 확인된 2019 신종 코로나바이러스 감염증에 대한 공식 명칭을 발표했습니다.이 감염증의 새 명칭은 코로나바이러스 감염증 2019(Coronavirus disease-2019)이며, 줄임말로 코로나19(COVID-19)입니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        COVID-19에서 'CO'는 '코로나'를 나타내며 'VI'는 '바이러스', 'D'는 감염증을 나타냅니다. 이 감염증의 명칭은 세계보건기구(WHO) 감염병 명명 지침에 따라 지어졌습니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ Coronavirus Disease 2019 Basics
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a04" value = "4" onclick = "showView(this,'A_a04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나19의 바이러스는 어디에서 유래</span>했나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19는 SARS-CoV-2라는 코로나바이러스에 감염되어 발생합니다. 코로나바이러스과는 사람과 낙타, 소, 고양이, 박쥐 등 다양한 동물에 흔하게 서식하는 큰 바이러스 그룹입니다. 동물의 코로나바이러스가 사람에게 감염되어 사람들 사이에 전파될 수 있습니다.
+                                    </li>
+                                    <li>
+                                        MERS-CoV 및 SARS-CoV가 동물에서 사람으로 전파된 것으로 추정되며, SARS-CoV-2도 동물에서 사람으로 전파된 것으로 추정하고 있습니다.
+                                    </li>
+                                    <li>
+                                        SARS-CoV-2 바이러스는 MERS-CoV 및 SARS-CoV와 같은 메타-코로나 바이러스입니다. 이전의 두 바이러스는 모두 박쥐에서 기원했습니다. SARS-CoV-2 또한 박쥐에서 유사한 바이러스가 발견되어, 박쥐의 코로나 바이러스와 기원이 알려지지 않은 코로나 바이러스 사이의 재조합에서 유래했을 것으로 추측되지만 아직 확인되지 않았습니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ How COVID-19 Spreads
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a05" value = "5" onclick = "showView(this,'A_a05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나19는 어떻게 전염</span>되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19를 일으키는 바이러스는 사람에서 사람으로 전파되며 주로 환자와 직접 접촉 또는 호흡기를 통해 배출되는 비말에 의해 전염됩니다. 다시 말해서 코로나19에 감염된 사람이 말을 하거나, 기침이나 재채기, 노래 등을 할 때 생성된 비말이 근처에 있는 사람들의 호흡기에 직접 닿거나, 비말이 묻은 손 또는 물건 등을 만진 뒤 눈, 코 또는 입을 만질 때 전염될 수 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        또한 공기 감염은 흔하지 않으나 의료기관의 에어로졸 생성 시술이나 밀폐된 공간에서 장시간 호흡기 비말을 만드는 환경 등 특수상황에서 보통 비말이 도달하는 거리(2미터) 이상까지 바이러스 전파가 가능할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a06" value = "6" onclick = "showView(this,'A_a06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>지역사회 감염</span>이 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        지역사회 감염은 지역사회에서 감염자가 발생하였지만 발생 지역 방문이나 확진자와의 접촉력 없이, 언제 어디에서 감염되었는지 역학적 연관성이 확인되지 않은 감염을 말합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a07" value = "7" onclick = "showView(this,'A_a07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나19 환자의 대변이나 체액으로도 전염</span>이 가능한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        환자의 대변에서 코로나19 바이러스가 검출되었다는 보고가 있었지만, 현재까지 환자의 대변으로 인해 코로나19가 전염된 사례는 보고되지 않았습니다. 추가로 물이나 하수오물 같은 환경에서 바이러스가 생존할 수 있다는 증거도 발견되지 않았습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        혈액, 뇌척수액, 소변, 타액, 눈물 및 결막 분비물 등의 체액에서도 바이러스가 검출되었다는 보고가 있었지만, 그로 인해 전염된 사례는 보고되지 않았습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on coronaviruses<br>
+                                    ▶ (출처) BMJ, Best practice Coronavirus disease 2019(COVID-19)
+                                </ul>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a08" value = "8" onclick = "showView(this,'A_a08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>음식을 통해 코로나19가 전염</span>될 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        현재까지 코로나19가 음식을 통해 전파된다는 증거는 없습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        바이러스가 있는 음식의 포장 용기 표면이나 물체를 만진 후 자신의 입, 코 또는 눈을 만지면 코로나19에 걸릴 수 있지만, 물체의 표면에서 이러한 코로나바이러스의 생존력이 높지 않기 때문에 식품이나 포장 용기를 통해 확산될 위험은 매우 낮습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        안전을 위해서는 항상 음식을 준비하거나 먹기 전에 비누와 물로 30초 동안 손을 씻는 것이 도움이 될 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a09" value = "9" onclick = "showView(this,'A_a09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>날씨가 따뜻해지면 코로나19 전파</span>를 막을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        일반적으로 코로나바이러스는 저온의 건조한 환경보다 고온 다습한 환경에서 생존 기간이 더 짧습니다. 하지만 코로나19 바이러스에 대한 직접적인 온도와 관련된 자료와 바이러스 비활성화에 관련된 온도 정보는 아직까지 부족합니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        제한적이지만, 위도, 온도, 습도에 따른 코로나19의 분포 양상이 계절성 호흡기 바이러스의 양상과 비슷하다는 연구 보고가 있었습니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ How COVID-19 Spreads<br>
+                                    ▶ (출처) Temperature, humidity, and latitude analysis to estimate potential spread and seasonality of coronavirus disease 2019 (COVID-19). JAMA Netw Open. 2020 Jun 1;3(6):e2011834.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a10" value = "10" onclick = "showView(this,'A_a10')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>모기나 진드기 같은 곤충이 코로나19</span>를 전파시킬 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a10">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        미국 CDC에 따르면, 신종 코로나바이러스나 다른 유사한 코로나바이러스가 모기나 진드기 등의 곤충에 의해 전파된다는 증거는 없습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        코로나19의 주요 전파경로는 사람 간 전파입니다
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a11" value = "11" onclick = "showView(this,'A_a11')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>카페 등의 다중이용시설 및 가정에서 냉난방기 가동시, 환기</span>는 얼마나 자주 해야 하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a11">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19는 비말, 접촉, 공기 전파를 통해 감염가능하며, 주된 감염경로는 2m 이내의 비말감염입니다. 공기감염은 흔하지는 않지만, 밀폐된 공간에서 장시간 호흡기 비말을 배출하거나 환기가 부적절한 경우 발생 가능하여 집단감염을 일으킬 수 있으므로 실내 오염도를 낮추기 위하여 충분한 환기를 실시하여야 합니다.
+                                    </li>
+                                    <li>
+                                        환기 시에는 가급적 자연환기 하며, 창문을 개방하여 맞통풍하고, 공조장비설치 시설은 외부공기 도입량을 가능한 높게 설정하여 최대한 외부 공기로 환기하며 가능하면 자연환기와 병행합니다.
+                                    </li>
+                                    ▶ (출처) Guidance for residential buildings, ASHRAE('20.10.5.)
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b01" value = "1" onclick = "showView(this,'A_b01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[증상]</div>
+                            <div class = "question"><span>코로나19의 증상</span>은 어떤 것이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19의 가장 흔한 증상은 발열, 마른 기침, 피로이며 그 외에 후각 및 미각 소실, 근육통, 인후통, 콧물, 코막힘, 두통, 결막염, 설사, 피부 증상 등 다양한 증상이 나타날 수 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        이러한 증상은 보통 경미하고 점진적으로 나타납니다. 어떤 사람들은 감염되어도 매우 약한 증상만 나타날 수 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        대부분의 환자들(약 80%)은 특별한 치료 없이 회복되나, 5명 중 1명 정도는 중증으로 진행할 수 있습니다. 고령자나 고혈압, 심폐질환, 당뇨병이나 암과 같은 기저질환이 있는 사람들은 중증으로 진행될 가능성이 높습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on coronaviruses
+                                </ul>
+                                <table border = "1">
+                                    <caption style = "text-align: left;">[참고.우리나라 코로나19 확진자 병원입원 시 주요증상]</caption>
+                                    <thead>
+                                        <tr><th>주요증상</th><th>비율(%)</th><th>주요증상</th><th>비율(%)</th><th>주요증상</th><th>비율(%)</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>기침</td><td>41.8%</td><td>근육통</td><td>16.5%</td><td>설사</td><td>9.2%</td></tr>
+                                        <tr><td>객담</td><td>28.9%</td><td>인후염</td><td>15.7%</td><td>구토/오심</td><td>4.3%</td></tr>
+                                        <tr><td>발열(≥37.5℃)</td><td>21.1%</td><td>호흡곤란</td><td>11.9%</td><td>피로/권태</td><td>4.2%</td></tr>
+                                        <tr><td>두통</td><td>17.2%</td><td>콧물</td><td>11%</td><td>증상없음</td><td>26.7%</td></tr>
+                                    </tbody>
+                                </table>
+                                * (출처) 주간 건강과 질병 제13권 제28호, 코로나바이러스감염증-19 임상정보 1차 분석 보고서
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b02" value = "2" onclick = "showView(this,'A_b02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[증상]</div>
+                            <div class = "question"><span>무증상환자도 다른 사람을 전염</span>시킬 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19의 주요 전파 방법은 코로나19에 감염된 사람이 숨을 내쉬거나, 기침이나 재채기를 할 때 생성되는 호흡기 비말이 근처에 있는 사람들의 호흡기에 직접 닿거나, 비말이 묻은 손 또는 물건 등을 만진 뒤 눈, 코 또는 입을 만질 때 점막을 통해 전염되는 것입니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        코로나19의 많은 환자들은 가벼운 증상만을 경험하지만, 증상이 가벼운 환자의 일부는 질환의 초기라서 증상이 약하게 나타나는 것일 수 있습니다. 경미한 기침 증상만 있거나, 증상을 잘 느끼지 못하는 사람의 경우에도 전염이 가능하다고 알려져 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        무증상의 경우에도 전염이 가능하다는 연구가 있으나 아직까지 정확하게 알려지지 않아 추가 연구결과가 발표되면 공유할 예정입니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on coronaviruses
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b03" value = "3" onclick = "showView(this,'A_b03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[증상]</div>
+                            <div class = "question"><span>코로나19에 어떤 사람들이 더 위험</span>한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나 19는 아직까지 명확하게 알려지지 않았지만, 지금까지 연구된 결과에 의하면 65세 이상의 노인, 장기 요양 시설 생활자, 기저질환(만성 폐질환, 천식, 심폐질환, 면역억제자, 비만, 당뇨병, 만성 신장 질환, 만성 간질환, 흡연자 등)을 가진 사람들에게 더 위험할 수 있습니다
+                                    </li>
+                                    ▶ (출처) CDC, FAQ Higher Risk
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b04" value = "4" onclick = "showView(this,'A_b04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[증상]</div>
+                            <div class = "question"><span>흡연자는 코로나19에 더 위험</span>한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        흡연자가 담배를 피우기 위해 손가락이나 담배가 입술에 닿을 때, 오염된 손가락이나 담배에 있던 바이러스가 손에서 입으로 전염될 가능성이 높아집니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        흡연자는 폐기능이 떨어져 있거나, 폐 질환이 동반되는 경우가 있으므로 코로나19에 걸리면 비흡연자에 비해 중증으로 진행할 위험도가 높습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on smoking and COVID-19
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c01" value = "1" onclick = "showView(this,'A_c01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>누가 검사를</span> 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        본 지침 상의 사례정의에 따라 의사환자 및 조사대상 유증상자로 분류되는 경우에 확진검사를 받을 수 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        중증응급환자(중증도 등급기준 1 및 2 등급) 또는 6시간 이상 지연할 수 없는 응급수술이 필요한 중증응급의심환자(중증도 등급기준 3등급)의 경우 응급 선별검사 또는 확진검사를 받을 수 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        막연한 불안감으로 검사를 받으실 필요는 없으므로, 의사선생님의 전문적인 판단을 신뢰하여 주시기 바랍니다.
+                                    </li>
+                                    <br>
+                                    ▶ 사회적 거리두기 단계, 역학적 연관성, 증상 유무, 지역과 관계없이 보건소 선별진료소 및 임시선별검사소에서 무료로 코로나19 진단검사 가능(별도공지 시까지)<br>
+                                    <table border="1">
+                                        <tbody style = "text-align:left;">
+                                            <tr><td>의사환자</td><td>확진환자와 접촉한 후 14일 이내에 코로나19 임상증상이 나타난 자</td></tr>
+                                            <tr>
+                                                <td rowspan="3">조사대상<br>유증상자</td>
+                                                <td>① 의사의 소견에 따라 코로나19 임상증상으로 코로나19가 의심되는 자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>② 해외 방문력이 있으며 귀국 후 14일 이내에 코로나19 임상증상이 나타난 자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>③ 코로나19 국내 집단발생과 역학적 연관성이 있어 진단검사가 필요하다고 인정되는 자</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfood>
+                                            <td colspan="2">주요 임상증상 : 발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실 또는 폐렴 등</td>
+                                        </tfood>
+                                    </table>
+                                    <br>
+                                    ▶ 다음에 해당하는 경우 적극적 검사 권고(조사대상 유증상자 1로 신고)
+                                    <ol>
+                                        <li>
+                                            가족(동거인) 또는 동일시설 생활자가 코로나19 임상증상이 있는 경우
+                                        </li>
+                                        <li>
+                                            해외에서 입국한지 14일 이내의 가족(동거인), 친구, 지인과 접촉한 경우
+                                        </li>
+                                        <li>
+                                            지역사회 유행 양상 고려하여 확진자가 발생한 기관 또는 장소 방문력이 있는 경우
+                                        </li>
+                                        <li>
+                                            응급선별검사, 신속항원검사 또는 자가검사 결과 양성인 경우
+                                        </li>
+                                    </ol>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c02" value = "2" onclick = "showView(this,'A_c02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>검사는 어디에서</span> 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        검체 채취가 가능한 선별진료소 및 일반 의료기관에서 검사를 받으실 수 있습니다. 
+                                    </li>
+                                    <li>
+                                        질병관리청 홈페이지에서 진료 가능한 선별진료소를 확인할 수 있습니다.
+                                    </li>
+                                    ▶ 질병관리청 홈페이지→코로나바이러스감염증-19→선별진료소 및 국민안심병원 찾기
+                                    <li>
+                                        자세한 문의사항은 질병관리청 콜센터(☎1339, 지역번호＋120) 또는 보건소와 상담해 주시기 바랍니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c03" value = "3" onclick = "showView(this,'A_c03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>검사는 어떻게</span> 이루어지나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        (검체 채취) 검체는 의사, 간호사, 임상병리사가 지정된 장소(선별진료소 등)에서 채취합니다. 필수 검체는 상기도 검체이며, 하기도 검체는 가래가 있는 환자에서 채취합니다. 검체 채취 시 불편감ㆍ통증이 있을 수 있습니다.
+                                    </li>
+                                    <br>
+                                    ▶ 간호사와 임상병리사는 의사의 지도하에 시행
+                                    <table border="1">
+                                        <tbody style = "text-align:left;">
+                                            <tr>
+                                                <td>상기도 검체</td>
+                                                <td>
+                                                    비인두 또는 구인두 도말물 채취<br>
+                                                    - (비인두도말) 콧구멍 깊숙이 면봉을 삽입하여 분비물 채취<br>
+                                                    - (구인두도말) 면봉으로 목구멍 안쪽 벽의 분비물을 긁어서 채취
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>하기도 검체</td>
+                                                <td>
+                                                    타액 등이 포함되지 않도록 깊이 기침하여 가래 채취<br>
+                                                    - 가래가 없는 경우는 억지로 뱉으면 에어로졸 발생가능성이 있으므로 가래 유도 금지
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    <li>
+                                        (유전자검사) 검사가 가능한 선별진료소는 직접 검사하고, 그렇지 않은 경우는 수탁검사기관으로 검사를 의뢰합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c04" value = "4" onclick = "showView(this,'A_c04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>검사(유전자 검사) 시간</span>은 얼마나 걸리나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        검사는 6시간 정도 소요되지만 검체 이송 및 대기시간 등을 고려하면 검사 후 1∼2일 이내에 결과를 확인할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c05" value = "5" onclick = "showView(this,'A_c05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>코로나19 PCR 검사에서 음성이 나온 뒤 다시 양성</span>으로 나올 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        PCR 검사가 음성 결과가 나왔다면, 검사 대상자의 검체에서 코로나19 바이러스가 검출되지 않았음을 의미합니다.
+                                    </li>
+                                    <li>
+                                        검체의 질이나 양이 부적합한 경우, 감염의 초기나 너무 늦은 시기에 검체가 채취된 경우, 검체가 부적합하게 배송되거나 다루어진 경우, 검사의 기술적 오류 등으로 인해 코로나19 환자에서 결과가 음성으로 나올 수 있습니다. 이후 다시 시행된 검사에서 다시 양성으로 판정될 수 있습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Laboratory testing for coronavirus disease 2019 (COVID-19) in suspected human cases
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c06" value = "6" onclick = "showView(this,'A_c06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>검사비용</span>은 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의사환자 및 조사대상 유증상자로 신고한 경우는 검사비용의 본인부담금이 발생하지 않습니다. 다만, 일반진찰, X-ray 검사 등 다른 진료비용은 본인이 부담합니다.
+                                    </li>
+                                    <li>
+                                        단, 응급상황에서 실시한 응급용 선별검사 또는 확진검사의 경우
+                                    </li>
+                                    ▶ 환자 본인부담금이 발생합니다.<br>
+                                    ▶ KTAS 1.2 등급 또는 KTAS 3 등급 중 6시간 이상 지연할 수 없는 응급수술이 필요한 경우
+                                    <li>
+                                        응급용 선별검사의 본인 부담률은 법령에서 정한 해당 환자의 본인 부담률을 따릅니다.
+                                    </li>
+                                    ▶ 사회적 거리두기 단계, 역학적 연관성, 증상 유무, 지역과 관계없이 보건소 선별진료소 및 임시선별검사소에서 무료로 코로나19 진단검사 가능(별도공지 시 까지)<br><br>
+
+                                    코로나19 진단검사비 지급 절차
+                                    <ol>
+                                        <li>
+                                            <border>(사례정의 해당건 검사 지원)</border> 코로나19 대응지침에 따른 사례의 경우, 질병관리청(또는 방역관)이 집단유행과 연관성을 인정한 경우 → 개별검사 진행
+                                        </li>
+                                        * 지급 절차 : 1)시도 공문(엑셀 자료), 2)수탁업체 공문(엑셀 자료), 3)코로나19 정보관리 시스템(선별진료소) 입력 현황(보건소 입력), 총 3가지 자료 매칭 후 지급
+                                        <li>
+                                            <border>(선제적 검사 지원)</border> 일정규모 집단 발생 시, 역학조사 전 지자체 자체 판단에 따라 시행(사전에 질병관리청 승인 필요)하는 진단검사비 지원 → 취합(풀링)검사 진행
+                                            * 지급 절차 : 시도에서 공문(엑셀 자료)으로 국비 지원 요청 시 별도 매칭 절차 없이 지급
+                                        </li>
+                                        <li>
+                                            <border>(사례정의 미해당건 검사 지원)</border> 보건소 선별진료소(무증상자 등) 및 임시선별검사소 대상 진단검사비 지원 → 취합(풀링)검사 진행 
+                                            * 지급 절차 : 1)코로나19 정보관리 시스템(임시선별진료소) 입력 현황(보건소 입력)과 2)수탁업체 공문(엑셀 자료) 매칭 후 지급
+                                        </li>
+                                    </ol>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c07" value = "7" onclick = "showView(this,'A_c07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>가래가 없으면 채취를 유도하지 않고 상기도 검체만 채취</span> 하는게 맞나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        그렇습니다. 필수검체는 상기도 검체이며, 가래가 있는 환자에서는 하기도 검체 1개와 상기도 검체 1개 각각 채취하여 송부합니다. 다만, 가래가 없으면 채취 유도는 절대 하지 않습니다.     
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c08" value = "8" onclick = "showView(this,'A_c08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question">본인이 <span>스스로 가래를 채취하는 경우도 음압실</span>이 필요한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        반드시 음압실이 필요하지는 않으나, 에어로졸 발생 가능성이 있으므로 내부순환은 안되고 외부 환기가 잘되는 독립된 공간에서 채취하도록 합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c09" value = "9" onclick = "showView(this,'A_c09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>검체채취 시 표준주의</span>란 무엇입니까?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        표준주의는 의료기관 내에서 환자를 대상으로 하는 모든 처치와 술기, 간호를 하는데 가장 기본적인 지침으로 감염병 전파를 예방하기 위해 공통으로 적용되는 주의사항입니다.     
+                                    </li>
+                                    <li>
+                                        환자의 혈액, 체액, 분비물, 배설물, 손상된 피부와 점막을 다룰 때 표준주의에 따라 환자를 진료하여야 하며, 전파경로별로 접촉주의, 비말주의(5 마이크로미터보다 큰 입자의 비말에 의해 전파되는 질환), 공기주의가 있습니다.
+                                    </li>
+                                    <br>
+                                    ▶ (출처) 질병관리청. ｢의료관련감염 표준예방지침｣(2020)<br>
+                                    : 질병관리청 홈페이지 → 알림·자료 → 지침
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c10" value = "10" onclick = "showView(this,'A_c10')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>코로나 항체검사</span>는 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c10">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        항체 검사는 사람의 혈액 검체를 검사하여 코로나19 원인 바이러스인 SARS-CoV-2에 대한 항체를 찾는 검사입니다. 항체는 감염이 된 이후에 생성되기 때문에, 검사 결과 양성이 나오면 이전에 이 바이러스에 감염된 적이 있다는 의미입니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        SARS-CoV-2 항체가 형성되기까지 보통 1-3주 걸리므로 항체 검사로 초기 감염 여부를 확인하는 것은 어렵습니다. 현재 감염 상태인지 확인하려면 RT-PCR 같은 유전자 검사가 필요합니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        아직까지 항체 검사의 정확도에 대해 정확하게 알려져 있지 않아, 국내에서는 진단에 사용하지 않고 있습니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ Symptoms & Testing
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c11" value = "11" onclick = "showView(this,'A_c11')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>열 스캐너로 코로나19</span> 환자를 찾아낼 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c11">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        열 스캐너는 코로나19에 감염되어 발열 증상이 있는 사람(즉, 정상 체온보다 높은 사람)을 감지하는 데 효과적입니다.
+                                    </li>
+                                    <li>
+                                        하지만 열 스캐너는 발열 증상이 없는 환자, 증상이 나타나기 전 잠복기 환자들을 감지할 수 없습니다. 코로나 19의 잠복기는 1~14일(중앙값 5~7일)로 알려져 있습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Coronavirus disease(COVID-19) advice for the public: Myth busters.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c12" value = "12" onclick = "showView(this,'A_c12')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>응급용 선별검사 결과 양성인 경우 추가 실시되는 코로나19 확진검사는 비용이 얼마</span>인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c12">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        응급용 선별검사 결과 양성으로 확진검사를 시행하는 경우 국비지원 대상으로 환자에게 본인부담금을 수납하지 않으며, 급여 청구방법은 기존 국비지원 명세서 청구방법과 동일합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c13" value = "13" onclick = "showView(this,'A_c13')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>코로나19 응급용 선별검사와 확진검사를 동시</span>에 시행할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c13">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        진료의사는 응급환자상태 및 검사여건 등을 종합적으로 고려하여 응급용 선별검사 혹은 확진검사 중 1개를 선택하여 급여로 시행할 수 있으며, 2개의 검사를 동시에 실시할 수 없습니다(전액본인 부담도 불가).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c14" value = "14" onclick = "showView(this,'A_c14')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>선별진료소 검체 채취 시에 보호자가 동행하여 검사</span>를 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c14">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        선별진료소에서 소아, 발달장애인 등 보호자 동행이 필요한 경우 보호자가 검체 채취실에 동행할 수 있으며, 이 경우 보호자는 마스크 착용 등 감염예방수칙을 준수하여 동행이 가능합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d01" value = "1" onclick = "showView(this,'A_d01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>코로나19의 치료법</span>이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        대증 치료로 코로나바이러스감염증-19의 증상을 완화시킬 수 있지만, 아직까지 질병을 예방하거나 치료하는 것으로 확실하게 밝혀진 특이 치료제는 없습니다.
+                                    </li>
+                                    <li>
+                                        최근 FDA에서 “렘데시비르”라는 약이 치료제로 긴급승인 되어 사용 중입니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d02" value = "2" onclick = "showView(this,'A_d02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>항생제가 코로나19의 예방이나 치료</span>에 도움이 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        일반적으로 항생제는 바이러스 감염에는 효과가 없고 세균감염에 효과적입니다. 코로나19는 바이러스 감염에 의해 발생하므로 항생제는 코로나19에 효과가 없습니다.
+                                    </li>
+                                    <li>
+                                        하지만 코로나19 중증의 환자에게 합병증으로 2차 세균 감염이 발생할 수 있으므로 세균 감염을 예방하거나 동반된 세균감염을 치료하기 위해 항생제를 사용할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d03" value = "3" onclick = "showView(this,'A_d03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>코로나19에서 회복되면 면역</span>이 생기나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아직까지 코로나19에 감염되었던 사람이 다시 감염될 수 있는지에 대한 정보는 부족합니다. 재감염이 가능한지에 대한 연구가 전 세계 여러 곳에서 진행중입니다.
+                                    </li>
+                                    ※ (출처) CDC, FAQ Symptoms & Testing
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d04" value = "4" onclick = "showView(this,'A_d04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>코로나19로 확진되면 국가에서 치료비</span>를 지원해주나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        「감염병의 예방 및 관리에 관한 법률」에 의해 국가 및 지자체에서 부담합니다.
+                                    </li>
+                                    <li>
+                                        단, 담당의·지자체의 지시에 협조하지 않는 경우 격리입원치료비 지원이 제한됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d05" value = "5" onclick = "showView(this,'A_d05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>다중이용시설에서의 감염예방 조치</span>는 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        다중이용시설에 대해서는 손소독제 비치, 종사자 마스크 착용 등 기본적인 감염관리를 수행하도록 권고하였으며, 다중 행사는 감염예방 조치를 철저히 준수하도록 지침이 마련되어 있으니 지침을 참고하여 주시기 바랍니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d06" value = "6" onclick = "showView(this,'A_d06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>폐렴 백신이나 BCG 백신이 코로나19 예방</span>에 도움이 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        폐렴구균 백신이나 헤모필루스 인플루엔자 B형(Hib) 백신과 같은 폐렴 예방 백신은 코로나19를 예방할 수 없습니다. 하지만 다른 폐렴을 예방할 수 있으므로 예방 접종은 권장되고 있습니다.
+                                    </li>
+                                    <li>
+                                        BCG 백신을 접종시키는 국가가 BCG 백신을 접종시키지 않는 국가에 비해 코로나19 발병률이 낮다는 보고가 있었지만, 이것이 BCG 백신이 코로나19를 예방한다는 것을 의미하지는 않습니다.
+                                    </li>
+                                    <li>
+                                        아직까지 BCG 백신이 코로나19를 예방한다는 증거가 부족하므로, 코로나19를 예방하기 위한 목적으로 BCG 백신은 권장하지 않습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Coronavirus disease(COVID-19) advice for the public: Myth busters.<br>
+                                    ▶ (출처) WHO, Baclille Calmette-Guerin(BCG) vaccination and COVID-19
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d07" value = "7" onclick = "showView(this,'A_d07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>코로나19를 예방하기 위해 콘택트렌즈</span> 사용자는 어떻게 해야 하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아직까지 콘택트렌즈 착용자가 안경 착용자보다 코로나19 감염 위험이 더 높다는 증거는 없지만, 콘택트렌즈 착용자들은 콘택트렌즈 관련 감염을 예방하기 위해 안전하고 위생적인 콘택트렌즈 착용 및 관리 습관을 가져야 합니다.
+                                    </li>
+                                    <li>
+                                        렌즈를 만지기 전 항상 비누와 물로 손을 씻어야 합니다. 세정/소독액을 사용해서 콘택트렌즈와 케이스를 소독하고, 청소 및 소독이 된 곳에서 렌즈를 다뤄야 합니다. 
+                                    </li>
+                                    <li>
+                                        콘택트렌즈 세척, 소독 및 보관용 과산화수소계 약제는 코로나19 원인 바이러스의 예방에 효과가 있습니다. 다목적 용액(MPS)이나 초음파 세척기 같은 다른 살균/소독 방법은 아직까지 바이러스 예방 효과에 대한 과학적 증거가 충분하지 않습니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ How to protect yoursel
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e01" value = "1" onclick = "showView(this,'A_e01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>접촉자 범위</span>는 어떻게 설정하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        접촉자의 범위는 시·도 즉각대응팀이 노출정도를 평가하여 판단하게 됩니다.
+                                    </li>
+                                    <li>
+                                        접촉자는 확진환자의 증상 및 마스크 착용 여부, 노출력(접촉 장소·접촉 기간 등) 등을 고려하여 증상발생 2일전(무증상자의 경우 검체 채취일 기준 2일 전)부터 접촉자 범위를 설정하고 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e02" value = "2" onclick = "showView(this,'A_e02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>마스크를 착용하지 않은 코로나19 환자를 진료 시 의료진은 개인보호구를 착용했는데 접촉자로 분류</span>되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의료기관의 상황에 따른 개인보호구를 올바르게 착용하고 탈의하면 접촉자로 분류하지 않습니다.
+                                    </li>
+                                    <li>
+                                        접촉자 범위는 시‧도 즉각대응팀이 확진환자의 증상 및 마스크 착용 여부, 체류기간, 노출상황 및 시기 등을 고려하여 최종 결정합니다.
+                                    </li>
+                                    ▶ [부록 8] 코로나19 관련 개인보호구의 사용 참조
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e03" value = "3" onclick = "showView(this,'A_e03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>접촉자</span>가 되면 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        확진환자와 최종으로 접촉한 날로 부터 14일 동안 격리(자가, 시설, 병원)를 실시합니다. 
+                                    </li>
+                                    <li>
+                                        시·도지사 또는 시장·군수·구청장은 접촉자에게 격리통지서를 발부하고, 생활수칙을 안내하며, 1:1로 담당자를 지정하여 격리 해제 시까지 매일 2회 유선 연락하여 발열 또는 호흡기 증상여부를 확인합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e04" value = "4" onclick = "showView(this,'A_e04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>자가격리 시 주의할 사항</span>은 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        자가격리 대상자는 독립된 공간에서 혼자 생활하며, 방문은 닫은 채로 창문을 열어 자주 환기시키고, 가능한 혼자만 사용할 수 있는 화장실과 세면대가 있는 공간을 사용하여야 합니다.
+                                    </li>
+                                    <li>
+                                        공용화장실, 세면대를 사용한다면, 사용 후 소독(락스 등 가정용소독제) 후 다른 사람이 사용하도록 합니다.
+                                    </li>
+                                    <li>
+                                        자가격리 대상자의 생활 준수사항으로는 개인용 수건, 식기류, 휴대전화 등 개인물품을 사용하도록 하고 있으며, 의복 및 침구류는 단독 세탁하고, 식사는 혼자서 하며, 식기류 등은 별도로 분리하여 깨끗이 씻기 전에 다른 사람이 사용하지 않도록 합니다. 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e05" value = "5" onclick = "showView(this,'A_e05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>자택 내 독립된 공간 확보가 안 될 경우</span> 어떻게 격리하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        자택 내 독립된 공간 확보가 어렵거나 추가적인 도움이 필요할 경우에는 지자체에서 적절한 격리 장소에 시설격리를 하도록 하고 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q"id ="Q_e06" value = "6" onclick = "showView(this,'A_e06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>자가격리를 하면 생활지원</span>을 해 주나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        자가격리에 따른 생활지원, 유급휴가 등을 지원하고 있습니다. 자세한 사항은 관할 읍, 면, 동사무소에 문의하시기 바랍니다.
+                                    </li>
+                                    ▶ 단, 해외 입국자 격리 시 생활지원비는 미지원이나 격리기간 중 생필품 지원 등 최소생활이 보장될 수 있도록 지원 ([부록 14] 해외입국자 관리방안 안내 참조)
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e07" value = "7" onclick = "showView(this,'A_e07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>자가격리 중 외출한 사람들에 대한 법적 처벌기준</span>이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        「감염병의 예방 및 관리에 관한 법률」제79조의3에 따라 1년 이하의 징역 또는 1천만원 이하의 벌금형에 처할 수 있습니다.
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q"id ="Q_e08" value = "8" onclick = "showView(this,'A_e08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>외국인인데, 자가격리 중이지만 증상도 없고, 본국으로 돌아가고 싶습니다. 출국</span>할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        집이나 숙소에서 자가격리 중인 장기체류 외국인은 공익적·인도주의적 사유(임종·장례식) 등 해당 지자체장이 승인하는 사유에 해당하는 경우, 진단검사(입국 후 1일 이내 검사)에서 음성이면 출국 가능합니다.
+                                    </li>
+                                    <li>
+                                        임시생활시설에서 시설격리 중인 단기체류 외국인은 원칙적으로 중도 출국이 제한됩니다. 다만, 건강상의 이유나 인도주의적 사유(임종‧장례식) 등 인도적 사유 발생으로 국적국가 또는 출발국가로 출국하는 경우 시설 단장의 승인 하에 출국이 가능합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q"id ="Q_e09" value = "9" onclick = "showView(this,'A_e09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>확진환자의 이동경로</span>를 확인하고 싶습니다.</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        2020년 2월 23일(일) 코로나19 위기경보를 ‘심각’ 단계로 격상함에 따라 확진환자 이동경로 동선 공개는 지자체 홈페이지에서 확인가능 합니다.
+                                    </li>
+                                    ▶ 질병관리청 홈페이지→ 코로나바이러스감염증-19→ 발생동향→ 시도별 발생동향→ 시도별 코로나 관련정보
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                
+                <li class = "q_item">
+                    <div class = "Q" id ="Q_e10" value = "10" onclick = "showView(this,'A_e10')" >
+                        <div class = "icon_Q">Q</div>
+                        <div class = "title_name">[접촉자 및 확진환자]</div>
+                        <div class = "question"><span>확진환자의 정보 중 거주지 공개 범위</span>는 어떻게 설정하나요?</div>
+                        <div class = "Q_btn">></div> 
+                    </div>
+                    <div class = "A" id = "A_e10" >
+                        <div class = "icon_A">A</div>
+                        <div class = "answer">
+                            <ul>
+                                <li>
+                                    확진환자의 거주지 세부정보는 개인을 특정할 수 있는 개인정보이므로 정보공개 대상에 해당하지 않습니다.
+                                </li>
+                                <li>
+                                    다만, 확진환자의 역학조사 및 정보공개 주체가 시·군·구인 점을 고려하여, 시·도 및 시·군·구 단위정보까지 공개 가능 합니다.
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f01" value = "1" onclick = "showView(this,'A_f01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>무증상 확진환자의 격리해제기준</span>은 어떤가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        임상경과 기준 또는 검사 기준 중 어느 하나를 충족한 경우 격리해제 가능합니다.
+                                    </li>
+                                    ▶ (임상경과 기반)
+                                    <ul>
+                                        
+                                        <li>
+                                            (기간) 확진일로부터 10일 경과
+                                        </li>
+                                        <li>
+                                            (증상) 이 기간 동안 임상증상 미발생
+                                        </li>
+                                    </ul>
+                                    ▶ (검사 기반)
+                                    <ul>
+                                        
+                                        <li>
+                                            (검사) PCR 검사 결과 24시간 이상의 간격으로 연속 2회 음성
+                                        </li>
+                                        <li>
+                                            (증상) 확진 후 임상증상 미발생
+                                        </li>
+                                    </ul>
+                                <ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f02" value = "2" onclick = "showView(this,'A_f02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>유증상 확진환자의 격리해제기준</span>은 어떤가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        임상경과 기준 또는 검사 기준 중 어느 하나를 충족한 경우 격리해제 가능합니다.
+                                    </li>
+                                    ▶ (임상경과 기반)
+                                    <ul>
+                                        <li>
+                                            (기간) 증상 발생 후 최소 10일 경과
+                                        </li>
+                                        <li>
+                                            (증상) 최소 24시간 동안 해열 치료 없이 발열이 없고 임상증상이 호전되는 추세
+                                        </li>
+                                    </ul>
+                                    ▶ (임상경과 기반) : 위중증 단계*에 해당하거나 해당한 적이 있는 경우,
+                                    <ul>
+                                        <li>
+                                            (기간) 증상 발생 후 최소 10일 경과 
+                                        </li>
+                                        <li>
+                                            (증상) 최소 48시간 동안 해열 치료 없이 발열이 없고 임상증상이 호전되는 추세
+                                        </li>
+                                        * 위중증 : 고유량 산소요법, 인공호흡기, ECMO, CRRT 치료 적용
+                                    </ul>
+                                    ▶ (검사기반)
+                                    <ul>
+                                        <li>
+                                            · (검사) PCR 검사 결과 24시간 이상의 간격으로 연속 2회 음성
+                                        </li>
+                                        <li>
+                                            (증상) 해열 치료 없이 발열이 없고 임상증상이 호전되는 추세
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f03" value = "3" onclick = "showView(this,'A_f03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>코로나19의 증상</span>은 어떤 것이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        당초 코로나19 확진환자는 격리해제 시 보건교육을 실시하여 격리해제된 후에도 코로나19 예방수칙을 준수토록 안내하고 있으며 이 방침은 변경 없이 계속 유지됩니다. 따라서 새로 도입된 기준에 따라 격리해제 되는 환자도 보건교육을 통해 다중이용시설 이용이나 타인과의 접촉은 자제하고 마스크 착용 및 손씻기 등은 준수토록 하며, 향후 증상 발생 및 악화 시 보건당국에 우선 문의할 것을 안내합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f04" value = "4" onclick = "showView(this,'A_f04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>확진자가 격리해제된 이후 바로 등교/출근</span> 할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        확진자의 격리해제 기준에 부합하여 격리 해제된 경우에는 바로 일상생활로 복귀할 수 있습니다.
+                                    </li>
+                                    <li>
+                                        다만, 코로나19 감염을 예방하고 지역사회 전파를 차단하기 위해 코로나19 행동 수칙을 준수하여 주시기 바랍니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f05" value = "5" onclick = "showView(this,'A_f05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>생활치료센터 입소실 부족 시 조정 절차</span>는 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        시·도 환자관리반은 관내 또는 타 시·도 생활치료센터와 직접 협의하여 시설배정을 결정합니다.
+                                    </li>
+                                    - 다만, 협의가 어려울 경우 시·도 환자관리반은 중앙사고수습본부에 시설배정 조정을 요청하고, 중앙사고수습본부에서 조정 후 시·도 환자관리반에 결과를 통보합니다.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f06" value = "6" onclick = "showView(this,'A_f06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>접촉자</span>가 되면 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        접촉정도에 따라 자가격리, 능동감시 등으로 구분하여 관리됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f07" value = "7" onclick = "showView(this,'A_f07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>자가격리 시 주의할 사항</span>은 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        자가격리자는 생활수칙을 준수하셔야 합니다. (관련동영상 주소 <a href = "https://www.youtube.com/watch?v=Kad0zYa4CWw">https://www.youtube.com/watch?v=Kad0zYa4CWw</a>)
+                                    </li>
+                                    <br>
+                                    <li>
+                                        또한, 자가격리자의 가족 및 동거인도 생활수칙을 준수하셔야 합니다. (관련동영상 주소 <a = href="https://www.youtube.com/watch?v=Ym_m6ndNatE&t=20s">https://www.youtube.com/watch?v=Ym_m6ndNatE&t=20s</a>)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f08" value = "8" onclick = "showView(this,'A_f08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>장애인, 영유아 등 돌봄이 필요한 가족이 자가격리 대상자</span>입니다. 함께 격리가 가능할까요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        ｢감염병의 예방 및 관리에 관한 법률 시행령｣ 별표2에 따라 격리대상자가 장애인, 영유아(만 8세 이하 또는 초등학교 2학년 이하인 아동*)인 경우 등 불가피한 경우에는 함께 거주하는 사람 등과 공동격리 할 수 있습니다.
+                                    </li>
+                                    *  해당 연령을 상회하더라도 아동의 신체적, 정서적 측면 등을 고려하여 불가피하다고 판단되는 경우에는 보호자 등과 공동격리가 가능
+                                    <li>
+                                        아울러, 격리대상자가 장애인·영유아가 아닌, 기존에 돌봄을 제공 받아왔던 사람으로서 혼자 생활하는 것이 불가능하다면 공동격리가 가능합니다.
+                                    </li>
+                                    <li>
+                                        공동격리 대상자에 대해서는 통상의 자가격리자에 대한 규정(격리수칙 준수, 격리자 대상 생활지원 등)이 동일하게 적용됩니다.
+                                    </li>
+                                    <br>
+                                    (코로나19홈-공지사항-자가격리자)<br>
+                                    <a href = "http://ncov.mohw.go.kr/duBoardList.do?brdId=2&brdGubun=22">http://ncov.mohw.go.kr/duBoardList.do?brdId=2&brdGubun=22</a>
+                                    <br><자가격리자 공동격리 대상 안내><br>
+                                    서식4 격리통지서 수령증(공동격리자용)
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f09" value = "9" onclick = "showView(this,'A_f09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>자가격리 기간 중 예방접종이 예정되어 있습니다. 접종을 목적으로 외출</span>할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        격리 중인 코로나-19 확진자 및 접촉자는 예방접종 제외 대상입니다. 따라서 접종을 목적으로 외출은 허용되지 않으며, 격리해제 후에 예방접종을 진행하셔야 합니다.
+                                    </li>
+                                    ※ 자가격리기간 중 백신접종을 위한 외출은 원칙적으로 불가<br>
+                                    - 단, 해외입국 격리자의 경우 필수업무 수행 등을 위한 공적 목적으로  접종일정 변경이 어렵거나, 예약접종일에 접종을 해야 할 불가피한 사유 등이 인정되는 때에는 관할 보건소장 승인을 받아 접종을 위한 일시 외출 가능(밀접접촉에  따른 격리자는 제외)<br>
+                                    ※ 반드시 자차 또는 방역택시 이용 및 방역수칙(KF94 이상 마스크 상시착용,  접종 및 귀가 시 타인 접촉 금지, 접종후 즉시 귀가 등)준수
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f10" value = "10" onclick = "showView(this,'A_f10')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>국내 밀접접촉자인데 자가격리 전 이사</span>를 계획하였습니다. 이사가 가능한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f10">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        격리통지 전 사전 예정된 불가피한 이사로서 격리장소 적정성 및 이사 관련 입증자료*가 확인되는 경우에 한하여 이사가 가능합니다.
+                                    </li>
+                                    * 부동산(매매, 전세 등) 관련 계약서, 이사업체 계약서 등
+                                    <li>
+                                        지자체에 ①이사 관련 입증자료, ②격리장소 적정성을 확인할 수 있는 자료, ③이사업체 연락처, ④자가격리자 이동(자차 또는 방역택시 등) 계획(이사 중 대기방법 포함) 등을 제출하고, 이사 허가와 자가격리자의 폐기물 수거 또는 처리를 요청합니다.
+                                    </li>
+                                    <li>
+                                        이사업체에 본인이 자가격리 중임을 밝히고 이삿짐 포장, 가구 배치 및 결제방법(비대면), 이사짐 정리 후 집안 소독 실시 등에 대해 사전협의를 합니다.
+                                    </li>
+                                    <li>
+                                        자가격리 중 발생한 폐기물(음식물쓰레기 포함)은 소독한 후 의료폐기물 전용 봉투에 담아 밀봉한 후 다시 종량제 봉투에 담아 지자체에서 처리할 수 있도록 합니다. 
+                                    </li>
+                                    <li>
+                                        이사 당일 자가격리자와 동거인 가족을 포함 이사업체 직원 등 이사관계인은 방역수칙(KF-94 동급 마스크, 일회용 장갑 등의 개인보호구 착용)을 준수하고 자가격리자는 타인과의 대면접촉을 하지 않고 바로 이동수단에 탑승하여 대기하는 등 이동계획에 따라 자가격리지로 이동합니다.
+                                    </li>
+                                    <li>
+                                        기타 사항은 지자체의 안내에 따라 진행합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f11" value = "11" onclick = "showView(this,'A_f11')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리 및 격리해제]</div>
+                            <div class = "question"><span>치료받기 위해 한국에 입국하려고 합니다. 자가격리 중 병원에서 대면 진료</span>를 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f11">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        자가격리 중 시급성이 요구되는 병원 치료 및 진료, 시험응시, 장례 등 예외적인 상황에는 외출이 가능합니다.
+                                    </li>
+                                    <li>
+                                        자가격리 중 외출 허용 여부는 방역당국(보건소 등)에서 해당자의 증상 발현 유무 등을 고려하여 엄격하게 결정하게 되는 사안으로 보다 구체적인 것은 관할 보건소에서 안내를 받으셔야 합니다.
+                                    </li>
+                                    <li>
+                                        또한, 사전 방역조치 완료 등 병원의 협조가 요구되므로 격리자 본인이 진료를 받고자 하는 병원에서 자가격리자 대상 진료가 가능한지 여부를 확인하여야 합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g01" value = "1" onclick = "showView(this,'A_g01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[격리입원 치료비]</div>
+                            <div class = "question"><span>코로나바이러스감염증19 격리입원치료비</span> 지원 계획 안내 참조</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <a href = "http://www.gidcc.or.kr/epvbr/%ec%bd%94%eb%a1%9c%eb%82%98%eb%b0%94%ec%9d%b4%eb%9f%ac%ec%8a%a4%ea%b0%90%ec%97%bc%ec%a6%9d-19covid-19/">▶ ｢코로나바이러스감염증19 격리입원치료비 지원 계획 안내｣ 참조</a>
+                            </div>
+                        </div>
+                    </li>
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h01" value = "1" onclick = "showView(this,'A_h01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" >[의사환자 및 조사...]</div>
+                            <div class = "question"><span>조사대상 유증상자 중 의사의 소견에 따라 코로나19 임상증상으로 코로나19가 의심</span>되는 자는 어떤 경우인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의사가 환자를 진료하였을 때, 발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실 또는 폐렴, 그 외 피로, 식욕감소, 가래, 소화기증상(오심, 구토, 설사 등), 혼돈, 어지러움, 콧물이나 코막힘, 객혈, 흉통, 결막염, 피부 증상 등의 소견으로 코로나19 환자로 의심하는 경우가 해당됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h02" value = "2" onclick = "showView(this,'A_h02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" >[의사환자 및 조사...]</div>
+                            <div class = "question"><span>의사환자는 선별진료소 이외 일반 의료기관</span>을 방문하면 안되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의사환자는 확진환자의 접촉자 중 증상이 나타난 사람으로 코로나19 감염 가능성이 높기 때문에 일반 의료기관을 방문하지 말고 보건소나 질병관리청 콜센터(1339 또는 지역번호＋120) 문의를 통해 가까운 선별진료소(의료기관 또는 보건소)를 방문하여 진료 및 조치를 받으시면 됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h03" value = "3" onclick = "showView(this,'A_h03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" >[의사환자 및 조사...]</div>
+                            <div class = "question"><span>의사환자와 조사대상 유증상자</span>는 어떻게 다른가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의사환자는 확진환자 접촉자 중 유증상자로 코로나19 감염가능성이 높은 경우이고, 조사대상 유증상자는 의사환자보다 위험도는 낮은 것으로 판단되나 국외 방문력, 국내 집단발생과 역학적 연관성, 의사소견에 따라 코로나19 임상증상으로 코로나19 감염이 의심되는 경우입니다.
+                                    </li>
+                                    <li>
+                                        조사대상 유증상자는 일반 의료기관에서 검체 채취 시 Ⅷ. 실험실 검사 관리 내용을 숙지하고 시행하시기 바랍니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h04" value = "4" onclick = "showView(this,'A_h04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" >[의사환자 및 조사...]</div>
+                            <div class = "question"><span>의사환자와 조사대상 유증상자 신고 시 주의사항</span>이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의사환자와 조사대상 유증상자는 감염병 발생 신고시 감염병발생 신고서→ 감염병 발생정보→ 비고(특이사항) 란에 의사환자와 조사대상 유증상자의 구분하여 해당되는 분류를 반드시 입력해 주시기 바랍니다.
+                                    </li>
+                                    <li>
+                                        신고된 사례에 대해서만 검사비 지원이 가능하므로 제1급감염병(신종감염병증후군)으로 신고 필요
+                                    </li>
+                                    - 감염병 발생신고를 반드시 해야하고, 결과 양성이면 확진환자와 동일한 조치를 하셔야 합니다.
+                                    <br><br>
+                                    <table border="1">
+                                        <tbody style = "text-align:left;">
+                                            <tr><td>의사환자</td><td>확진환자와 접촉한 후 14일 이내에 코로나19 임상증상이 나타난 자</td></tr>
+                                            <tr>
+                                                <td rowspan="3">조사대상<br>유증상자</td>
+                                                <td>① 의사의 소견에 따라 코로나19 임상증상으로 코로나19가 의심되는 자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>② 해외 방문력이 있으며 귀국 후 14일 이내에 코로나19 임상증상이 나타난 자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>③ 코로나19 국내 집단발생과 역학적 연관성이 있어 진단검사가 필요하다고 인정되는 자</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfood>
+                                            <td colspan="2">주요 임상증상 : 발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실 또는 폐렴 등</td>
+                                        </tfood>
+                                    </table>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h05" value = "5" onclick = "showView(this,'A_h05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" >[의사환자 및 조사...]</div>
+                            <div class = "question"><span>조사대상 유증상자가 일반 의료기관에 가는 경우는 신고, 환자관리(외출자제 권고, 이동방법안내, 보건교육 등)는 일반 의료기관</span>에서 진행하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        그렇습니다. 검사 결과가 나올 때 까지 외출자제, 대중교통 이용자제, 다중이용시설 방문 자제, 올바른 손씻기 및 기침예절 준수 등 보건교육을 일반 의료기관에서 시행해야 합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_i01" value = "1" onclick = "showView(this,'A_i01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[청소 및 소독]</div>
+                            <div class = "question"><span>코로나바이러스감염증-19 대응 집단시설·다중이용시설 소독 안내 참조</span></div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_i01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <a href = "http://www.gidcc.or.kr/epvbr/%ec%bd%94%eb%a1%9c%eb%82%98%eb%b0%94%ec%9d%b4%eb%9f%ac%ec%8a%a4%ea%b0%90%ec%97%bc%ec%a6%9d-19covid-19/">▶ ｢코로나바이러스감염증-19 대응 집단시설·다중이용시설 소독 안내｣ 참조</a>
+                            </div>
+                        </div>
+                    </li>
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_j01" value = "1" onclick = "showView(this,'A_j01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[임신과 출산]</div>
+                            <div class = "question"><span>임산부는 코로나19</span>에 더 위험한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_j01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19가 임산부에게 미치는 영향에 대한 연구가 진행 중입니다. 아직까지 임산부가 일반인에 비해 코로나19에 더 취약하다는 증거는 없습니다.
+                                    </li>
+                                    <li>
+                                        그러나 임산부는 신체와 면역 체계의 변화로 호흡기 감염에 나쁜 영향을 받을 수 있습니다. 임산부는 코로나19로부터 자신을 보호하기 위해 예방 조치를 취해야 합니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on COVID-19 and pregnancy and childbirth
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_j02" value = "2" onclick = "showView(this,'A_j02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[임신과 출산]</div>
+                            <div class = "question"><span>임산부는 어떻게 코로나19 예방</span>을 할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_j02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        임산부도 코로나19 감염을 예방하기 위해 예방수칙을 지켜야합니다. 다음 예방수칙을 통해 자신을 보호할 수 있습니다.
+                                    </li>
+                                    <ul>
+                                        <li>
+                                            비누와 물로 손을 자주 씻거나, 알코올 성분의 손 위생을 실시하세요.
+                                        </li>
+                                        <li>
+                                            자신과 다른 사람 사이에 2m(최소 1m)거리를 유지하고 붐비는 공간을 피하십시오.
+                                        </li>
+                                        <li>
+                                            기침이나 재채기를 할 때, 팔꿈치나 휴지로 입과 코를 가리고 사용한 휴지는 즉시 휴지통에 버립니다.
+                                        </li>
+                                        <li>
+                                            발열이나 기침 등의 증상이 있거나 호흡곤란이 있으면 신속히 치료를 받아야 합니다. 
+                                        </li>
+                                        ▶ (출처) WHO, Q&A on COVID-19 and pregnancy and childbirth
+                                    </ul>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_j03" value = "3" onclick = "showView(this,'A_j03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[임신과 출산]</div>
+                            <div class = "question"><span>임산부도 코로나 검사</span>를 받아야 하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_j03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 증상이 있거나, 코로나19가 의심되는 임산부는 검사를 받아야 합니다. 코로나19에 감염된 경우 전문적인 치료가 필요할 수 있습니다.
+                                    </li>
+                                    ※ (출처) WHO, Q&A on COVID-19 and pregnancy and childbirth
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_j04" value = "4" onclick = "showView(this,'A_j04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[임신과 출산]</div>
+                            <div class = "question"><span>코로나19가 태아에게 전염</span>될 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_j04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19에 감염된 임산부가 태아 또는 분만 중 아기에게 코로나19를 전염시킬 수 있는지는 아직까지 불명확합니다. 현재까지 양수 또는 모유에서 바이러스가 발견되지 않았습니다.
+                                    </li>
+                                    ※ (출처) WHO, Q&A on COVID-19 and pregnancy and childbirth
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_j05" value = "5" onclick = "showView(this,'A_j05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[임신과 출산]</div>
+                            <div class = "question"><span>코로나19가 수유</span>를 통해 전염될 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_j05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        모유 수유를 통한 코로나19의 전파는 지금까지 보고되지 않았습니다. 모유수유를 중단하거나 피하지 않아도 됩니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on COVID-19 and pregnancy and childbirth
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_j06" value = "6" onclick = "showView(this,'A_j06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[임신과 출산]</div>
+                            <div class = "question"><span>코로나19에 감염되어도 수유</span> 할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_j06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        모유 수유는 신생아, 영아의 건강과 발달에 도움이 되며 엄마의 건강에도 도움이 됩니다.
+                                    </li>
+                                    <li>
+                                        엄마가 코로나19로 확진되거나 의심이 되더라도 손위생, 마스크 착용, 기침 예절 등의 예방 수칙을 지키면서 수유가 가능합니다.
+                                    </li>
+                                    <li>
+                                        마스크 착용이 불가능한 경우라도, 다른 예방 수칙을 지키면서 수유가 가능합니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on COVID-19 and pregnancy and childbirth
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_k01" value = "1" onclick = "showView(this,'A_k01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[방역수칙]</div>
+                            <div class = "question"><span>현재 방역수칙</span>은 어떤 것이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_k01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        현재 코로나19 방역수칙은 지차제마다 다르게 적용중입니다<br>
+                                        <a = href = "http://ncov.mohw.go.kr/duBoardList.do?brdId=2&brdGubun=28">▶ ｢코로나바이러스감염증-19 지자체용 대응지침｣ 참조</a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                
+
+                
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l01" value = "1" onclick = "showView(this,'A_l01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>어린이들은 코로나19</span>에 얼마나 위험한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        현재까지의 연구에 의하면, 성인에 비해 어린이의 위험도는 낮은 편입니다. 일부 어린이와 유아에서 코로나19 발병 사례들이 있으나, 현재까지 알려진 대부분의 사례는 성인입니다. 어린이는 코로나 19에 걸리더라도 대부분 경한 증상만 나타내며 좋은 예후를 보였습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l02" value = "2" onclick = "showView(this,'A_l02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>코로나19에 걸린 어린이의 증상</span>은 성인과 다른가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19의 증상은 어린이와 성인이 비슷하지만, 어린이는 일반적으로 코로나19에 걸리더라도 경한 증상만을 나타냈습니다. 소아에서 보고된 증상으로는 열, 콧물, 기침 등의 감기와 비슷한 증상, 구토와 설사 같은 소화기 증상 등이 있었습니다.
+                                    </li>
+                                    <li>
+                                        코로나19에 걸린 어린이들 중 소수에서 가와사키병과 유사한 중증 염증성 질환을 나타났다는 사례가 보고되었습니다. 이에 대한 연구가 진행 중입니다.
+                                    </li>
+                                    ▶ (출처) Covid-19: concerns grow over inflammatory syndrome emerging in children BMJ 2020; 369.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l03" value = "3" onclick = "showView(this,'A_l03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>신종 코로나 바이러스와 인플루엔자 바이러스</span>는 무엇이 비슷한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19와 인플루엔자는 비슷한 증상을 나타냅니다. 두 바이러스 모두 호흡기 증상을 주로 유발하며, 이는 무증상 또는 경증에서 중증 및 사망에 이르는 광범위한 임상양상으로 나타납니다.
+                                    </li>
+                                    <li>
+                                        두 바이러스 모두 호흡기 침방울(비말)이나 접촉에 의해 전염됩니다. 결과적으로 두 바이러스 모두를 예방하기 위해 손 위생이나 호흡기 에티켓과 같은 예방 수칙을 지키는 것은 감염을 예방하기 위한 중요한 조치입니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A: Similarities and differences-COVID-19 and influenza
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l04" value = "4" onclick = "showView(this,'A_l04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>코로나19와 인플루엔자</span>는 어떻게 다른가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        인플루엔자 바이러스는 코로나 바이러스(SARS-CoV-2)에 비해 잠복기가 짧고, 전파속도가 빨라 지역사회에 더 빠르게 전파될 수 있습니다. 어린이는 인플루엔자 바이러스 전파에 중요한 요인이지만, 지금까지의 연구에 의하면 어린이는 코로나19에 상대적으로 영향이 적은 것으로 알려져 있습니다.
+                                    </li>
+                                    <li>
+                                        코로나19의 사망률은 인플루엔자보다 높습니다. 지금까지 알려진 전세계 사망률은 5% 이상이며(WHO, 5/9일 기준), 인플루엔자의 경우 일반적으로 0.1% 미만입니다. 사망률은 국가나 지역에 따라 상이할 수 있습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A: Similarities and differences-COVID-19 and influenza
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l05" value = "5" onclick = "showView(this,'A_l05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>코로나19와 인플루엔자의 치료</span>는 어떻게 다른가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        현재 코로나19에 대한 백신과 치료제가 개발, 연구되고 있습니다. 아직까지 개발된 백신은 없지만, FDA에서 “렘데시비르”라는 약이 긴급 승인되어 사용 중입니다.
+                                    </li>
+                                    <li>
+                                        인플루엔자는 치료제와 백신이 개발되어 있습니다. 인플루엔자 백신은 코로나19 바이러스에 효과적이지 않지만, 인플루엔자 감염을 예방하기 위해 매년 예방 접종을 받는 것이 좋습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A: Similarities and differences-COVID-19 and influenza
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l06" value = "6" onclick = "showView(this,'A_l06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>코로나19와 인플루엔자</span>가 동시에 걸릴 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        인플루엔자(다른 호흡기 병원체도 마찬가지)와 COVID-19 바이러스에 동시에 걸릴 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l07" value = "7" onclick = "showView(this,'A_l07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>개나 고양이 등의 반려동물이나 그 외 동물에게서 코로나19가 감염</span>될 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아직까지 코로나19에 감염된 반려동물들이 질병을 사람에게 전염시키고 전파시킬 수 있다는 증거는 없습니다.
+                                    </li>
+                                    <li>
+                                        반려동물이 코로나19 바이러스에 감염된 사례들이 보고되었는데, 대부분 코로나19에 감염된 사람과 접촉한 후에 감염되었습니다.
+                                    </li>
+                                    <li>
+                                        코로나19나 다른 질병을 예방하기 위해서는, 반려동물이나 반려동물의 물건을 접촉하기 전·후에 손을 물과 비누로 깨끗이 씻는 예방수칙을 잘 지켜야 합니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on coronaviruses<br>
+                                    ▶ [부록 23] 코로나19 관련 반려동물 관리방안 참조
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l08" value = "8" onclick = "showView(this,'A_l08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>코로나19에 걸리면 반려동물이나 다른 동물과의 접촉</span>을 피해야 하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        전 세계에서 사람에서 동물로 감염된 것으로 추정되는 몇몇 사례들이 보고되었습니다.
+                                    </li>
+                                    <li>
+                                        코로나19 증상이 있다면 반려동물과 접촉을 피하고, 반려동물과 함께 있을 때 손씻기를 철저히 하고 마스크를 착용하도록 합니다.
+                                    </li>
+                                    <li>
+                                        코로나19가 의심되거나 확진되면, 완치되기 전까지 가능하면 다른 사람에게 반려동물을 돌보게 하는 것이 안전합니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ COVID-19 and Animal
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l09" value = "9" onclick = "showView(this,'A_l09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>개를 산책</span>시켜도 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        개와 산책하는 것은 개와 사람의 건강과 삶의 만족도에 중요합니다. 다른 사람이나 다른 동물로부터 최소 2m이상 거리를 유지하면서 개에게 목줄을 한 상태로 산책합니다.
+                                    </li>
+                                    - 많은 사람과 개가 모이는 공원이나 공공장소에는 가지 않습니다. 사회적 거리를 유지하기 위해, 산책을 할 때 다른 사람들이 개를 만지지 못하게 해야 합니다.<br>
+                                    ▶ (출처) CDC, FAQ COVID-19 and Animal
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l10" value = "10" onclick = "showView(this,'A_l10')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>해외여행</span>을 예약했는데, 여행을 가도 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l10">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19가 전세계적으로 확산되고 있어 해외여행에 각별한 주의가 필요한 상황이며 여행 전에 질병관리청 ‘해외감염병 NOW’에서 제공하는 해외발생동향과 외교부 해외안전여행 홈페이지를 통해 우리나라 여행객에 대한 입국금지, 격리 등 방역을 위한 입국제한 조치를 실시하고 있는 국가를 확인하시기 바랍니다.
+                                    </li>
+                                    ▶ (해외감염병 NOW) www.해외감염병now.kr/infect/occurrence_list.do<br>
+                                    ▶ (외교부해외안전여행) www.0404.go.kr/dev/main.mofa<br><br>
+                                    ▶ 방문 전
+                                    <ul>
+                                        <li>
+                                            질병관리청 ‘해외감염병NOW’에서 발생 정보 및 감염병 예방 수칙을 확인해주세요
+                                        </li>
+                                        <li>
+                                            외교부 해외안전여행에서 입국제한 조치 실시국가를 확인해 주세요.
+                                        </li>
+                                    </ul>
+                                    ▶ 방문 중
+                                    <ul>
+                                        <li>
+                                            가금류, 야생동물과의 접촉을 피해주세요.
+                                        </li>
+                                        <li>
+                                            호흡기 유증상자(발열, 호흡곤란 등)와의 접촉을 피해주세요.
+                                        </li>
+                                        <li>
+                                            현지 시장 등 감염위험이 있는 장소 방문을 자제해주세요.
+                                        </li>
+                                        <li>
+                                            손 씻기, 기침 예절 등 개인위생을 철저히 지켜주세요.
+                                        </li>
+                                    </ul>
+                                    ▶ 방문 후
+                                    <ul>
+                                        <li>
+                                            14일 이내 발열 또는 호흡기 증상(기침, 호흡곤란 등)이 발생하면 질병관리청 콜센터
+                                        </li>
+                                        (☎1339, 지역번호＋120) 또는 보건소로 문의하시기 바랍니다.
+                                        <li>
+                                            또한 의심 증상으로 진료를 받고자 하실 경우는 지역 내 선별진료소를 우선으로 방문하시고,
+                                        
+                                        </li>
+                                        <li>
+                                            진료 전 의료진에게 반드시 해외여행력을 알리시기 바랍니다.
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l11" value = "11" onclick = "showView(this,'A_l11')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>해외에서 및 국내에서 코로나19 환자</span>는 얼마나 발생했나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l11">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 해외 발생동향은 코로나바이러스감염증-19 홈페이지(ncov.mohw.go.kr) ‘발생동향’에서 확인 가능합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID_Vaccine/COVID_Vaccine_main.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">예방접종에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        var v = localStorage.getItem("textvalue");
+        
+        var q = document.getElementsByClassName("q_item");
+        
+        for(var i = 0; i < q.length; i++){
+                q[i].style.display = "none";
+        }   
+        
+        var cnt = 0;
+        
+        var span = document.getElementsByTagName("span");
+        
+        for(var i = 0; i < span.length; i++) {
+            var s = span[i].innerHTML;
+            if(s.includes(v)){
+                var k = span[i].parentNode.parentNode.parentNode;
+                k.style.display = "grid";
+                cnt +=1;
+            }
+        }
+        var c = document.getElementById("search_result");
+        if (v.length == 0 || cnt == 0){
+            c.innerHTML = "‟"+v+"”"+" 검색결과가 없습니다.";
+        } else {
+            c.innerHTML = "‟"+v+"”"+" 검색결과 " + cnt + " 건";
+        }
+
+    </script>
+</body>
+</html>

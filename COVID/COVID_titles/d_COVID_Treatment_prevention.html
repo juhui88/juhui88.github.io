@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_titles.css" rel = "stylesheet">
+    <title>치료 및 예방</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../index.html" id = "logo">
+                        <p>코로나19에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Pathogen_info.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pathogen_information">병원체정보</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Symptom.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Symptom">증상</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Test.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Test">검사</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Treatment_prevention.html">
+                        <div class = "b_title" style = "background-color:#78A6A4">
+                            <h4 class = "one_line" id = "Treatment_prevention">치료 및 예방</h4> 
+                        </div>
+                    </a>
+                    <a href = "e_COVID_Contacts.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "contacts" >접촉자 및<br>확진환자</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Isolation.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Isolation">격리 및<br>격리해제</h4> 
+                        </div>
+                    </a>  
+
+                    <br>
+                    <a href = "g_COVID_Treatment_cost.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Treatment_cost">격리입원<br>치료비</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Managemen.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Management">의사환자 및<br>조사대상<br>유증상자 관리</h4> 
+                        </div>
+                    </a>
+                    <a href = "i_COVID_Sanitize.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Sanitize">청소 및 소독</h4> 
+                        </div>
+                    </a>
+                    <a href = "j_COVID_Pregnant.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pregnant">임신과 출산</h4> 
+                        </div>
+                    </a>
+                    <a href = "k_COVID_Quarantine_rule.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Quarantine_rule">방역수칙</h4> 
+                        </div>
+                    </a>
+                    <a href = "l_COVID_so_on.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line"id = "so_on">기타</h4> 
+                        </div>
+                    </a> 
+
+                    
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>치료 및 예방</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d01" value = "1" onclick = "showView(this,'A_d01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>코로나19의 치료법</span>이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        대증 치료로 코로나바이러스감염증-19의 증상을 완화시킬 수 있지만, 아직까지 질병을 예방하거나 치료하는 것으로 확실하게 밝혀진 특이 치료제는 없습니다.
+                                    </li>
+                                    <li>
+                                        최근 FDA에서 “렘데시비르”라는 약이 치료제로 긴급승인 되어 사용 중입니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d02" value = "2" onclick = "showView(this,'A_d02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>항생제가 코로나19의 예방이나 치료</span>에 도움이 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        일반적으로 항생제는 바이러스 감염에는 효과가 없고 세균감염에 효과적입니다. 코로나19는 바이러스 감염에 의해 발생하므로 항생제는 코로나19에 효과가 없습니다.
+                                    </li>
+                                    <li>
+                                        하지만 코로나19 중증의 환자에게 합병증으로 2차 세균 감염이 발생할 수 있으므로 세균 감염을 예방하거나 동반된 세균감염을 치료하기 위해 항생제를 사용할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d03" value = "3" onclick = "showView(this,'A_d03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>코로나19에서 회복되면 면역</span>이 생기나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아직까지 코로나19에 감염되었던 사람이 다시 감염될 수 있는지에 대한 정보는 부족합니다. 재감염이 가능한지에 대한 연구가 전 세계 여러 곳에서 진행중입니다.
+                                    </li>
+                                    ※ (출처) CDC, FAQ Symptoms & Testing
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d04" value = "4" onclick = "showView(this,'A_d04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>코로나19로 확진되면 국가에서 치료비</span>를 지원해주나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        「감염병의 예방 및 관리에 관한 법률」에 의해 국가 및 지자체에서 부담합니다.
+                                    </li>
+                                    <li>
+                                        단, 담당의·지자체의 지시에 협조하지 않는 경우 격리입원치료비 지원이 제한됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d05" value = "5" onclick = "showView(this,'A_d05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>다중이용시설에서의 감염예방 조치</span>는 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        다중이용시설에 대해서는 손소독제 비치, 종사자 마스크 착용 등 기본적인 감염관리를 수행하도록 권고하였으며, 다중 행사는 감염예방 조치를 철저히 준수하도록 지침이 마련되어 있으니 지침을 참고하여 주시기 바랍니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d06" value = "6" onclick = "showView(this,'A_d06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>폐렴 백신이나 BCG 백신이 코로나19 예방</span>에 도움이 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        폐렴구균 백신이나 헤모필루스 인플루엔자 B형(Hib) 백신과 같은 폐렴 예방 백신은 코로나19를 예방할 수 없습니다. 하지만 다른 폐렴을 예방할 수 있으므로 예방 접종은 권장되고 있습니다.
+                                    </li>
+                                    <li>
+                                        BCG 백신을 접종시키는 국가가 BCG 백신을 접종시키지 않는 국가에 비해 코로나19 발병률이 낮다는 보고가 있었지만, 이것이 BCG 백신이 코로나19를 예방한다는 것을 의미하지는 않습니다.
+                                    </li>
+                                    <li>
+                                        아직까지 BCG 백신이 코로나19를 예방한다는 증거가 부족하므로, 코로나19를 예방하기 위한 목적으로 BCG 백신은 권장하지 않습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Coronavirus disease(COVID-19) advice for the public: Myth busters.<br>
+                                    ▶ (출처) WHO, Baclille Calmette-Guerin(BCG) vaccination and COVID-19
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d07" value = "7" onclick = "showView(this,'A_d07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[치료 및 예방]</div>
+                            <div class = "question"><span>코로나19를 예방하기 위해 콘택트렌즈</span> 사용자는 어떻게 해야 하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아직까지 콘택트렌즈 착용자가 안경 착용자보다 코로나19 감염 위험이 더 높다는 증거는 없지만, 콘택트렌즈 착용자들은 콘택트렌즈 관련 감염을 예방하기 위해 안전하고 위생적인 콘택트렌즈 착용 및 관리 습관을 가져야 합니다.
+                                    </li>
+                                    <li>
+                                        렌즈를 만지기 전 항상 비누와 물로 손을 씻어야 합니다. 세정/소독액을 사용해서 콘택트렌즈와 케이스를 소독하고, 청소 및 소독이 된 곳에서 렌즈를 다뤄야 합니다. 
+                                    </li>
+                                    <li>
+                                        콘택트렌즈 세척, 소독 및 보관용 과산화수소계 약제는 코로나19 원인 바이러스의 예방에 효과가 있습니다. 다목적 용액(MPS)이나 초음파 세척기 같은 다른 살균/소독 방법은 아직까지 바이러스 예방 효과에 대한 과학적 증거가 충분하지 않습니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ How to protect yoursel
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID_Vaccine/COVID_Vaccine_main.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">예방접종에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

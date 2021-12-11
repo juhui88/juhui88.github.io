@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_Vaccine_title.css" rel = "stylesheet">
+    <title>검색창</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../../COVID/COVID.js">
+        
+    </script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../COVID_Vaccine_main.html" id = "logo">
+                        <p>코로나 예방접종에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3D5D5B'" onkeydown="enterSearch()">
+                        <input id="search_btn" type="button" value="⌕" onclick="SearchValue()">
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Vaccine_Vaccine.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Vaccine">코로나19 백신</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Vaccine_Business.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Business">코로나19<br>예방접종 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Vaccine_Standard.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Standard">코로나19<br>예방접종<br>실시기준</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Vaccine_Side_Effect.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Side_Effect">코로나19<br>예방접종 후<br>이상반응</h4> 
+                        </div>
+                    </a> 
+    
+                    <br>
+                    <a href = "e_COVID_Vaccine_Compensation.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Compensation">코로나19<br>예방접종 관련<br>피해보상</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Vaccine_Causality.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Causality">인과성<br>불충분한 환자<br>의료비 지원 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "g_COVID_Vaccine_Institution.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Institution">접종 기관<br>및 인력 관련</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Vaccine_System.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "System">시스템 및<br>예방접종 기록</h4> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <div id = "search_result"></div>
+            <div class = "FAQ" id = "FAQ_search">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a01" value = "1" onclick = "showView(this,'A_a01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 백신에는 어떤 종류가 있으며 우리나라에서 사용하고 있는 백신</span>은 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        전 세계 여러나라에서 mRNA나 DNA를 이용한 백신, 바이러스백터 백신 및 불활성화 백신, 재조합 백신, 바이러스 유사입자 백신 등 여러 종류의 코로나19 백신을 개발 중에 있습니다.
+                                    </li>
+                                    <li>
+                                        현재 우리나라에 도입되어 사용하고 있는 백신은 아스트라제네카, 얀센社의 바이러스벡터 백신 2종과 화이자, 모더나社의 mRNA 백신 2종이며, 노바백스 합성항원 백신 1종이 도입될 예정입니다
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a02" value = "2" onclick = "showView(this,'A_a02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 백신은 어떻게 코로나바이러스감염증-19를 예방</span>하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 백신 물질이 우리 몸에 들어와 면역세포인 B세포와 T세포를 자극합니다. B세포는 코로나바이러스-19에 대항하는 항체를 만들고, 면역세포 중 일부는 기억세포로 남습니다.
+                                    </li>
+                                    <li>
+                                        이후 우리 몸에 코로나바이러스-19가 침투했을 때 예방접종을 통해 만들어진 항체와 기억세포가 바이러스 침입에 빠르게 반응하여 코로나바이러스-19 감염증을 예방합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a03" value = "3" onclick = "showView(this,'A_a03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>mRNA 백신이 우리 몸의 유전자에 영향</span>을 미칠 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아니요. 핵산백신(mRNA)는 체내에서 몇 시간 후에 분해됩니다. 주사로 주입된 mRNA는 우리 몸의 세포 내 유전 물질(DNA)이 포함되어 있는 세포핵으로 들어갈 수 없기 때문에 우리 몸의 유전자와 상호 작용할 수 없습니다
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a04" value = "4" onclick = "showView(this,'A_a04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19백신에 방부제</span>가 포함되어 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아니요, 현재 우리나라에서 사용 중인 코로나19 백신에는 방부제가 포함되어 있지 않습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a05" value = "5" onclick = "showView(this,'A_a05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 예방접종 후 면역획득</span>까지 얼마나 걸리나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        예방접종 후 방어항체가 형성되는 데는 2주~3주 이상 걸립니다.
+                                    </li>
+                                    <li>
+                                        최대 백신 효과를 위해서는 각 백신별 권장기간 내에 2차 접종을 완료하는 것이 매우 중요합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a06" value = "6" onclick = "showView(this,'A_a06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 예방접종 후 얼마나 면역</span>이 지속되나요? 인풀루엔자백신과 같이<span>매년 접종</span>을 해야하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        국내외에서 코로나19 백신의 면역 지속 기간 및 장기 면역원성에 대한 연구가 진행 중이며, 아직 연구가 충분하지는 않아 정확한 면역 지속 기간 및 장기 면역원성에 대해서는 알 수 없습니다
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a07" value = "7" onclick = "showView(this,'A_a07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 예방접종을 해도 코로나바이러슴감염증-19</span>에 걸릴 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종 후 면역이 형성되지 않거나 면역이 형성되기 전에 또는 시간이 흘러 형성된 면역의 효과가 떨어지면 코로나바이러스-19에 감염될 수 있습니다.
+                                    </li>
+                                    <li>
+                                        접종을 완료하였더라도 코로나바이러스-19 감염 예방을 위하여 마스크 착용, 손씻기, 거리두기 등 개인방역수칙을 준수해야 합니다.
+                                    </li>
+                                </ul>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a08" value = "8" onclick = "showView(this,'A_a08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>화이자 코로나19 백신</span>은 왜 흔들면 안 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        화이자 코로나19 백신은 mRNA백신으로, 코로나19 바이러스의 항원 단백질의 정보를 담고 있는 mRNA와 mRNA가 체내에서 세포내로 도입될 수 있도록 도와주는 역할을 하는 지질나노입자(Lipid nanoparticle)로 구성되어 있습니다.
+                                    </li>
+                                    <li>
+                                        핵산백신(mRNA)와 지질나노입자 모두 화학적으로 안전하고 단단한 결합이 아니므로 물리적인 힘에 의해 구조가 쉽게 분해될 수 있어 백신 취급 시 주의해야 하며, 흔들면 안됩니다.
+                                    </li>
+                                    * 출처: 코백스-화이자 코로나 19 백신특례수입 승인, 식품의약품안전처·질병관리청 보도자료, 2021.2.3
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a09" value = "9" onclick = "showView(this,'A_a09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 백신은 모두 1회 사용 형태</span>로 공급되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아니요, 코로나19 백신은 모두 다회 투여 용량 바이알(multi-dose vial)로 제공됩니다
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a10" value = "10" onclick = "showView(this,'A_a10')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 백신 전처리부터 접종 준비과정 중에 육안으로 확인할 수 있는 약물 이상</span>(정상적이지 않은)은 무엇이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a10">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        화이자 코로나19 백신의 해동된 분산액은 흰색에서 미백색의 불투명한 무정형 입자를 포함할 수 있으며, 희석한 백신은 미립자가 보이지 않는 미백색 용액입니다. 미립자가 있거나 변색이 보이는 경우 희석된 백신은 사용을 금합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a11" value = "11" onclick = "showView(this,'A_a11')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>여러 바이알의 백신 잔량을 서로 섞어 한회 접종분량</span>을 만들어도 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a11">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        안됩니다. 백신 잔량은 폐기해야 하며 절대 서로 섞어서는 안됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b01" value = "1" onclick = "showView(this,'A_b01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[예방접종 사업]</div>
+                            <div class = "question"><span>코로나19 예방접종</span>을 왜 해야하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        사회적 거리두기, 마스크 착용 등은 바이러스와 접촉을 줄여 감염을 예방하는 반면, 
+                                        예방접종은 우리 몸이 바이러스에 대항하는 면역력을 길러 감염을 예방합니다. 예방접종을 통해 일차적으로 코로나19 감염 또는 중증 코로나19 감염을 예방할 수 있습니다. 더 나아가 우리나라 인구 중 일정 수준 이상이 접종할 경우 집단면역을 형성하여 대규모 집단유행을 억제할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b02" value = "2" onclick = "showView(this,'A_b02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[예방접종 사업]</div>
+                            <div class = "question"><span>코로나19 예방접종 대상자</span>는 누구인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        전 국민이 코로나19 예방접종 대상입니다.
+                                    </li>
+                                    * 단, 12세 미만 어린이의 경우 현재 사용이 승인된 코로나19 백신이 없으므로 접종대상에서 제외됩니다.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b03" value = "3" onclick = "showView(this,'A_b03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[예방접종 사업]</div>
+                            <div class = "question"><span>우리나라의 코로나 19 예방접종 목표</span>는 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종을 통해 ① 고령자 등 코로나19 취약집단의 감염과 사망 감소, ② 보건의료체계 및 국가의 필수 기능 유지, ③ 지역사회 내 전파 감소를 목표로 합니다.
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b04" value = "4" onclick = "showView(this,'A_b04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[예방접종 사업]</div>
+                            <div class = "question"><span>코로나10 예방접종 대상자</span>에 해당되어도 <span>접종여부</span>는 본인이 선택할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        네, 접종 여부는 본인이 선택할 수 있습니다.
+                                    </li>
+                                    <li>
+                                        정부에서는 코로나19 유행의 효과적인 관리 및 피해 최소화를 위해 공중보건학적 목적에서 전 국민 접종을 제공하고 있으나, 예방접종은 기본적으로 본인의 자발적인 동의하에서만 실시됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b05" value = "5" onclick = "showView(this,'A_b05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[예방접종 사업]</div>
+                            <div class = "question"><span>코로나19 예방접종을 거부할 경우 구상권 청구 등 불이익</span>이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아니요, 예방접종은 기본적으로 본인의 자발적인 동의하에서만 시행되므로 예방접종을 거부하여도 불이익은 없습니다.
+                                    </li>
+                                    <li>
+                                        정부에서는 국민들에게 코로나19 예방접종에 대한 올바른 정보를 제공하고 코로나19 유행 차단 등 공중보건학적 목적에서 국민들이 합리적인 판단하에 예방접종을 받으시길 권고합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b07" value = "6" onclick = "showView(this,'A_b06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[예방접종 사업]</div>
+                            <div class = "question"><span>접종 대상자 연령의 기준</span>은 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        주민등록상 출생연도를 기준으로 합니다.
+                                    </li>
+                                    <li>
+                                        실제 출생연도와 주민등록상 출생연도가 다르다고 하여도 주민등록상 출생연도를 기준으로 접종 받으실 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b07" value = "7" onclick = "showView(this,'A_b07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[예방접종 사업]</div>
+                            <div class = "question"><span>코로나19 예방접종 대상자 순서</span>를 정한 이유와 근거는 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        초기 백신 물량이 제한되었던 시기에는 접종 대상 선정이 불가피함에 따라 다음의 원칙에 따라 접종순서를 검토하였습니다.<br>
+                                        ① 감염/중증 질환 발생 위험, ② 의료체게 및 기타 사회기반 시설 유지, ③ 취약군에게 전파 위험, ④ 코로나19 환자 노출 위험, ⑤ 적용가능성
+                                    </li>
+                                    <li>
+                                        코로나19 예방접종 순서는 백신별 공급시기, 효과성, 접종 및 유통 보관 방법 등을 종합적으로 고려하여 예방접종전문위원회 심의를 통해 선정하였습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b08" value = "8" onclick = "showView(this,'A_b08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[예방접종 사업]</div>
+                            <div class = "question">제가 <span>접종 대상자인지, 언제, 어디서 접종</span>받을 수 있는지는 어떻게 알 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        접종 대상자별로 접종 가능한 시기와 예약방법을 안내하고 있으며, 질병관리청 코로나19 예방접종 사전예약시스템(http://ncvr.kdca.go.kr)에서도 확인할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c01" value = "1" onclick = "showView(this,'A_c01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[예방접종 실시기준]</div>
+                            <div class = "question"><span>각 코로나19 백신의 예방접종 간격과 방법</span>은 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종은 아래와 같이 각 백신별 접종권고사항에 따라 실시됩니다.
+                                    </li>
+                                    <li>
+                                        접종권고사항
+                                    </li>
+                                    <table border = "1">
+                                        <thead>
+                                            <tr><th>백신명</th><th>코미나티주</th><th>모더나코비드-19<br>백신주</th><th>한국아스트라제네카<br>코비드-19 백신</th><th>코비드-19백신<br>얀센주</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>제조사</td>
+                                                <td>화이자 및<br>바이오엔텍</td>
+                                                <td>모더나</td>
+                                                <td>아스트라제네카</td>
+                                                <td>얀센</td>
+                                            </tr>
+                                            <tr>
+                                                <td>접종권고연령</td>
+                                                <td>12세 이상</td>
+                                                <td>18세 이상</td>
+                                                <td>50세 이상</td>
+                                                <td>(1) 50세 이상<br>
+                                                    (2) 30세 이상 중 <br>2회 접종완료가 어렵거나,<br>방역상황 고려하여<br> 조기 접종완료가 필요한 대상
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>접종횟수<br>,(권고간격)</td>
+                                                <td>2회, 21일</td>
+                                                <td>2회, 4주</td>
+                                                <td>2회, 8-12주</td>
+                                                <td>1회</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    * mRNA 백신(화이자, 모더나)의 경우, 국내 백신 공급 상황, 의료기관별 접종 여건, 개인사정(건강상태 등) 등에 따라 필요한 경우 6주 범위 내에서
+                                    <li>
+                                        허가사항
+                                    </li>
+                                    <table border = "1">
+                                        <thead>
+                                            <tr>
+                                                <th >백신명</th>
+                                                <th >코미나티주</th>
+                                                <th >모더나코비드-19 <br>백신주</th>
+                                                <th >한국아스트라제네카 코비드-19백신</th>
+                                                <th >코비드-19백신 <br>얀센주</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>제조사</td>
+                                                <td>화이자 및 바이오엔텍</td>
+                                                <td>모더나</td>
+                                                <td>아스트라제네카</td>
+                                                <td>얀센</td>
+                                            </tr>
+                                            <tr>
+                                                <td>허가연령</td>
+                                                <td>12세 이상</td>
+                                                <td>18세 이상</td>
+                                                <td>18세 이상</td>
+                                                <td>18세 이상</td>
+                                            </tr>
+                                            <tr>
+                                                <td>구성</td>
+                                                <td>다인용바이알<br>(1바이알=6도즈)</td>
+                                                <td>다인용바이알<br>(6.3㎖, 8.0㎖)</td>
+                                                <td>다인용바이알<br>(1바이알=10도즈)</td>
+                                                <td>다인용바이알<br>(1바이알=5도즈)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>접종 횟수(간격)</td>
+                                                <td>2회, 21일</td>
+                                                <td>2회, 4주</td>
+                                                <td>2회, 4-12주</td>
+                                                <td>1회</td>
+                                            </tr>
+                                            <tr>
+                                                <td>접종량 및 방법</td>
+                                                <td>희석된 백신 0.3㎖ 근육주사</td>
+                                                <td>0.5㎖ 근육주사</td>
+                                                <td>0.5㎖ 근육주사</td>
+                                                <td>0.5㎖ 근육주사</td>
+                                            </tr>
+                                            <tr>
+                                                <td>추가접종 간격 / 용량</td>
+                                                <td>기본접종 6개월 이후 / <br>0.3㎖</td>
+                                                <td>기본접종 6개월 이후 / <br>0.25㎖ (50μg)</td>
+                                                <td>기본접종 6개월 이후** / <br>0.5㎖</td>
+                                                <td>기본접종 2개월 이후 / <br>0.5㎖</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    ※ 임상시험 결과 등에 따라 추후 변동 가능
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c02" value = "2" onclick = "showView(this,'A_c02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[예방접종 실시기준]</div>
+                            <div class = "question"><span>접종일에 열</span>이 납니다. 오늘 접종을 할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아니요, 37.5℃ 이상의 발열이 나는 경우는 열이 떨어지고 증상이 없어질 때까지 예방접종을 연기하도록 합니다.
+                                    </li>
+                                    <li>
+                                        이후 건강 상태가 좋은 날에 코로나19 예방접종을 예약한 접종기관(의료기관, 접종센터, 보건소 등)과 상의하여 가능한 다음 예방 접종일을 예약하고 접종을 진행하시기 바랍니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c03" value = "3" onclick = "showView(this,'A_c03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[예방접종 실시기준]</div>
+                            <div class = "question"><span>코로나19 백신은 교차접종</span>이 가능한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        2회 접종이 필요한 코로나19 백신의 경우 1, 2차 접종은 동일한 백신으로 완료합니다.
+                                    </li>
+                                    <li>
+                                        다만, 다음의 상황에서 한시적으로 1차 접종 백신의 권고 간격에 맞춰 교차접종 가능합니다.
+                                    </li>
+                                    <li style = "list-style:none; font-size: 15px;">
+                                        1차 접종 후 금기대상*이 된 경우, 의사 소견에 따라 서로 다른 플랫폼의 백신으로 2차 접종 고려 가능<br>
+                                        * 아나필락시스 반응, 혈소판감소성 혈전증, 모세혈관<br>
+                                        해외에서 1차 접종한 백신이 국내 미승인 되었거나 없는 경우, 사용 가능한 백신으로 2차 접종 진행<br>
+                                        1차 접종 백신 종류를 모르는 경우, 사용 가능한 백신으로 12주 간격으로 2차 접종 진행<br>
+                                        1차 접종과 동일 백신이 국내에 없는 경우(공급 불가능), 1차 접종 백신이 연령제한 등으로 접종이 어려운 경우에는 사용 가능한 백신으로 2차 접종 진행<br>
+                                        의학적 사유로 인해 1차 접종 백신과 다른 백신 접종이 필요하다고 의사가 판단한 경우
+                                    </li>
+                                    <li>
+                                        만약 부주의로 허용되지 않는 교차접종을 한 경우 재접종은 권고하지 않음
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c04" value = "4" onclick = "showView(this,'A_c04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[예방접종 실시기준]</div>
+                            <div class = "question"><span>기본 접종 후 언제부터 추가접종</span>을 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        추가접종은 기본접종 완료 6개월 이후 접종을 권고하며, 가급적 기본접종 완료 후 8개월 내에 추가접종을 받으시길 권고합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c05" value = "5" onclick = "showView(this,'A_c05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[예방접종 실시기준]</div>
+                            <div class = "question"><span>추가접종은 어떤 백신</span>으로 접종을 시행하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        추가접종은 기본접종 백신 종류와 관계없이 mRNA 백신으로 접종하며 가급적 동일한 백신으로 접종받으시길 권고합니다. 다만 얀센 백신 기본 접종자는 얀센 백신으로도 추가접종이 가능합니다.
+                                    </li>
+                                    <li>
+                                        mRNA 백신에 대한 금기․연기 대상인 경우에는 의사의 판단 하에 다른 플랫폼의 백신으로 추가접종이 가능합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d01" value = "1" onclick = "showView(this,'A_d01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 후 이상반응]</div>
+                            <div class = "question"><span>안전하게 예방접종 받기 위해 주의할 사항</span>은 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        건강 상태가 좋을 때 코로나19 백신을 접종받는 것이 중요합니다.
+                                    </li>
+                                    <li>
+                                        예방접종 시 의사 예진을 통해 예방접종 금기사항, 제외사항 등을 확인하여 예방접종 가능여부를 확인하게 됩니다.
+                                    </li>
+                                    <li>
+                                        다음과 같은 경우는 교차접종(아스트라제네카 → 화이자)을 고려해야 합니다.
+                                        <ul style = "font-size:15px;">
+                                            <li>
+                                                1차 코로나19 예방접종 후 아나필락시스*, 혈소판감소성혈전증, 모세혈관 누출 증후군이 나타나 금기대상이 된 경우, 의사 소견에 따라 1차 코로나19 접종백신과 다른 플랫폼 백신으로 2차 접종 가능
+                                            </li>
+                                            *아나필락시스: 호흡곤란, 얼굴의 부기, 눈 또는 입술/입안의 부종, 몸 전체의 발진, 빠른 심장 박동, 현기증, 쇼크 등의 증상을 동반한 심각한 알레르기 반응
+                                            <li>
+                                                ! 주의사항: 약(장 세척제 등), 화장품, 음식, 다른 종류의 백신 접종 등에 대한 알레르기 병력이 있는 경우 예진표에 자세히 기록해 주세요!
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        첫 번째 mRNA 코로나19 백신(화이자, 모더나) 접종 후 심근염·심낭염 발생이 확인된 경우 안전성에 대한 근거가 마련될 때까지 코로나19 백신 접종을 연기합니다.
+                                    </li>
+                                    <li>
+                                        다음과 같은 경우 코로나19 예방접종을 연기합니다.
+                                        <ul style = "font-size:15px;">
+                                            <li>
+                                                코로나19 감염이 의심되는 경우 선별진료소 등을 통해 신속히 진단검사를 받으셔야하며, 결과가 나올 때까지 예방접종을 연기합니다.
+                                            </li>
+                                            <li>
+                                                격리 중인 코로나19 환자 및 접촉자는 격리해제 될 때까지 예방접종을 연기합니다.
+                                            </li>
+                                            <li>
+                                                발열(37.5℃ 이상) 등 급성병증이 있는 경우 증상이 없어질 때까지 예방접종을 연기합니다.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d02" value = "2" onclick = "showView(this,'A_d02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 후 이상반응]</div>
+                            <div class = "question"><span>코로나19 예방접종 후 이상반응에 대한 국내외 발생동향</span>은 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        국내이상반응 발생 동향의 경우, 정기적인 보도참고자료로 대국민께 공개되고 있으며, 주별 단위로 분석된 종합적인 자료는 매주 목요일마다 제공되고 있습니다.
+                                    </li>
+                                    <li>
+                                        국내 주간 분석 자료는 물론, 국외 발생동향도 주간단위로 매주 갱신하고 있으며, 예방접종 누리집에 공개되고 있습니다.<br>
+                                        코로나19예방접종 누리집 상단▶예방접종 현황▶이상반응 발생동향
+                                    </li>
+                                    <a href = "https://ncv.kdca.go.kr/board.es?mid=a11707010000&bid=0032">국내발생동향 바로가기</a><br>
+                                    <a href = "https://ncv.kdca.go.kr/board.es?mid=a11707020000&bid=0036">국외발생동향 바로가기</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d03" value = "3" onclick = "showView(this,'A_d03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 후 이상반응]</div>
+                            <div class = "question"><span>코로나19 백신 1차 접종 후 심각한 알레르기 반응이 발생한 경우 2차 접종</span>을 어떻게 해야하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 백신 1차 접종 후 아나필락시스(중증 알레르기 반응)가 발생하였다면 동일한 플랫폼의 코로나19 2차 백신 접종은 하지 않으셔야 합니다.
+                                    </li>
+                                    <li>
+                                        코로나19 백신 1차 접종 후 며칠 뒤에 두드러기, 발진 등 알레르기 반응이 발생하는 경우, 백신에 의한 아나필락시스로 볼 수 없습니다. 다만, 알레르기 원인, 치료 등을 위하여 의료기관을 방문하여 진료를 받으십시오.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e01" value = "1" onclick = "showView(this,'A_e01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 관련 피해..]</div>
+                            <div class = "question"><span>코로나19 예방접종 후 발생한 피해에 대한 보상</span>은 어떤 종류가 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        진료비* 및 정액간병비, 장애일시보상금, 사망일시보상금 및 장제비가 포함됩니다.
+                                    </li>
+                                    * 진료비 : 예방접종피해로 발생한 질병의 진료비 중 「국민건강보험법」에 따라 보험자가 부담하거나 지급한 금액을 제외한 잔액 또는 「의료급여법」에 따라 의료급여기금이 부담한 금액을 제외한 잔액
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e02" value = "2" onclick = "showView(this,'A_e02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 관련 피해..]</div>
+                            <div class = "question"><span>예방접종피해를 국가에서 보상</span>하는 것으로 알고 있는데, 정확히 어떤 <span>절차</span>를 거쳐야 하나요?</span></div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        예방접종 후 이상반응으로 신고된 사례에 대해서 피해보상을 받으려는 사람은 보상신청서에 피해에 관한 구비서류를 첨부하여 관할 보건소에 제출하며, 지방자치단체의 기초조사, 피해조사반 조사 및「예방접종피해보상 전문위원회」의 심의를 통해 보상 여부 결정 후 심의내용은 관할 보건소를 통해 피해보상 신청자에게 안내됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e03" value = "3" onclick = "showView(this,'A_e03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 관련 피해..]</div>
+                            <div class = "question"><span>진료비 및 간병비 신청을 위한 구비서루</span>는 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        진료비 및 간병비 신청서, 코로나19 예방접종받은 사람의 신분증(또는 신청인과 보상대상자의 관계를 증명하는 주민등록등본, 가족관계증명서 등), 의료기관이 발행한 진료확인서, 진료비영수증, 진료비 상세내역서, 의무기록사본(본인부담금 30만원 이상인 경우), 예방접종 전 3개월 이내의 의무기록사본(있을 경우, 본인부담금 30만원 이상인 경우)를 구비하시면 됩니다.
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f01" value = "1" onclick = "showView(this,'A_f01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[인과성 불충분..]</div>
+                            <div class = "question"><span>코로나 예방접종 후 인과성 불충분한 환자 의료비 지원사업의 대상</span>은 누구인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종 후 중환자실 입원치료 등 이에 준하는 질병 또는 특별관심 이상반응(경증 포함)이 발생하였으나, 예방접종피해조사반 또는 피해보상전문위원회 검토결과 인과성 인정을 위한 근거자료 불충분(심의기준, ④-1 해당)으로 피해보상에서 제외된 환자를 대상으로 하며, 이때 소득·재산 여건은 고려되지 않습니다.
+                                    </li> 
+                                    <li>
+                                        다만, 백신보다는 다른 이유에 의한 경우(심의기준 ④-2), 명백히 인과성이 없는 경우(심의기준 ⑤)는 지원대상이 아닙니다.
+                                    </li>   
+                                    * (보상금 지급 기준) 백신과 이상반응 인과성 결과 심의기준 ①,②,③에 대해 해당시 지급<br>
+                                    - ①인과성 명백, ②인과성에 개연성이 있음 ③인과성에 가능성있음 ④인과성이 인정되기 어려움(④-1 근거자료 불충분, ④-2 백신보다는 다른 이유에 의한 경우) ⑤명백히 인과성이 없는 경우
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f02" value = "2" onclick = "showView(this,'A_f02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[인과성 불충분..]</div>
+                            <div class = "question"><span>코로나 예방접종 후 인과성 불충분한 환자 의료비 지원사업의 지원범위</span>는 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 백신 예방접종 후 발생한 질환의 의료비를 지원하며, 실제 발생한 간병비를 기준으로 1일 5만원 범위에서 간병비도 지원범위에 포함됩니다. 단, 기존 기저질환의 치료비와 사망시 장제비는 제외됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f03" value = "3" onclick = "showView(this,'A_f03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[인과성 불충분..]</div>
+                            <div class = "question"><span>코로나 예방접종 후 인과성 불충분한 환자 의료비 지원사업의 의료비 지원 절차</span>는 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종 후
+                                        <ol>
+                                            <li>
+                                                이상반응 신고 또는 피해보상 신청 사례에 대해
+                                            </li>
+                                            <li>
+                                                지자체 기초조사 및 피해조사반 또는 피해보상전문위원회 검토 결과
+                                            </li>
+                                            <li>
+                                                중증 또는 특별관심 이상반응(경증 포함)이면서 인과성 근거자료 불충분으로 판정받은 경우 
+                                                <br>(4-1)에 코로나19 예방접종을 받은 사람 또는 보호자는 지원신청 구비서류를 갖춰 주소지 관할 보건소에서 의료비 지원을 신청할 수 있으며
+                                            </li>
+                                            <li>
+                                                지원액 검토 등을 거쳐 질병관리청이 지원액을 지급합니다.
+                                            </li>
+                                            * 예방접종 후 진료 받은 진료비 영수증, 진료세부내역서 등 지원액을 산출할 수 있는 상세내역 제출 필요
+                                        </ol>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g01" value = "1" onclick = "showView(this,'A_g01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>위탁의료기관은 언제부터 운영</span>하게 되는지?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종 참여의향*을 제출한 약 1.6만개 중, 요양병원 자체접종, 요양시설 방문접종에 필요한 촉탁의 소속 의료기관의 위탁계약**을 조기 진행(2월 중순∼)하였습니다.
+                                    </li>
+                                    <li style = "list-style: none; font-size:15px;">
+                                        * 기존 국가예방접종사업 참여 의료기관 대상 조사(‘21.1월)<br>
+                                        ** 현장 점검, 코로나19 예방접종 교육(온라인 교육, 2.8일∼) 이수 확인 등
+                                    </li>
+                                    <li>
+                                        2분기 시행계획에 포함된 위탁의료기관을 내원 접종자의 차질없는 접종을 위하여 조기 계약완료(약 1만개소, ~3월)를 독려 중에 있습니다.
+                                    </li>
+                                    ※ 참여 의향표시 16,397개소 대비 27.2% 수준 4,462개소 완료<br>
+                                    65~74세 이상 어르신의 본격 접종이 시작되는 6월 이후 위탁의료기관을 본격 운영할 예정입니다.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g02" value = "2" onclick = "showView(this,'A_g02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>위탁의료기관은 어떤 백신을 접종하게 되고, 해당 백신을 위탁의료기관에서 접종하는 이유는?</span></div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        위탁의료기관을 통해 바이러스 벡터(아스트라제네카, 얀센 백신) 플랫폼의 백신을 접종하실 수 있습니다.
+                                    </li>
+                                    <li>
+                                        바이러스 벡터 백신은 mRNA 백신과 다르게 의료기관에서 지속 공급받는 여타 백신들과 동일한 유통 및 보관체계를 가지고 있어 유통 및 보관이 용이한 장점이 있습니다.
+                                    </li>
+                                    <li>
+                                        해당 백신을 위탁의료기관을 통해 시행하여, 대상자의 접근성을 높여 접종의 불편감을 해소하고자 합니다.
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g03" value = "3" onclick = "showView(this,'A_g03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>65세 이상 어르신에 대한 접종 본격화 대비하여 위탁의료기관은 충분</span>한지?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        2분기 시행계획상 6월에 접종이 시작되는 65~74세 이상 어르신의 접종을 위해 코로나19 예방접종 참여의향을 제출한 의료기관 대상 조기 계약 완료(약 1만개소, ~3월)를 독려중에 있습니다
+                                    </li>
+                                    현재 약 4천여개의 의료기관이 계약 완료하였고, 6월에는 전국적으로 약 1만개소 이상의 위탁의료기관이 준비될 것으로, 신속하고 안전한 접종이 가능합니다.
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g04" value = "4" onclick = "showView(this,'A_g04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>예방접종센터 운영</span>은 어떻게 하고 있나</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        예방접종센터는 3월에 22개소를 시작으로 8월 현재 282개소(중앙 1, 지역 281) 운영 중입니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g05" value = "5" onclick = "showView(this,'A_g05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>접종센터 운영시간 내 접종이 불가능한 직장인을 위해 주말, 야간 운영</span>을 하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        예방접종센터 운영은 주 6일을 기준으로 하되, 운영 요일, 운영 시간(주간, 야간 등) 등은 지자체별 탄력적으로 운영 가능토록하고 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g06" value = "6" onclick = "showView(this,'A_g06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>예방접종은 백신 접종센터와 위탁의료기관</span>으로 구분되던데, 이 차이는?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        접종센터는 초저온냉동 보관, 전처리 등 세심한 취급·보관 과정이 필요한 mRNA 백신을 접종하고, 위탁의료기관에서 2~8℃에서 보관 가능한 바이러스벡터 백신을 접종합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h01" value = "1" onclick = "showView(this,'A_h01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[시스템 및 예방접종..]</div>
+                            <div class = "question"><span>코로나19 예방접종 기록</span>은 어떻게 관리하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        전 세계 여러나라에서 mRNA나 DNA를 이용한 백신, 바이러스백터 백신 및 불활성화 백신, 재조합 백신, 바이러스 유사입자 백신 등 여러 종류의 코로나19 백신을 개발 중에 있습니다.
+                                    </li>
+                                    <li>
+                                        현재 우리나라에 도입되어 사용하고 있는 백신은 아스트라제네카, 얀센社의 바이러스벡터 백신 2종과 화이자, 모더나社의 mRNA 백신 2종이며, 노바백스 합성항원 백신 1종이 도입될 예정입니다
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h02" value = "2" onclick = "showView(this,'A_h02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[시스템 및 예방접종..]</div>
+                            <div class = "question"><span>코로나19 예방접종을 완료한 경우 증명서는 어떻게 발급</span> 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        국가예방접종사업과 마찬가지로, 접종 후 증명서의 발급은 예방접종도우미 누리집(<a href = "https://nip.kdca.go.kr">https://nip.kdca.go.kr</a>) 또는 정부24(<a href = "https://www.gov.kr">https://www.gov.kr</a>)를 통해 온라인으로 발급 가능합니다.
+                                    </li>
+                                    * 접종의료기관 및 보건소방문하여 발급 가능합니다.(단, 발급여부는 해당기관에 반드시 유선전화로 확인 후 방문하시기 바랍니다.)
+                                    <li>
+                                        또한, 모바일을 통한 전자예방접종 증명서 발급이 가능합니다.
+                                    </li>
+                                    * 구글플레이스토어, 애플 앱스토어, 원스토어에서 coov 또는 전자 예방접종증명서를 검색해서 내려받을 수 있으며,<br>
+                                     자세한 사용방법은 <a href = "https://www.coov.kr/how-to-use">https://www.coov.kr/how-to-use</a> 을 통해 확인하실 수 있습니다.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h03" value = "3" onclick = "showView(this,'A_h03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[시스템 및 예방접종..]</div>
+                            <div class = "question"><span>코로나19 예방접종을 예약</span>한 사람에 대해 <span>알림</span>을 보내나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종 예약자를 대상으로 질병관리청에서 예방접종예약일 1일전에 사전에 등록된 휴대전화 번호로 알림 문자를 발송합니다.
+                                    </li>
+                                    <li>
+                                        또한, 코로나19 예방접종 기록이 코로나19예방접종등록시스템에 등록된 후에 코로나19 예방접종이 완료되었다는 문자를 발송합니다.
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h04" value = "4" onclick = "showView(this,'A_h04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[시스템 및 예방접종..]</div>
+                            <div class = "question">"<span>잔여백신</span>"은 무엇이고, 왜 <span>발생</span>하게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아스트라제네카의 경우, 포장된 1개 백신(바이알) 당 10명 분량(도즈)을 접종할 수 있습니다.
+                                         다만, 1개 바이알을 개봉한 경우, 최대 6시간 내에 사용하여야 하며, 기한 내에 사용하지 못한 경우 ｢폐기물관리법｣에 따라 폐기 처리하게 됩니다.
+                                    </li>
+                                    <li>
+                                        예방접종을 사전 예약한 자가 접종기관에 방문하지 않거나, 예진 시 접종이 불가능한 경우 등의 상황이 발생하면, 해당 인원 수만큼 접종하지 못하는 백신이 발생하게 되는데, 이를 잔여 백신이라 합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h05" value = "5" onclick = "showView(this,'A_h05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[시스템 및 예방접종..]</div>
+                            <div class = "question"><span>잔여백신은 어떻게 접종</span>하게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        잔여백신은 의료기관에서 긴급하게 접종대상자를 찾아서 접종할 수 있습니다.<br>
+                                         다만, 의료기관에서 미리 준비한 예비명단이나 내원한 환자/보호자 등으로부터 직접 적절한 대상자를 찾지 못할 경우를 대비하여,<br>
+                                         인근 접종기관에서 예방접종을 원하는 국민이 네이버 및 카카오 관련 앱 등을 통해 빠르고 간편하게 예약한 후, 당일 인근 접종기관에 바로 방문하여 접종할 수 있도록 하였습니다.<br>
+                                         이를 당일예약이라 합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID/index.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">코로나19에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var v = localStorage.getItem("textvalue");
+        var c = document.getElementById("search_result");
+        
+        var q = document.getElementsByClassName("q_item");
+        
+        for(var i = 0; i < q.length; i++){
+                q[i].style.display = "none";
+        }   
+        
+        var cnt = 0;
+        var c = document.getElementById("search_result");
+        
+        var span = document.getElementsByTagName("span");
+        
+        for(var i = 0; i < span.length; i++) {
+            var s = span[i].innerHTML;
+            if(s.includes(v)){
+                var k = span[i].parentNode.parentNode.parentNode;
+                k.style.display = "grid";
+                cnt +=1;
+            }
+        }
+        if (v.length == 0 || cnt == 0){
+            c.innerHTML = "‟"+v+"”"+" 검색결과가 없습니다.";
+        } else {
+            c.innerHTML = "‟"+v+"”"+" 검색결과 " + cnt + " 건";
+        }
+
+    </script>
+</body>
+</html>

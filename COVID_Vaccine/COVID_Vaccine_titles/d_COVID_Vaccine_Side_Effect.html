@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_Vaccine_title.css" rel = "stylesheet">
+    <title>코로나19 예방접종 후 이상반응</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../../COVID/COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../COVID_Vaccine_main.html" id = "logo">
+                        <p>코로나 예방접종에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_Vaccine_Search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id ="B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Vaccine_Vaccine.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Vaccine">코로나19 백신</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Vaccine_Business.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Business">코로나19<br>예방접종 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Vaccine_Standard.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')"">
+                            <h4 class = "three_lines" id = "Standard">코로나19<br>예방접종<br>실시기준</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Vaccine_Side_Effect.html">
+                        <div class = "b_title" style = "background-color: #78A6A4">
+                            <h4 class = "three_lines" id = "Side_Effect">코로나19<br>예방접종 후<br>이상반응</h4> 
+                        </div>
+                    </a> 
+    
+                    <br>
+                    <a href = "e_COVID_Vaccine_Compensation.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Compensation">코로나19<br>예방접종 관련<br>피해보상</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Vaccine_Causality.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Causality">인과성<br>불충분한 환자<br>의료비 지원 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "g_COVID_Vaccine_Institution.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Institution">접종 기관<br>및 인력 관련</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Vaccine_System.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "System">시스템 및<br>예방접종 기록</h4> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>코로나19 예방접종 후 이상반응</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d01" value = "1" onclick = "showView(this,'A_d01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 후 이상반응]</div>
+                            <div class = "question"><span>안전하게 예방접종 받기 위해 주의할 사항</span>은 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        건강 상태가 좋을 때 코로나19 백신을 접종받는 것이 중요합니다.
+                                    </li>
+                                    <li>
+                                        예방접종 시 의사 예진을 통해 예방접종 금기사항, 제외사항 등을 확인하여 예방접종 가능여부를 확인하게 됩니다.
+                                    </li>
+                                    <li>
+                                        다음과 같은 경우는 교차접종(아스트라제네카 → 화이자)을 고려해야 합니다.
+                                        <ul style = "font-size:15px;">
+                                            <li>
+                                                1차 코로나19 예방접종 후 아나필락시스*, 혈소판감소성혈전증, 모세혈관 누출 증후군이 나타나 금기대상이 된 경우, 의사 소견에 따라 1차 코로나19 접종백신과 다른 플랫폼 백신으로 2차 접종 가능
+                                            </li>
+                                            *아나필락시스: 호흡곤란, 얼굴의 부기, 눈 또는 입술/입안의 부종, 몸 전체의 발진, 빠른 심장 박동, 현기증, 쇼크 등의 증상을 동반한 심각한 알레르기 반응
+                                            <li>
+                                                ! 주의사항: 약(장 세척제 등), 화장품, 음식, 다른 종류의 백신 접종 등에 대한 알레르기 병력이 있는 경우 예진표에 자세히 기록해 주세요!
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        첫 번째 mRNA 코로나19 백신(화이자, 모더나) 접종 후 심근염·심낭염 발생이 확인된 경우 안전성에 대한 근거가 마련될 때까지 코로나19 백신 접종을 연기합니다.
+                                    </li>
+                                    <li>
+                                        다음과 같은 경우 코로나19 예방접종을 연기합니다.
+                                        <ul style = "font-size:15px;">
+                                            <li>
+                                                코로나19 감염이 의심되는 경우 선별진료소 등을 통해 신속히 진단검사를 받으셔야하며, 결과가 나올 때까지 예방접종을 연기합니다.
+                                            </li>
+                                            <li>
+                                                격리 중인 코로나19 환자 및 접촉자는 격리해제 될 때까지 예방접종을 연기합니다.
+                                            </li>
+                                            <li>
+                                                발열(37.5℃ 이상) 등 급성병증이 있는 경우 증상이 없어질 때까지 예방접종을 연기합니다.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d02" value = "2" onclick = "showView(this,'A_d02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 후 이상반응]</div>
+                            <div class = "question"><span>코로나19 예방접종 후 이상반응에 대한 국내외 발생동향</span>은 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        국내이상반응 발생 동향의 경우, 정기적인 보도참고자료로 대국민께 공개되고 있으며, 주별 단위로 분석된 종합적인 자료는 매주 목요일마다 제공되고 있습니다.
+                                    </li>
+                                    <li>
+                                        국내 주간 분석 자료는 물론, 국외 발생동향도 주간단위로 매주 갱신하고 있으며, 예방접종 누리집에 공개되고 있습니다.<br>
+                                        코로나19예방접종 누리집 상단▶예방접종 현황▶이상반응 발생동향
+                                    </li>
+                                    <a href = "https://ncv.kdca.go.kr/board.es?mid=a11707010000&bid=0032">국내발생동향 바로가기</a><br>
+                                    <a href = "https://ncv.kdca.go.kr/board.es?mid=a11707020000&bid=0036">국외발생동향 바로가기</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_d03" value = "3" onclick = "showView(this,'A_d03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 후 이상반응]</div>
+                            <div class = "question"><span>코로나19 백신 1차 접종 후 심각한 알레르기 반응이 발생한 경우 2차 접종</span>을 어떻게 해야하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_d03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 백신 1차 접종 후 아나필락시스(중증 알레르기 반응)가 발생하였다면 동일한 플랫폼의 코로나19 2차 백신 접종은 하지 않으셔야 합니다.
+                                    </li>
+                                    <li>
+                                        코로나19 백신 1차 접종 후 며칠 뒤에 두드러기, 발진 등 알레르기 반응이 발생하는 경우, 백신에 의한 아나필락시스로 볼 수 없습니다. 다만, 알레르기 원인, 치료 등을 위하여 의료기관을 방문하여 진료를 받으십시오.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID/index.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">코로나19에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

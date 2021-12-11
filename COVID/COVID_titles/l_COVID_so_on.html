@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_titles.css" rel = "stylesheet">
+    <title>기타</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../index.html" id = "logo">
+                        <p>코로나19에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Pathogen_info.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pathogen_information">병원체정보</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Symptom.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Symptom">증상</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Test.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Test">검사</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Treatment_prevention.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Treatment_prevention">치료 및 예방</h4> 
+                        </div>
+                    </a>
+                    <a href = "e_COVID_Contacts.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "contacts" >접촉자 및<br>확진환자</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Isolation.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Isolation">격리 및<br>격리해제</h4> 
+                        </div>
+                    </a>  
+
+                    <br>
+                    <a href = "g_COVID_Treatment_cost.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Treatment_cost">격리입원<br>치료비</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Managemen.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Management">의사환자 및<br>조사대상<br>유증상자 관리</h4> 
+                        </div>
+                    </a>
+                    <a href = "i_COVID_Sanitize.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Sanitize">청소 및 소독</h4> 
+                        </div>
+                    </a>
+                    <a href = "j_COVID_Pregnant.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pregnant">임신과 출산</h4> 
+                        </div>
+                    </a>
+                    <a href = "k_COVID_Quarantine_rule.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Quarantine_rule">방역수칙</h4> 
+                        </div>
+                    </a>
+                    <a href = "l_COVID_so_on.html" >
+                        <div class = "b_title" style = "background-color: #78A6A4;">
+                            <h4 class = "one_line"id = "so_on">기타</h4> 
+                        </div>
+                    </a> 
+
+                    
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>기타</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l01" value = "1" onclick = "showView(this,'A_l01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>어린이들은 코로나19</span>에 얼마나 위험한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        현재까지의 연구에 의하면, 성인에 비해 어린이의 위험도는 낮은 편입니다. 일부 어린이와 유아에서 코로나19 발병 사례들이 있으나, 현재까지 알려진 대부분의 사례는 성인입니다. 어린이는 코로나 19에 걸리더라도 대부분 경한 증상만 나타내며 좋은 예후를 보였습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l02" value = "2" onclick = "showView(this,'A_l02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>코로나19에 걸린 어린이의 증상</span>은 성인과 다른가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19의 증상은 어린이와 성인이 비슷하지만, 어린이는 일반적으로 코로나19에 걸리더라도 경한 증상만을 나타냈습니다. 소아에서 보고된 증상으로는 열, 콧물, 기침 등의 감기와 비슷한 증상, 구토와 설사 같은 소화기 증상 등이 있었습니다.
+                                    </li>
+                                    <li>
+                                        코로나19에 걸린 어린이들 중 소수에서 가와사키병과 유사한 중증 염증성 질환을 나타났다는 사례가 보고되었습니다. 이에 대한 연구가 진행 중입니다.
+                                    </li>
+                                    ▶ (출처) Covid-19: concerns grow over inflammatory syndrome emerging in children BMJ 2020; 369.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l03" value = "3" onclick = "showView(this,'A_l03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>신종 코로나 바이러스와 인플루엔자 바이러스</span>는 무엇이 비슷한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19와 인플루엔자는 비슷한 증상을 나타냅니다. 두 바이러스 모두 호흡기 증상을 주로 유발하며, 이는 무증상 또는 경증에서 중증 및 사망에 이르는 광범위한 임상양상으로 나타납니다.
+                                    </li>
+                                    <li>
+                                        두 바이러스 모두 호흡기 침방울(비말)이나 접촉에 의해 전염됩니다. 결과적으로 두 바이러스 모두를 예방하기 위해 손 위생이나 호흡기 에티켓과 같은 예방 수칙을 지키는 것은 감염을 예방하기 위한 중요한 조치입니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A: Similarities and differences-COVID-19 and influenza
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l04" value = "4" onclick = "showView(this,'A_l04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>코로나19와 인플루엔자</span>는 어떻게 다른가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        인플루엔자 바이러스는 코로나 바이러스(SARS-CoV-2)에 비해 잠복기가 짧고, 전파속도가 빨라 지역사회에 더 빠르게 전파될 수 있습니다. 어린이는 인플루엔자 바이러스 전파에 중요한 요인이지만, 지금까지의 연구에 의하면 어린이는 코로나19에 상대적으로 영향이 적은 것으로 알려져 있습니다.
+                                    </li>
+                                    <li>
+                                        코로나19의 사망률은 인플루엔자보다 높습니다. 지금까지 알려진 전세계 사망률은 5% 이상이며(WHO, 5/9일 기준), 인플루엔자의 경우 일반적으로 0.1% 미만입니다. 사망률은 국가나 지역에 따라 상이할 수 있습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A: Similarities and differences-COVID-19 and influenza
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l05" value = "5" onclick = "showView(this,'A_l05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>코로나19와 인플루엔자의 치료</span>는 어떻게 다른가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        현재 코로나19에 대한 백신과 치료제가 개발, 연구되고 있습니다. 아직까지 개발된 백신은 없지만, FDA에서 “렘데시비르”라는 약이 긴급 승인되어 사용 중입니다.
+                                    </li>
+                                    <li>
+                                        인플루엔자는 치료제와 백신이 개발되어 있습니다. 인플루엔자 백신은 코로나19 바이러스에 효과적이지 않지만, 인플루엔자 감염을 예방하기 위해 매년 예방 접종을 받는 것이 좋습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A: Similarities and differences-COVID-19 and influenza
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l06" value = "6" onclick = "showView(this,'A_l06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>코로나19와 인플루엔자</span>가 동시에 걸릴 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        인플루엔자(다른 호흡기 병원체도 마찬가지)와 COVID-19 바이러스에 동시에 걸릴 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l07" value = "7" onclick = "showView(this,'A_l07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>개나 고양이 등의 반려동물이나 그 외 동물에게서 코로나19가 감염</span>될 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아직까지 코로나19에 감염된 반려동물들이 질병을 사람에게 전염시키고 전파시킬 수 있다는 증거는 없습니다.
+                                    </li>
+                                    <li>
+                                        반려동물이 코로나19 바이러스에 감염된 사례들이 보고되었는데, 대부분 코로나19에 감염된 사람과 접촉한 후에 감염되었습니다.
+                                    </li>
+                                    <li>
+                                        코로나19나 다른 질병을 예방하기 위해서는, 반려동물이나 반려동물의 물건을 접촉하기 전·후에 손을 물과 비누로 깨끗이 씻는 예방수칙을 잘 지켜야 합니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on coronaviruses<br>
+                                    ▶ [부록 23] 코로나19 관련 반려동물 관리방안 참조
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l08" value = "8" onclick = "showView(this,'A_l08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>코로나19에 걸리면 반려동물이나 다른 동물과의 접촉</span>을 피해야 하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        전 세계에서 사람에서 동물로 감염된 것으로 추정되는 몇몇 사례들이 보고되었습니다.
+                                    </li>
+                                    <li>
+                                        코로나19 증상이 있다면 반려동물과 접촉을 피하고, 반려동물과 함께 있을 때 손씻기를 철저히 하고 마스크를 착용하도록 합니다.
+                                    </li>
+                                    <li>
+                                        코로나19가 의심되거나 확진되면, 완치되기 전까지 가능하면 다른 사람에게 반려동물을 돌보게 하는 것이 안전합니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ COVID-19 and Animal
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l09" value = "9" onclick = "showView(this,'A_l09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>개를 산책</span>시켜도 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        개와 산책하는 것은 개와 사람의 건강과 삶의 만족도에 중요합니다. 다른 사람이나 다른 동물로부터 최소 2m이상 거리를 유지하면서 개에게 목줄을 한 상태로 산책합니다.
+                                    </li>
+                                    - 많은 사람과 개가 모이는 공원이나 공공장소에는 가지 않습니다. 사회적 거리를 유지하기 위해, 산책을 할 때 다른 사람들이 개를 만지지 못하게 해야 합니다.<br>
+                                    ▶ (출처) CDC, FAQ COVID-19 and Animal
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l10" value = "10" onclick = "showView(this,'A_l10')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>해외여행</span>을 예약했는데, 여행을 가도 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l10">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19가 전세계적으로 확산되고 있어 해외여행에 각별한 주의가 필요한 상황이며 여행 전에 질병관리청 ‘해외감염병 NOW’에서 제공하는 해외발생동향과 외교부 해외안전여행 홈페이지를 통해 우리나라 여행객에 대한 입국금지, 격리 등 방역을 위한 입국제한 조치를 실시하고 있는 국가를 확인하시기 바랍니다.
+                                    </li>
+                                    ▶ (해외감염병 NOW) www.해외감염병now.kr/infect/occurrence_list.do<br>
+                                    ▶ (외교부해외안전여행) www.0404.go.kr/dev/main.mofa<br><br>
+                                    ▶ 방문 전
+                                    <ul>
+                                        <li>
+                                            질병관리청 ‘해외감염병NOW’에서 발생 정보 및 감염병 예방 수칙을 확인해주세요
+                                        </li>
+                                        <li>
+                                            외교부 해외안전여행에서 입국제한 조치 실시국가를 확인해 주세요.
+                                        </li>
+                                    </ul>
+                                    ▶ 방문 중
+                                    <ul>
+                                        <li>
+                                            가금류, 야생동물과의 접촉을 피해주세요.
+                                        </li>
+                                        <li>
+                                            호흡기 유증상자(발열, 호흡곤란 등)와의 접촉을 피해주세요.
+                                        </li>
+                                        <li>
+                                            현지 시장 등 감염위험이 있는 장소 방문을 자제해주세요.
+                                        </li>
+                                        <li>
+                                            손 씻기, 기침 예절 등 개인위생을 철저히 지켜주세요.
+                                        </li>
+                                    </ul>
+                                    ▶ 방문 후
+                                    <ul>
+                                        <li>
+                                            14일 이내 발열 또는 호흡기 증상(기침, 호흡곤란 등)이 발생하면 질병관리청 콜센터
+                                        </li>
+                                        (☎1339, 지역번호＋120) 또는 보건소로 문의하시기 바랍니다.
+                                        <li>
+                                            또한 의심 증상으로 진료를 받고자 하실 경우는 지역 내 선별진료소를 우선으로 방문하시고,
+                                        
+                                        </li>
+                                        <li>
+                                            진료 전 의료진에게 반드시 해외여행력을 알리시기 바랍니다.
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_l11" value = "11" onclick = "showView(this,'A_l11')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[기타]</div>
+                            <div class = "question"><span>해외에서 및 국내에서 코로나19 환자</span>는 얼마나 발생했나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_l11">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 해외 발생동향은 코로나바이러스감염증-19 홈페이지(ncov.mohw.go.kr) ‘발생동향’에서 확인 가능합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID_Vaccine/COVID_Vaccine_main.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">예방접종에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

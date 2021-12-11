@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_Vaccine_main.css" rel = "stylesheet">
+    <title>COVID_Vaccine_main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../COVID/COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "COVID_Vaccine_main.html" id = "logo">
+                        <p>코로나 예방접종에<br>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_Vaccine_titles/COVID_Vaccine_Search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <div class = "title_wrap">
+                <a href = "./COVID_Vaccine_titles/a_COVID_Vaccine_Vaccine.html">
+                    <div class = "c_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "one_line" id = "Vaccine">코로나19 백신</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_Vaccine_titles/b_COVID_Vaccine_Business.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "two_lines" id = "Business">코로나19<br>예방접종 사업</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_Vaccine_titles/c_COVID_Vaccine_Standard.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "three_lines" id = "Standard">코로나19<br>예방접종<br>실시기준</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_Vaccine_titles/d_COVID_Vaccine_Side_Effect.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "three_lines" id = "Side_Effect">코로나19<br>예방접종 후<br>이상반응</h4> 
+                    </div>
+                </a> 
+
+                <br>
+                <a href = "./COVID_Vaccine_titles/e_COVID_Vaccine_Compensation.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "three_lines"id = "Compensation">코로나19<br>예방접종 관련<br>피해보상</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_Vaccine_titles/f_COVID_Vaccine_Causality.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "three_lines"id = "Causality">인과성<br>불충분한 환자<br>의료비 지원 사업</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_Vaccine_titles/g_COVID_Vaccine_Institution.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "two_lines" id = "Institution">접종 기관<br>및 인력 관련</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_Vaccine_titles/h_COVID_Vaccine_System.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "two_lines" id = "System">시스템 및<br>예방접종 기록</h4> 
+                    </div>
+                </a>
+            </div>
+
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../COVID/index.html" onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">코로나19에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>

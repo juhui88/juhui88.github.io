@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_Vaccine_title.css" rel = "stylesheet">
+    <title>코로나19 예방접종 관련 피해보상</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../../COVID/COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../COVID_Vaccine_main.html" id = "logo">
+                        <p>코로나 예방접종에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_Vaccine_Search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id ="B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Vaccine_Vaccine.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Vaccine">코로나19 백신</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Vaccine_Business.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Business">코로나19<br>예방접종 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Vaccine_Standard.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Standard">코로나19<br>예방접종<br>실시기준</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Vaccine_Side_Effect.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Side_Effect">코로나19<br>예방접종 후<br>이상반응</h4> 
+                        </div>
+                    </a> 
+    
+                    <br>
+                    <a href = "e_COVID_Vaccine_Compensation.html">
+                        <div class = "b_title" style = "background-color: #78A6A4">
+                            <h4 class = "three_lines"id = "Compensation">코로나19<br>예방접종 관련<br>피해보상</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Vaccine_Causality.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Causality">인과성<br>불충분한 환자<br>의료비 지원 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "g_COVID_Vaccine_Institution.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Institution">접종 기관<br>및 인력 관련</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Vaccine_System.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "System">시스템 및<br>예방접종 기록</h4> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>코로나19 예방접종 관련 피해보상</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e01" value = "1" onclick = "showView(this,'A_e01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 관련 피해..]</div>
+                            <div class = "question"><span>코로나19 예방접종 후 발생한 피해에 대한 보상</span>은 어떤 종류가 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        진료비* 및 정액간병비, 장애일시보상금, 사망일시보상금 및 장제비가 포함됩니다.
+                                    </li>
+                                    * 진료비 : 예방접종피해로 발생한 질병의 진료비 중 「국민건강보험법」에 따라 보험자가 부담하거나 지급한 금액을 제외한 잔액 또는 「의료급여법」에 따라 의료급여기금이 부담한 금액을 제외한 잔액
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e02" value = "2" onclick = "showView(this,'A_e02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 관련 피해..]</div>
+                            <div class = "question"><span>예방접종피해를 국가에서 보상</span>하는 것으로 알고 있는데, 정확히 어떤 <span>절차</span>를 거쳐야 하나요?</span></div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        예방접종 후 이상반응으로 신고된 사례에 대해서 피해보상을 받으려는 사람은 보상신청서에 피해에 관한 구비서류를 첨부하여 관할 보건소에 제출하며, 지방자치단체의 기초조사, 피해조사반 조사 및「예방접종피해보상 전문위원회」의 심의를 통해 보상 여부 결정 후 심의내용은 관할 보건소를 통해 피해보상 신청자에게 안내됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e03" value = "3" onclick = "showView(this,'A_e03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[예방접종 관련 피해..]</div>
+                            <div class = "question"><span>진료비 및 간병비 신청을 위한 구비서루</span>는 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        진료비 및 간병비 신청서, 코로나19 예방접종받은 사람의 신분증(또는 신청인과 보상대상자의 관계를 증명하는 주민등록등본, 가족관계증명서 등), 의료기관이 발행한 진료확인서, 진료비영수증, 진료비 상세내역서, 의무기록사본(본인부담금 30만원 이상인 경우), 예방접종 전 3개월 이내의 의무기록사본(있을 경우, 본인부담금 30만원 이상인 경우)를 구비하시면 됩니다.
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID/index.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">코로나19에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

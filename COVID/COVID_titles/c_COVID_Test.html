@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_titles.css" rel = "stylesheet">
+    <title>증상</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../index.html" id = "logo">
+                        <p>코로나19에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Pathogen_info.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pathogen_information">병원체정보</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Symptom.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Symptom">증상</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Test.html">
+                        <div class = "b_title" style = "background-color:#78A6A4">
+                            <h4 class = "one_line" id = "Test">검사</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Treatment_prevention.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Treatment_prevention">치료 및 예방</h4> 
+                        </div>
+                    </a>
+                    <a href = "e_COVID_Contacts.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "contacts" >접촉자 및<br>확진환자</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Isolation.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Isolation">격리 및<br>격리해제</h4> 
+                        </div>
+                    </a>  
+
+                    <br>
+                    <a href = "g_COVID_Treatment_cost.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Treatment_cost">격리입원<br>치료비</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Managemen.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Management">의사환자 및<br>조사대상<br>유증상자 관리</h4> 
+                        </div>
+                    </a>
+                    <a href = "i_COVID_Sanitize.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Sanitize">청소 및 소독</h4> 
+                        </div>
+                    </a>
+                    <a href = "j_COVID_Pregnant.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pregnant">임신과 출산</h4> 
+                        </div>
+                    </a>
+                    <a href = "k_COVID_Quarantine_rule.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Quarantine_rule">방역수칙</h4> 
+                        </div>
+                    </a>
+                    <a href = "l_COVID_so_on.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line"id = "so_on">기타</h4> 
+                        </div>
+                    </a> 
+
+                    
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>검사</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c01" value = "1" onclick = "showView(this,'A_c01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>누가 검사를</span> 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        본 지침 상의 사례정의에 따라 의사환자 및 조사대상 유증상자로 분류되는 경우에 확진검사를 받을 수 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        중증응급환자(중증도 등급기준 1 및 2 등급) 또는 6시간 이상 지연할 수 없는 응급수술이 필요한 중증응급의심환자(중증도 등급기준 3등급)의 경우 응급 선별검사 또는 확진검사를 받을 수 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        막연한 불안감으로 검사를 받으실 필요는 없으므로, 의사선생님의 전문적인 판단을 신뢰하여 주시기 바랍니다.
+                                    </li>
+                                    <br>
+                                    ▶ 사회적 거리두기 단계, 역학적 연관성, 증상 유무, 지역과 관계없이 보건소 선별진료소 및 임시선별검사소에서 무료로 코로나19 진단검사 가능(별도공지 시까지)<br>
+                                    <table border="1">
+                                        <tbody style = "text-align:left;">
+                                            <tr><td>의사환자</td><td>확진환자와 접촉한 후 14일 이내에 코로나19 임상증상이 나타난 자</td></tr>
+                                            <tr>
+                                                <td rowspan="3">조사대상<br>유증상자</td>
+                                                <td>① 의사의 소견에 따라 코로나19 임상증상으로 코로나19가 의심되는 자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>② 해외 방문력이 있으며 귀국 후 14일 이내에 코로나19 임상증상이 나타난 자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>③ 코로나19 국내 집단발생과 역학적 연관성이 있어 진단검사가 필요하다고 인정되는 자</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfood>
+                                            <td colspan="2">주요 임상증상 : 발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실 또는 폐렴 등</td>
+                                        </tfood>
+                                    </table>
+                                    <br>
+                                    ▶ 다음에 해당하는 경우 적극적 검사 권고(조사대상 유증상자 1로 신고)
+                                    <ol>
+                                        <li>
+                                            가족(동거인) 또는 동일시설 생활자가 코로나19 임상증상이 있는 경우
+                                        </li>
+                                        <li>
+                                            해외에서 입국한지 14일 이내의 가족(동거인), 친구, 지인과 접촉한 경우
+                                        </li>
+                                        <li>
+                                            지역사회 유행 양상 고려하여 확진자가 발생한 기관 또는 장소 방문력이 있는 경우
+                                        </li>
+                                        <li>
+                                            응급선별검사, 신속항원검사 또는 자가검사 결과 양성인 경우
+                                        </li>
+                                    </ol>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c02" value = "2" onclick = "showView(this,'A_c02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>검사는 어디에서</span> 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        검체 채취가 가능한 선별진료소 및 일반 의료기관에서 검사를 받으실 수 있습니다. 
+                                    </li>
+                                    <li>
+                                        질병관리청 홈페이지에서 진료 가능한 선별진료소를 확인할 수 있습니다.
+                                    </li>
+                                    ▶ 질병관리청 홈페이지→코로나바이러스감염증-19→선별진료소 및 국민안심병원 찾기
+                                    <li>
+                                        자세한 문의사항은 질병관리청 콜센터(☎1339, 지역번호＋120) 또는 보건소와 상담해 주시기 바랍니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c03" value = "3" onclick = "showView(this,'A_c03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>검사는 어떻게</span> 이루어지나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        (검체 채취) 검체는 의사, 간호사, 임상병리사가 지정된 장소(선별진료소 등)에서 채취합니다. 필수 검체는 상기도 검체이며, 하기도 검체는 가래가 있는 환자에서 채취합니다. 검체 채취 시 불편감ㆍ통증이 있을 수 있습니다.
+                                    </li>
+                                    <br>
+                                    ▶ 간호사와 임상병리사는 의사의 지도하에 시행
+                                    <table border="1">
+                                        <tbody style = "text-align:left;">
+                                            <tr>
+                                                <td>상기도 검체</td>
+                                                <td>
+                                                    비인두 또는 구인두 도말물 채취<br>
+                                                    - (비인두도말) 콧구멍 깊숙이 면봉을 삽입하여 분비물 채취<br>
+                                                    - (구인두도말) 면봉으로 목구멍 안쪽 벽의 분비물을 긁어서 채취
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>하기도 검체</td>
+                                                <td>
+                                                    타액 등이 포함되지 않도록 깊이 기침하여 가래 채취<br>
+                                                    - 가래가 없는 경우는 억지로 뱉으면 에어로졸 발생가능성이 있으므로 가래 유도 금지
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    <li>
+                                        (유전자검사) 검사가 가능한 선별진료소는 직접 검사하고, 그렇지 않은 경우는 수탁검사기관으로 검사를 의뢰합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c04" value = "4" onclick = "showView(this,'A_c04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>검사(유전자 검사) 시간</span>은 얼마나 걸리나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        검사는 6시간 정도 소요되지만 검체 이송 및 대기시간 등을 고려하면 검사 후 1∼2일 이내에 결과를 확인할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c05" value = "5" onclick = "showView(this,'A_c05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>코로나19 PCR 검사에서 음성이 나온 뒤 다시 양성</span>으로 나올 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        PCR 검사가 음성 결과가 나왔다면, 검사 대상자의 검체에서 코로나19 바이러스가 검출되지 않았음을 의미합니다.
+                                    </li>
+                                    <li>
+                                        검체의 질이나 양이 부적합한 경우, 감염의 초기나 너무 늦은 시기에 검체가 채취된 경우, 검체가 부적합하게 배송되거나 다루어진 경우, 검사의 기술적 오류 등으로 인해 코로나19 환자에서 결과가 음성으로 나올 수 있습니다. 이후 다시 시행된 검사에서 다시 양성으로 판정될 수 있습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Laboratory testing for coronavirus disease 2019 (COVID-19) in suspected human cases
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c06" value = "6" onclick = "showView(this,'A_c06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>검사비용</span>은 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의사환자 및 조사대상 유증상자로 신고한 경우는 검사비용의 본인부담금이 발생하지 않습니다. 다만, 일반진찰, X-ray 검사 등 다른 진료비용은 본인이 부담합니다.
+                                    </li>
+                                    <li>
+                                        단, 응급상황에서 실시한 응급용 선별검사 또는 확진검사의 경우
+                                    </li>
+                                    ▶ 환자 본인부담금이 발생합니다.<br>
+                                    ▶ KTAS 1.2 등급 또는 KTAS 3 등급 중 6시간 이상 지연할 수 없는 응급수술이 필요한 경우
+                                    <li>
+                                        응급용 선별검사의 본인 부담률은 법령에서 정한 해당 환자의 본인 부담률을 따릅니다.
+                                    </li>
+                                    ▶ 사회적 거리두기 단계, 역학적 연관성, 증상 유무, 지역과 관계없이 보건소 선별진료소 및 임시선별검사소에서 무료로 코로나19 진단검사 가능(별도공지 시 까지)<br><br>
+
+                                    코로나19 진단검사비 지급 절차
+                                    <ol>
+                                        <li>
+                                            <border>(사례정의 해당건 검사 지원)</border> 코로나19 대응지침에 따른 사례의 경우, 질병관리청(또는 방역관)이 집단유행과 연관성을 인정한 경우 → 개별검사 진행
+                                        </li>
+                                        * 지급 절차 : 1)시도 공문(엑셀 자료), 2)수탁업체 공문(엑셀 자료), 3)코로나19 정보관리 시스템(선별진료소) 입력 현황(보건소 입력), 총 3가지 자료 매칭 후 지급
+                                        <li>
+                                            <border>(선제적 검사 지원)</border> 일정규모 집단 발생 시, 역학조사 전 지자체 자체 판단에 따라 시행(사전에 질병관리청 승인 필요)하는 진단검사비 지원 → 취합(풀링)검사 진행
+                                            * 지급 절차 : 시도에서 공문(엑셀 자료)으로 국비 지원 요청 시 별도 매칭 절차 없이 지급
+                                        </li>
+                                        <li>
+                                            <border>(사례정의 미해당건 검사 지원)</border> 보건소 선별진료소(무증상자 등) 및 임시선별검사소 대상 진단검사비 지원 → 취합(풀링)검사 진행 
+                                            * 지급 절차 : 1)코로나19 정보관리 시스템(임시선별진료소) 입력 현황(보건소 입력)과 2)수탁업체 공문(엑셀 자료) 매칭 후 지급
+                                        </li>
+                                    </ol>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c07" value = "7" onclick = "showView(this,'A_c07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>가래가 없으면 채취를 유도하지 않고 상기도 검체만 채취</span> 하는게 맞나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        그렇습니다. 필수검체는 상기도 검체이며, 가래가 있는 환자에서는 하기도 검체 1개와 상기도 검체 1개 각각 채취하여 송부합니다. 다만, 가래가 없으면 채취 유도는 절대 하지 않습니다.     
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c08" value = "8" onclick = "showView(this,'A_c08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question">본인이 <span>스스로 가래를 채취하는 경우도 음압실</span>이 필요한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        반드시 음압실이 필요하지는 않으나, 에어로졸 발생 가능성이 있으므로 내부순환은 안되고 외부 환기가 잘되는 독립된 공간에서 채취하도록 합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c09" value = "9" onclick = "showView(this,'A_c09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>검체채취 시 표준주의</span>란 무엇입니까?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        표준주의는 의료기관 내에서 환자를 대상으로 하는 모든 처치와 술기, 간호를 하는데 가장 기본적인 지침으로 감염병 전파를 예방하기 위해 공통으로 적용되는 주의사항입니다.     
+                                    </li>
+                                    <li>
+                                        환자의 혈액, 체액, 분비물, 배설물, 손상된 피부와 점막을 다룰 때 표준주의에 따라 환자를 진료하여야 하며, 전파경로별로 접촉주의, 비말주의(5 마이크로미터보다 큰 입자의 비말에 의해 전파되는 질환), 공기주의가 있습니다.
+                                    </li>
+                                    <br>
+                                    ▶ (출처) 질병관리청. ｢의료관련감염 표준예방지침｣(2020)<br>
+                                    : 질병관리청 홈페이지 → 알림·자료 → 지침
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c10" value = "10" onclick = "showView(this,'A_c10')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>코로나 항체검사</span>는 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c10">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        항체 검사는 사람의 혈액 검체를 검사하여 코로나19 원인 바이러스인 SARS-CoV-2에 대한 항체를 찾는 검사입니다. 항체는 감염이 된 이후에 생성되기 때문에, 검사 결과 양성이 나오면 이전에 이 바이러스에 감염된 적이 있다는 의미입니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        SARS-CoV-2 항체가 형성되기까지 보통 1-3주 걸리므로 항체 검사로 초기 감염 여부를 확인하는 것은 어렵습니다. 현재 감염 상태인지 확인하려면 RT-PCR 같은 유전자 검사가 필요합니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        아직까지 항체 검사의 정확도에 대해 정확하게 알려져 있지 않아, 국내에서는 진단에 사용하지 않고 있습니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ Symptoms & Testing
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c11" value = "11" onclick = "showView(this,'A_c11')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>열 스캐너로 코로나19</span> 환자를 찾아낼 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c11">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        열 스캐너는 코로나19에 감염되어 발열 증상이 있는 사람(즉, 정상 체온보다 높은 사람)을 감지하는 데 효과적입니다.
+                                    </li>
+                                    <li>
+                                        하지만 열 스캐너는 발열 증상이 없는 환자, 증상이 나타나기 전 잠복기 환자들을 감지할 수 없습니다. 코로나 19의 잠복기는 1~14일(중앙값 5~7일)로 알려져 있습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Coronavirus disease(COVID-19) advice for the public: Myth busters.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c12" value = "12" onclick = "showView(this,'A_c12')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>응급용 선별검사 결과 양성인 경우 추가 실시되는 코로나19 확진검사는 비용이 얼마</span>인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c12">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        응급용 선별검사 결과 양성으로 확진검사를 시행하는 경우 국비지원 대상으로 환자에게 본인부담금을 수납하지 않으며, 급여 청구방법은 기존 국비지원 명세서 청구방법과 동일합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c13" value = "13" onclick = "showView(this,'A_c13')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>코로나19 응급용 선별검사와 확진검사를 동시</span>에 시행할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c13">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        진료의사는 응급환자상태 및 검사여건 등을 종합적으로 고려하여 응급용 선별검사 혹은 확진검사 중 1개를 선택하여 급여로 시행할 수 있으며, 2개의 검사를 동시에 실시할 수 없습니다(전액본인 부담도 불가).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c14" value = "14" onclick = "showView(this,'A_c14')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[검사]</div>
+                            <div class = "question"><span>선별진료소 검체 채취 시에 보호자가 동행하여 검사</span>를 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c14">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        선별진료소에서 소아, 발달장애인 등 보호자 동행이 필요한 경우 보호자가 검체 채취실에 동행할 수 있으며, 이 경우 보호자는 마스크 착용 등 감염예방수칙을 준수하여 동행이 가능합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID_Vaccine/COVID_Vaccine_main.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">예방접종에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

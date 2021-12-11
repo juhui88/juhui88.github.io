@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_Vaccine_title.css" rel = "stylesheet">
+    <title>시스템 및 예방접종 기록</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../../COVID/COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../COVID_Vaccine_main.html" id = "logo">
+                        <p>코로나 예방접종에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_Vaccine_Search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id ="B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Vaccine_Vaccine.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Vaccine">코로나19 백신</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Vaccine_Business.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Business">코로나19<br>예방접종 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Vaccine_Standard.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Standard">코로나19<br>예방접종<br>실시기준</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Vaccine_Side_Effect.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Side_Effect">코로나19<br>예방접종 후<br>이상반응</h4> 
+                        </div>
+                    </a> 
+    
+                    <br>
+                    <a href = "e_COVID_Vaccine_Compensation.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Compensation">코로나19<br>예방접종 관련<br>피해보상</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Vaccine_Causality.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Causality">인과성<br>불충분한 환자<br>의료비 지원 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "g_COVID_Vaccine_Institution.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Institution">접종 기관<br>및 인력 관련</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Vaccine_System.html">
+                        <div class = "b_title" style = "background-color: #78A6A4">
+                            <h4 class = "two_lines" id = "System">시스템 및<br>예방접종 기록</h4> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>시스템 및 예방접종 기록</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h01" value = "1" onclick = "showView(this,'A_h01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[시스템 및 예방접종..]</div>
+                            <div class = "question"><span>코로나19 예방접종 기록</span>은 어떻게 관리하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        전 세계 여러나라에서 mRNA나 DNA를 이용한 백신, 바이러스백터 백신 및 불활성화 백신, 재조합 백신, 바이러스 유사입자 백신 등 여러 종류의 코로나19 백신을 개발 중에 있습니다.
+                                    </li>
+                                    <li>
+                                        현재 우리나라에 도입되어 사용하고 있는 백신은 아스트라제네카, 얀센社의 바이러스벡터 백신 2종과 화이자, 모더나社의 mRNA 백신 2종이며, 노바백스 합성항원 백신 1종이 도입될 예정입니다
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h02" value = "2" onclick = "showView(this,'A_h02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[시스템 및 예방접종..]</div>
+                            <div class = "question"><span>코로나19 예방접종을 완료한 경우 증명서는 어떻게 발급</span> 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        국가예방접종사업과 마찬가지로, 접종 후 증명서의 발급은 예방접종도우미 누리집(<a href = "https://nip.kdca.go.kr">https://nip.kdca.go.kr</a>) 또는 정부24(<a href = "https://www.gov.kr">https://www.gov.kr</a>)를 통해 온라인으로 발급 가능합니다.
+                                    </li>
+                                    * 접종의료기관 및 보건소방문하여 발급 가능합니다.(단, 발급여부는 해당기관에 반드시 유선전화로 확인 후 방문하시기 바랍니다.)
+                                    <li>
+                                        또한, 모바일을 통한 전자예방접종 증명서 발급이 가능합니다.
+                                    </li>
+                                    * 구글플레이스토어, 애플 앱스토어, 원스토어에서 coov 또는 전자 예방접종증명서를 검색해서 내려받을 수 있으며,<br>
+                                     자세한 사용방법은 <a href = "https://www.coov.kr/how-to-use">https://www.coov.kr/how-to-use</a> 을 통해 확인하실 수 있습니다.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h03" value = "3" onclick = "showView(this,'A_h03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[시스템 및 예방접종..]</div>
+                            <div class = "question"><span>코로나19 예방접종을 예약</span>한 사람에 대해 <span>알림</span>을 보내나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종 예약자를 대상으로 질병관리청에서 예방접종예약일 1일전에 사전에 등록된 휴대전화 번호로 알림 문자를 발송합니다.
+                                    </li>
+                                    <li>
+                                        또한, 코로나19 예방접종 기록이 코로나19예방접종등록시스템에 등록된 후에 코로나19 예방접종이 완료되었다는 문자를 발송합니다.
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h04" value = "4" onclick = "showView(this,'A_h04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[시스템 및 예방접종..]</div>
+                            <div class = "question">"<span>잔여백신</span>"은 무엇이고, 왜 <span>발생</span>하게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아스트라제네카의 경우, 포장된 1개 백신(바이알) 당 10명 분량(도즈)을 접종할 수 있습니다.
+                                         다만, 1개 바이알을 개봉한 경우, 최대 6시간 내에 사용하여야 하며, 기한 내에 사용하지 못한 경우 ｢폐기물관리법｣에 따라 폐기 처리하게 됩니다.
+                                    </li>
+                                    <li>
+                                        예방접종을 사전 예약한 자가 접종기관에 방문하지 않거나, 예진 시 접종이 불가능한 경우 등의 상황이 발생하면, 해당 인원 수만큼 접종하지 못하는 백신이 발생하게 되는데, 이를 잔여 백신이라 합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h05" value = "5" onclick = "showView(this,'A_h05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[시스템 및 예방접종..]</div>
+                            <div class = "question"><span>잔여백신은 어떻게 접종</span>하게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        잔여백신은 의료기관에서 긴급하게 접종대상자를 찾아서 접종할 수 있습니다.<br>
+                                         다만, 의료기관에서 미리 준비한 예비명단이나 내원한 환자/보호자 등으로부터 직접 적절한 대상자를 찾지 못할 경우를 대비하여,<br>
+                                         인근 접종기관에서 예방접종을 원하는 국민이 네이버 및 카카오 관련 앱 등을 통해 빠르고 간편하게 예약한 후, 당일 인근 접종기관에 바로 방문하여 접종할 수 있도록 하였습니다.<br>
+                                         이를 당일예약이라 합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID/index.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">코로나19에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

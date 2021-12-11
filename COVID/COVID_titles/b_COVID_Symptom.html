@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_titles.css" rel = "stylesheet">
+    <title>증상</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../index.html" id = "logo">
+                        <p>코로나19에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Pathogen_info.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pathogen_information">병원체정보</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Symptom.html">
+                        <div class = "b_title" style = "background-color:#78A6A4">
+                            <h4 class = "one_line" id = "Symptom">증상</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Test.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Test">검사</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Treatment_prevention.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Treatment_prevention">치료 및 예방</h4> 
+                        </div>
+                    </a>
+                    <a href = "e_COVID_Contacts.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "contacts" >접촉자 및<br>확진환자</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Isolation.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Isolation">격리 및<br>격리해제</h4> 
+                        </div>
+                    </a>  
+
+                    <br>
+                    <a href = "g_COVID_Treatment_cost.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Treatment_cost">격리입원<br>치료비</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Managemen.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Management">의사환자 및<br>조사대상<br>유증상자 관리</h4> 
+                        </div>
+                    </a>
+                    <a href = "i_COVID_Sanitize.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Sanitize">청소 및 소독</h4> 
+                        </div>
+                    </a>
+                    <a href = "j_COVID_Pregnant.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pregnant">임신과 출산</h4> 
+                        </div>
+                    </a>
+                    <a href = "k_COVID_Quarantine_rule.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Quarantine_rule">방역수칙</h4> 
+                        </div>
+                    </a>
+                    <a href = "l_COVID_so_on.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line"id = "so_on">기타</h4> 
+                        </div>
+                    </a> 
+
+                    
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>증상</h3>
+            <div class = "FAQ" >
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b01" value = "1" onclick = "showView(this,'A_b01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[증상]</div>
+                            <div class = "question"><span>코로나19의 증상</span>은 어떤 것이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19의 가장 흔한 증상은 발열, 마른 기침, 피로이며 그 외에 후각 및 미각 소실, 근육통, 인후통, 콧물, 코막힘, 두통, 결막염, 설사, 피부 증상 등 다양한 증상이 나타날 수 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        이러한 증상은 보통 경미하고 점진적으로 나타납니다. 어떤 사람들은 감염되어도 매우 약한 증상만 나타날 수 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        대부분의 환자들(약 80%)은 특별한 치료 없이 회복되나, 5명 중 1명 정도는 중증으로 진행할 수 있습니다. 고령자나 고혈압, 심폐질환, 당뇨병이나 암과 같은 기저질환이 있는 사람들은 중증으로 진행될 가능성이 높습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on coronaviruses
+                                </ul>
+                                <table border = "1">
+                                    <caption style = "text-align: left;">[참고.우리나라 코로나19 확진자 병원입원 시 주요증상]</caption>
+                                    <thead>
+                                        <tr><th>주요증상</th><th>비율(%)</th><th>주요증상</th><th>비율(%)</th><th>주요증상</th><th>비율(%)</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>기침</td><td>41.8%</td><td>근육통</td><td>16.5%</td><td>설사</td><td>9.2%</td></tr>
+                                        <tr><td>객담</td><td>28.9%</td><td>인후염</td><td>15.7%</td><td>구토/오심</td><td>4.3%</td></tr>
+                                        <tr><td>발열(≥37.5℃)</td><td>21.1%</td><td>호흡곤란</td><td>11.9%</td><td>피로/권태</td><td>4.2%</td></tr>
+                                        <tr><td>두통</td><td>17.2%</td><td>콧물</td><td>11%</td><td>증상없음</td><td>26.7%</td></tr>
+                                    </tbody>
+                                </table>
+                                * (출처) 주간 건강과 질병 제13권 제28호, 코로나바이러스감염증-19 임상정보 1차 분석 보고서
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b02" value = "2" onclick = "showView(this,'A_b02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[증상]</div>
+                            <div class = "question"><span>무증상환자도 다른 사람을 전염</span>시킬 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19의 주요 전파 방법은 코로나19에 감염된 사람이 숨을 내쉬거나, 기침이나 재채기를 할 때 생성되는 호흡기 비말이 근처에 있는 사람들의 호흡기에 직접 닿거나, 비말이 묻은 손 또는 물건 등을 만진 뒤 눈, 코 또는 입을 만질 때 점막을 통해 전염되는 것입니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        코로나19의 많은 환자들은 가벼운 증상만을 경험하지만, 증상이 가벼운 환자의 일부는 질환의 초기라서 증상이 약하게 나타나는 것일 수 있습니다. 경미한 기침 증상만 있거나, 증상을 잘 느끼지 못하는 사람의 경우에도 전염이 가능하다고 알려져 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        무증상의 경우에도 전염이 가능하다는 연구가 있으나 아직까지 정확하게 알려지지 않아 추가 연구결과가 발표되면 공유할 예정입니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on coronaviruses
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b03" value = "3" onclick = "showView(this,'A_b03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[증상]</div>
+                            <div class = "question"><span>코로나19에 어떤 사람들이 더 위험</span>한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나 19는 아직까지 명확하게 알려지지 않았지만, 지금까지 연구된 결과에 의하면 65세 이상의 노인, 장기 요양 시설 생활자, 기저질환(만성 폐질환, 천식, 심폐질환, 면역억제자, 비만, 당뇨병, 만성 신장 질환, 만성 간질환, 흡연자 등)을 가진 사람들에게 더 위험할 수 있습니다
+                                    </li>
+                                    ▶ (출처) CDC, FAQ Higher Risk
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_b04" value = "4" onclick = "showView(this,'A_b04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[증상]</div>
+                            <div class = "question"><span>흡연자는 코로나19에 더 위험</span>한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_b04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        흡연자가 담배를 피우기 위해 손가락이나 담배가 입술에 닿을 때, 오염된 손가락이나 담배에 있던 바이러스가 손에서 입으로 전염될 가능성이 높아집니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        흡연자는 폐기능이 떨어져 있거나, 폐 질환이 동반되는 경우가 있으므로 코로나19에 걸리면 비흡연자에 비해 중증으로 진행할 위험도가 높습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on smoking and COVID-19
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../COVID_Vaccine/COVID_Vaccine_main.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">예방접종에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_Vaccine_title.css" rel = "stylesheet">
+    <title>인과성 불충분한 환자 의료비 지원 사업</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../../COVID/COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../COVID_Vaccine_main.html" id = "logo">
+                        <p>코로나 예방접종에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_Vaccine_Search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id ="B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Vaccine_Vaccine.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Vaccine">코로나19 백신</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Vaccine_Business.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Business">코로나19<br>예방접종 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Vaccine_Standard.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Standard">코로나19<br>예방접종<br>실시기준</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Vaccine_Side_Effect.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Side_Effect">코로나19<br>예방접종 후<br>이상반응</h4> 
+                        </div>
+                    </a> 
+    
+                    <br>
+                    <a href = "e_COVID_Vaccine_Compensation.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Compensation">코로나19<br>예방접종 관련<br>피해보상</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Vaccine_Causality.html">
+                        <div class = "b_title" style = "background-color: #78A6A4">
+                            <h4 class = "three_lines"id = "Causality">인과성<br>불충분한 환자<br>의료비 지원 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "g_COVID_Vaccine_Institution.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Institution">접종 기관<br>및 인력 관련</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Vaccine_System.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "System">시스템 및<br>예방접종 기록</h4> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>인과성 불충분한 환자 의료비 지원 사업</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f01" value = "1" onclick = "showView(this,'A_f01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[인과성 불충분..]</div>
+                            <div class = "question"><span>코로나 예방접종 후 인과성 불충분한 환자 의료비 지원사업의 대상</span>은 누구인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종 후 중환자실 입원치료 등 이에 준하는 질병 또는 특별관심 이상반응(경증 포함)이 발생하였으나, 예방접종피해조사반 또는 피해보상전문위원회 검토결과 인과성 인정을 위한 근거자료 불충분(심의기준, ④-1 해당)으로 피해보상에서 제외된 환자를 대상으로 하며, 이때 소득·재산 여건은 고려되지 않습니다.
+                                    </li> 
+                                    <li>
+                                        다만, 백신보다는 다른 이유에 의한 경우(심의기준 ④-2), 명백히 인과성이 없는 경우(심의기준 ⑤)는 지원대상이 아닙니다.
+                                    </li>   
+                                    * (보상금 지급 기준) 백신과 이상반응 인과성 결과 심의기준 ①,②,③에 대해 해당시 지급<br>
+                                    - ①인과성 명백, ②인과성에 개연성이 있음 ③인과성에 가능성있음 ④인과성이 인정되기 어려움(④-1 근거자료 불충분, ④-2 백신보다는 다른 이유에 의한 경우) ⑤명백히 인과성이 없는 경우
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f02" value = "2" onclick = "showView(this,'A_f02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[인과성 불충분..]</div>
+                            <div class = "question"><span>코로나 예방접종 후 인과성 불충분한 환자 의료비 지원사업의 지원범위</span>는 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 백신 예방접종 후 발생한 질환의 의료비를 지원하며, 실제 발생한 간병비를 기준으로 1일 5만원 범위에서 간병비도 지원범위에 포함됩니다. 단, 기존 기저질환의 치료비와 사망시 장제비는 제외됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_f03" value = "3" onclick = "showView(this,'A_f03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[인과성 불충분..]</div>
+                            <div class = "question"><span>코로나 예방접종 후 인과성 불충분한 환자 의료비 지원사업의 의료비 지원 절차</span>는 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_f03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종 후
+                                        <ol>
+                                            <li>
+                                                이상반응 신고 또는 피해보상 신청 사례에 대해
+                                            </li>
+                                            <li>
+                                                지자체 기초조사 및 피해조사반 또는 피해보상전문위원회 검토 결과
+                                            </li>
+                                            <li>
+                                                중증 또는 특별관심 이상반응(경증 포함)이면서 인과성 근거자료 불충분으로 판정받은 경우 
+                                                <br>(4-1)에 코로나19 예방접종을 받은 사람 또는 보호자는 지원신청 구비서류를 갖춰 주소지 관할 보건소에서 의료비 지원을 신청할 수 있으며
+                                            </li>
+                                            <li>
+                                                지원액 검토 등을 거쳐 질병관리청이 지원액을 지급합니다.
+                                            </li>
+                                            * 예방접종 후 진료 받은 진료비 영수증, 진료세부내역서 등 지원액을 산출할 수 있는 상세내역 제출 필요
+                                        </ol>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID/index.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">코로나19에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

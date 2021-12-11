@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_titles.css" rel = "stylesheet">
+    <title>의사환자 및 조사대상 유증상자 관리</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../index.html" id = "logo">
+                        <p>코로나19에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Pathogen_info.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pathogen_information">병원체정보</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Symptom.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Symptom">증상</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Test.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Test">검사</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Treatment_prevention.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Treatment_prevention">치료 및 예방</h4> 
+                        </div>
+                    </a>
+                    <a href = "e_COVID_Contacts.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "contacts" >접촉자 및<br>확진환자</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Isolation.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Isolation">격리 및<br>격리해제</h4> 
+                        </div>
+                    </a>  
+
+                    <br>
+                    <a href = "g_COVID_Treatment_cost.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Treatment_cost">격리입원<br>치료비</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Managemen.html" >
+                        <div class = "b_title" style = "background-color: #78A6A4;">
+                            <h4 class = "three_lines"id = "Management">의사환자 및<br>조사대상<br>유증상자 관리</h4> 
+                        </div>
+                    </a>
+                    <a href = "i_COVID_Sanitize.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Sanitize">청소 및 소독</h4> 
+                        </div>
+                    </a>
+                    <a href = "j_COVID_Pregnant.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pregnant">임신과 출산</h4> 
+                        </div>
+                    </a>
+                    <a href = "k_COVID_Quarantine_rule.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Quarantine_rule">방역수칙</h4> 
+                        </div>
+                    </a>
+                    <a href = "l_COVID_so_on.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line"id = "so_on">기타</h4> 
+                        </div>
+                    </a> 
+
+                    
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>의사환자 및 조사대상 유증상자 관리</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h01" value = "1" onclick = "showView(this,'A_h01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" >[의사환자 및 조사...]</div>
+                            <div class = "question"><span>조사대상 유증상자 중 의사의 소견에 따라 코로나19 임상증상으로 코로나19가 의심</span>되는 자는 어떤 경우인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의사가 환자를 진료하였을 때, 발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실 또는 폐렴, 그 외 피로, 식욕감소, 가래, 소화기증상(오심, 구토, 설사 등), 혼돈, 어지러움, 콧물이나 코막힘, 객혈, 흉통, 결막염, 피부 증상 등의 소견으로 코로나19 환자로 의심하는 경우가 해당됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h02" value = "2" onclick = "showView(this,'A_h02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" >[의사환자 및 조사...]</div>
+                            <div class = "question"><span>의사환자는 선별진료소 이외 일반 의료기관</span>을 방문하면 안되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의사환자는 확진환자의 접촉자 중 증상이 나타난 사람으로 코로나19 감염 가능성이 높기 때문에 일반 의료기관을 방문하지 말고 보건소나 질병관리청 콜센터(1339 또는 지역번호＋120) 문의를 통해 가까운 선별진료소(의료기관 또는 보건소)를 방문하여 진료 및 조치를 받으시면 됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h03" value = "3" onclick = "showView(this,'A_h03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" >[의사환자 및 조사...]</div>
+                            <div class = "question"><span>의사환자와 조사대상 유증상자</span>는 어떻게 다른가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의사환자는 확진환자 접촉자 중 유증상자로 코로나19 감염가능성이 높은 경우이고, 조사대상 유증상자는 의사환자보다 위험도는 낮은 것으로 판단되나 국외 방문력, 국내 집단발생과 역학적 연관성, 의사소견에 따라 코로나19 임상증상으로 코로나19 감염이 의심되는 경우입니다.
+                                    </li>
+                                    <li>
+                                        조사대상 유증상자는 일반 의료기관에서 검체 채취 시 Ⅷ. 실험실 검사 관리 내용을 숙지하고 시행하시기 바랍니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h04" value = "4" onclick = "showView(this,'A_h04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" >[의사환자 및 조사...]</div>
+                            <div class = "question"><span>의사환자와 조사대상 유증상자 신고 시 주의사항</span>이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의사환자와 조사대상 유증상자는 감염병 발생 신고시 감염병발생 신고서→ 감염병 발생정보→ 비고(특이사항) 란에 의사환자와 조사대상 유증상자의 구분하여 해당되는 분류를 반드시 입력해 주시기 바랍니다.
+                                    </li>
+                                    <li>
+                                        신고된 사례에 대해서만 검사비 지원이 가능하므로 제1급감염병(신종감염병증후군)으로 신고 필요
+                                    </li>
+                                    - 감염병 발생신고를 반드시 해야하고, 결과 양성이면 확진환자와 동일한 조치를 하셔야 합니다.
+                                    <br><br>
+                                    <table border="1">
+                                        <tbody style = "text-align:left;">
+                                            <tr><td>의사환자</td><td>확진환자와 접촉한 후 14일 이내에 코로나19 임상증상이 나타난 자</td></tr>
+                                            <tr>
+                                                <td rowspan="3">조사대상<br>유증상자</td>
+                                                <td>① 의사의 소견에 따라 코로나19 임상증상으로 코로나19가 의심되는 자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>② 해외 방문력이 있으며 귀국 후 14일 이내에 코로나19 임상증상이 나타난 자</td>
+                                            </tr>
+                                            <tr>
+                                                <td>③ 코로나19 국내 집단발생과 역학적 연관성이 있어 진단검사가 필요하다고 인정되는 자</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfood>
+                                            <td colspan="2">주요 임상증상 : 발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실 또는 폐렴 등</td>
+                                        </tfood>
+                                    </table>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_h05" value = "5" onclick = "showView(this,'A_h05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" >[의사환자 및 조사...]</div>
+                            <div class = "question"><span>조사대상 유증상자가 일반 의료기관에 가는 경우는 신고, 환자관리(외출자제 권고, 이동방법안내, 보건교육 등)는 일반 의료기관</span>에서 진행하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_h05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        그렇습니다. 검사 결과가 나올 때 까지 외출자제, 대중교통 이용자제, 다중이용시설 방문 자제, 올바른 손씻기 및 기침예절 준수 등 보건교육을 일반 의료기관에서 시행해야 합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID_Vaccine/COVID_Vaccine_main.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">예방접종에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

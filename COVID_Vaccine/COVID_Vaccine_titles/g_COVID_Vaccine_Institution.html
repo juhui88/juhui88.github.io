@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_Vaccine_title.css" rel = "stylesheet">
+    <title>접종기관 및 인력 관련</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../../COVID/COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../COVID_Vaccine_main.html" id = "logo">
+                        <p>코로나 예방접종에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_Vaccine_Search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id ="B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Vaccine_Vaccine.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Vaccine">코로나19 백신</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Vaccine_Business.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Business">코로나19<br>예방접종 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Vaccine_Standard.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Standard">코로나19<br>예방접종<br>실시기준</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Vaccine_Side_Effect.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Side_Effect">코로나19<br>예방접종 후<br>이상반응</h4> 
+                        </div>
+                    </a> 
+    
+                    <br>
+                    <a href = "e_COVID_Vaccine_Compensation.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Compensation">코로나19<br>예방접종 관련<br>피해보상</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Vaccine_Causality.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Causality">인과성<br>불충분한 환자<br>의료비 지원 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "g_COVID_Vaccine_Institution.html">
+                        <div class = "b_title" style = "background-color: #78A6A4">
+                            <h4 class = "two_lines" id = "Institution">접종 기관<br>및 인력 관련</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Vaccine_System.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "System">시스템 및<br>예방접종 기록</h4> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>접종 기관 및 인력 관련</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g01" value = "1" onclick = "showView(this,'A_g01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>위탁의료기관은 언제부터 운영</span>하게 되는지?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종 참여의향*을 제출한 약 1.6만개 중, 요양병원 자체접종, 요양시설 방문접종에 필요한 촉탁의 소속 의료기관의 위탁계약**을 조기 진행(2월 중순∼)하였습니다.
+                                    </li>
+                                    <li style = "list-style: none; font-size:15px;">
+                                        * 기존 국가예방접종사업 참여 의료기관 대상 조사(‘21.1월)<br>
+                                        ** 현장 점검, 코로나19 예방접종 교육(온라인 교육, 2.8일∼) 이수 확인 등
+                                    </li>
+                                    <li>
+                                        2분기 시행계획에 포함된 위탁의료기관을 내원 접종자의 차질없는 접종을 위하여 조기 계약완료(약 1만개소, ~3월)를 독려 중에 있습니다.
+                                    </li>
+                                    ※ 참여 의향표시 16,397개소 대비 27.2% 수준 4,462개소 완료<br>
+                                    65~74세 이상 어르신의 본격 접종이 시작되는 6월 이후 위탁의료기관을 본격 운영할 예정입니다.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g02" value = "2" onclick = "showView(this,'A_g02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>위탁의료기관은 어떤 백신을 접종하게 되고, 해당 백신을 위탁의료기관에서 접종하는 이유는?</span></div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        위탁의료기관을 통해 바이러스 벡터(아스트라제네카, 얀센 백신) 플랫폼의 백신을 접종하실 수 있습니다.
+                                    </li>
+                                    <li>
+                                        바이러스 벡터 백신은 mRNA 백신과 다르게 의료기관에서 지속 공급받는 여타 백신들과 동일한 유통 및 보관체계를 가지고 있어 유통 및 보관이 용이한 장점이 있습니다.
+                                    </li>
+                                    <li>
+                                        해당 백신을 위탁의료기관을 통해 시행하여, 대상자의 접근성을 높여 접종의 불편감을 해소하고자 합니다.
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g03" value = "3" onclick = "showView(this,'A_g03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>65세 이상 어르신에 대한 접종 본격화 대비하여 위탁의료기관은 충분</span>한지?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        2분기 시행계획상 6월에 접종이 시작되는 65~74세 이상 어르신의 접종을 위해 코로나19 예방접종 참여의향을 제출한 의료기관 대상 조기 계약 완료(약 1만개소, ~3월)를 독려중에 있습니다
+                                    </li>
+                                    현재 약 4천여개의 의료기관이 계약 완료하였고, 6월에는 전국적으로 약 1만개소 이상의 위탁의료기관이 준비될 것으로, 신속하고 안전한 접종이 가능합니다.
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g04" value = "4" onclick = "showView(this,'A_g04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>예방접종센터 운영</span>은 어떻게 하고 있나</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        예방접종센터는 3월에 22개소를 시작으로 8월 현재 282개소(중앙 1, 지역 281) 운영 중입니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g05" value = "5" onclick = "showView(this,'A_g05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>접종센터 운영시간 내 접종이 불가능한 직장인을 위해 주말, 야간 운영</span>을 하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        예방접종센터 운영은 주 6일을 기준으로 하되, 운영 요일, 운영 시간(주간, 야간 등) 등은 지자체별 탄력적으로 운영 가능토록하고 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_g06" value = "6" onclick = "showView(this,'A_g06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:2px;">[접종 기관 및 인력..]</div>
+                            <div class = "question"><span>예방접종은 백신 접종센터와 위탁의료기관</span>으로 구분되던데, 이 차이는?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_g06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        접종센터는 초저온냉동 보관, 전처리 등 세심한 취급·보관 과정이 필요한 mRNA 백신을 접종하고, 위탁의료기관에서 2~8℃에서 보관 가능한 바이러스벡터 백신을 접종합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID/index.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">코로나19에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_titles.css" rel = "stylesheet">
+    <title>병원체정보</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../index.html" id = "logo">
+                        <p>코로나19에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Pathogen_info.html">
+                        <div class = "b_title" style = "background-color:#78A6A4">
+                            <h4 class = "one_line" id = "Pathogen_information">병원체정보</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Symptom.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Symptom">증상</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Test.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Test">검사</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Treatment_prevention.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Treatment_prevention">치료 및 예방</h4> 
+                        </div>
+                    </a>
+                    <a href = "e_COVID_Contacts.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "contacts" >접촉자 및<br>확진환자</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Isolation.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Isolation">격리 및<br>격리해제</h4> 
+                        </div>
+                    </a>  
+
+                    <br>
+                    <a href = "g_COVID_Treatment_cost.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Treatment_cost">격리입원<br>치료비</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Managemen.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Management">의사환자 및<br>조사대상<br>유증상자 관리</h4> 
+                        </div>
+                    </a>
+                    <a href = "i_COVID_Sanitize.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Sanitize">청소 및 소독</h4> 
+                        </div>
+                    </a>
+                    <a href = "j_COVID_Pregnant.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pregnant">임신과 출산</h4> 
+                        </div>
+                    </a>
+                    <a href = "k_COVID_Quarantine_rule.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Quarantine_rule">방역수칙</h4> 
+                        </div>
+                    </a>
+                    <a href = "l_COVID_so_on.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line"id = "so_on">기타</h4> 
+                        </div>
+                    </a> 
+
+                    
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>병원체정보</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a01" value = "1" onclick = "showView(this,'A_a01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나바이러스감염증-19는 어떤 질병</span>인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나바이러스감염증-19(코로나19)는 과거에 발견되지 않았던 
+                                        새로운 코로나 바이러스인 SARS-CoV-2에 의해 발생하는 호흡기 감염병입니다. 
+                                        이 바이러스에 감염되면 무증상부터 중증에 이르기까지 다양한 임상증상이 나타날 수 있습니다.
+                                    </li>
+                                    <li>
+                                        이 새로운 바이러스와 질병은 2019년 12월 중국 우한에서 처음 보고되었고, 현재 전 세계에 확산되었습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a02" value = "2" onclick = "showView(this,'A_a02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나바이러스는 어떤 바이러스</span>인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나바이러스는 동물 및 사람에게 전파될 수 있는 바이러스로 그 중 사람에게 전파가능한 사람 코로나바이러스는 기존에 6종이 알려져 있습니다.
+                                    </li>
+                                    <li>
+                                        이 중 4종은 감기와 같은 질병을 일으키는 바이러스이며, 나머지 2종은 각각 MERS-CoV와 SARS-CoV로 알려져 있습니다.
+                                    </li>
+                                    <li>
+                                        이번 유행의 원인 바이러스는 새로운 코로나바이러스(SARS-CoV-2)로 공개된 염기서열 분석을 통해 코로나19 바이러스가 박쥐유래 사스유사 바이러스와 89.1% 일치하는 것을 확인하였습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a03" value = "3" onclick = "showView(this,'A_a03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나바이러스감염증-19, 코로나19(COVID-19)</span>의 이름은 어떻게 지어졌나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        2020년 2월 11일, 세계보건기구(WHO)에서는 중국 우한에서 최초 확인된 2019 신종 코로나바이러스 감염증에 대한 공식 명칭을 발표했습니다.이 감염증의 새 명칭은 코로나바이러스 감염증 2019(Coronavirus disease-2019)이며, 줄임말로 코로나19(COVID-19)입니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        COVID-19에서 'CO'는 '코로나'를 나타내며 'VI'는 '바이러스', 'D'는 감염증을 나타냅니다. 이 감염증의 명칭은 세계보건기구(WHO) 감염병 명명 지침에 따라 지어졌습니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ Coronavirus Disease 2019 Basics
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a04" value = "4" onclick = "showView(this,'A_a04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나19의 바이러스는 어디에서 유래</span>했나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19는 SARS-CoV-2라는 코로나바이러스에 감염되어 발생합니다. 코로나바이러스과는 사람과 낙타, 소, 고양이, 박쥐 등 다양한 동물에 흔하게 서식하는 큰 바이러스 그룹입니다. 동물의 코로나바이러스가 사람에게 감염되어 사람들 사이에 전파될 수 있습니다.
+                                    </li>
+                                    <li>
+                                        MERS-CoV 및 SARS-CoV가 동물에서 사람으로 전파된 것으로 추정되며, SARS-CoV-2도 동물에서 사람으로 전파된 것으로 추정하고 있습니다.
+                                    </li>
+                                    <li>
+                                        SARS-CoV-2 바이러스는 MERS-CoV 및 SARS-CoV와 같은 메타-코로나 바이러스입니다. 이전의 두 바이러스는 모두 박쥐에서 기원했습니다. SARS-CoV-2 또한 박쥐에서 유사한 바이러스가 발견되어, 박쥐의 코로나 바이러스와 기원이 알려지지 않은 코로나 바이러스 사이의 재조합에서 유래했을 것으로 추측되지만 아직 확인되지 않았습니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ How COVID-19 Spreads
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a05" value = "5" onclick = "showView(this,'A_a05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나19는 어떻게 전염</span>되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19를 일으키는 바이러스는 사람에서 사람으로 전파되며 주로 환자와 직접 접촉 또는 호흡기를 통해 배출되는 비말에 의해 전염됩니다. 다시 말해서 코로나19에 감염된 사람이 말을 하거나, 기침이나 재채기, 노래 등을 할 때 생성된 비말이 근처에 있는 사람들의 호흡기에 직접 닿거나, 비말이 묻은 손 또는 물건 등을 만진 뒤 눈, 코 또는 입을 만질 때 전염될 수 있습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        또한 공기 감염은 흔하지 않으나 의료기관의 에어로졸 생성 시술이나 밀폐된 공간에서 장시간 호흡기 비말을 만드는 환경 등 특수상황에서 보통 비말이 도달하는 거리(2미터) 이상까지 바이러스 전파가 가능할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a06" value = "6" onclick = "showView(this,'A_a06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>지역사회 감염</span>이 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        지역사회 감염은 지역사회에서 감염자가 발생하였지만 발생 지역 방문이나 확진자와의 접촉력 없이, 언제 어디에서 감염되었는지 역학적 연관성이 확인되지 않은 감염을 말합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a07" value = "7" onclick = "showView(this,'A_a07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>코로나19 환자의 대변이나 체액으로도 전염</span>이 가능한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        환자의 대변에서 코로나19 바이러스가 검출되었다는 보고가 있었지만, 현재까지 환자의 대변으로 인해 코로나19가 전염된 사례는 보고되지 않았습니다. 추가로 물이나 하수오물 같은 환경에서 바이러스가 생존할 수 있다는 증거도 발견되지 않았습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        혈액, 뇌척수액, 소변, 타액, 눈물 및 결막 분비물 등의 체액에서도 바이러스가 검출되었다는 보고가 있었지만, 그로 인해 전염된 사례는 보고되지 않았습니다.
+                                    </li>
+                                    ▶ (출처) WHO, Q&A on coronaviruses<br>
+                                    ▶ (출처) BMJ, Best practice Coronavirus disease 2019(COVID-19)
+                                </ul>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a08" value = "8" onclick = "showView(this,'A_a08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>음식을 통해 코로나19가 전염</span>될 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        현재까지 코로나19가 음식을 통해 전파된다는 증거는 없습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        바이러스가 있는 음식의 포장 용기 표면이나 물체를 만진 후 자신의 입, 코 또는 눈을 만지면 코로나19에 걸릴 수 있지만, 물체의 표면에서 이러한 코로나바이러스의 생존력이 높지 않기 때문에 식품이나 포장 용기를 통해 확산될 위험은 매우 낮습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        안전을 위해서는 항상 음식을 준비하거나 먹기 전에 비누와 물로 30초 동안 손을 씻는 것이 도움이 될 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a09" value = "9" onclick = "showView(this,'A_a09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>날씨가 따뜻해지면 코로나19 전파</span>를 막을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        일반적으로 코로나바이러스는 저온의 건조한 환경보다 고온 다습한 환경에서 생존 기간이 더 짧습니다. 하지만 코로나19 바이러스에 대한 직접적인 온도와 관련된 자료와 바이러스 비활성화에 관련된 온도 정보는 아직까지 부족합니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        제한적이지만, 위도, 온도, 습도에 따른 코로나19의 분포 양상이 계절성 호흡기 바이러스의 양상과 비슷하다는 연구 보고가 있었습니다.
+                                    </li>
+                                    ▶ (출처) CDC, FAQ How COVID-19 Spreads<br>
+                                    ▶ (출처) Temperature, humidity, and latitude analysis to estimate potential spread and seasonality of coronavirus disease 2019 (COVID-19). JAMA Netw Open. 2020 Jun 1;3(6):e2011834.
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a10" value = "10" onclick = "showView(this,'A_a10')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>모기나 진드기 같은 곤충이 코로나19</span>를 전파시킬 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a10">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        미국 CDC에 따르면, 신종 코로나바이러스나 다른 유사한 코로나바이러스가 모기나 진드기 등의 곤충에 의해 전파된다는 증거는 없습니다.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        코로나19의 주요 전파경로는 사람 간 전파입니다
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a11" value = "11" onclick = "showView(this,'A_a11')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:5px;">[병원체정보]</div>
+                            <div class = "question"><span>카페 등의 다중이용시설 및 가정에서 냉난방기 가동시, 환기</span>는 얼마나 자주 해야 하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a11">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19는 비말, 접촉, 공기 전파를 통해 감염가능하며, 주된 감염경로는 2m 이내의 비말감염입니다. 공기감염은 흔하지는 않지만, 밀폐된 공간에서 장시간 호흡기 비말을 배출하거나 환기가 부적절한 경우 발생 가능하여 집단감염을 일으킬 수 있으므로 실내 오염도를 낮추기 위하여 충분한 환기를 실시하여야 합니다.
+                                    </li>
+                                    <li>
+                                        환기 시에는 가급적 자연환기 하며, 창문을 개방하여 맞통풍하고, 공조장비설치 시설은 외부공기 도입량을 가능한 높게 설정하여 최대한 외부 공기로 환기하며 가능하면 자연환기와 병행합니다.
+                                    </li>
+                                    ▶ (출처) Guidance for residential buildings, ASHRAE('20.10.5.)
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID_Vaccine/COVID_Vaccine_main.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">예방접종에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

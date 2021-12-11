@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_Vaccine_title.css" rel = "stylesheet">
+    <title>코로나19 백신</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../../COVID/COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../COVID_Vaccine_main.html" id = "logo">
+                        <p>코로나 예방접종에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_Vaccine_Search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id ="B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Vaccine_Vaccine.html">
+                        <div class = "b_title"  style = "background-color: #78A6A4">
+                            <h4 class = "one_line" id = "Vaccine">코로나19 백신</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Vaccine_Business.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Business">코로나19<br>예방접종 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Vaccine_Standard.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Standard">코로나19<br>예방접종<br>실시기준</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Vaccine_Side_Effect.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Side_Effect">코로나19<br>예방접종 후<br>이상반응</h4> 
+                        </div>
+                    </a> 
+    
+                    <br>
+                    <a href = "e_COVID_Vaccine_Compensation.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Compensation">코로나19<br>예방접종 관련<br>피해보상</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Vaccine_Causality.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Causality">인과성<br>불충분한 환자<br>의료비 지원 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "g_COVID_Vaccine_Institution.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Institution">접종 기관<br>및 인력 관련</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Vaccine_System.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "System">시스템 및<br>예방접종 기록</h4> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>코로나19 백신</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a01" value = "1" onclick = "showView(this,'A_a01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 백신에는 어떤 종류가 있으며 우리나라에서 사용하고 있는 백신</span>은 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        전 세계 여러나라에서 mRNA나 DNA를 이용한 백신, 바이러스백터 백신 및 불활성화 백신, 재조합 백신, 바이러스 유사입자 백신 등 여러 종류의 코로나19 백신을 개발 중에 있습니다.
+                                    </li>
+                                    <li>
+                                        현재 우리나라에 도입되어 사용하고 있는 백신은 아스트라제네카, 얀센社의 바이러스벡터 백신 2종과 화이자, 모더나社의 mRNA 백신 2종이며, 노바백스 합성항원 백신 1종이 도입될 예정입니다
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a02" value = "2" onclick = "showView(this,'A_a02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 백신은 어떻게 코로나바이러스감염증-19를 예방</span>하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 백신 물질이 우리 몸에 들어와 면역세포인 B세포와 T세포를 자극합니다. B세포는 코로나바이러스-19에 대항하는 항체를 만들고, 면역세포 중 일부는 기억세포로 남습니다.
+                                    </li>
+                                    <li>
+                                        이후 우리 몸에 코로나바이러스-19가 침투했을 때 예방접종을 통해 만들어진 항체와 기억세포가 바이러스 침입에 빠르게 반응하여 코로나바이러스-19 감염증을 예방합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a03" value = "3" onclick = "showView(this,'A_a03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>mRNA 백신이 우리 몸의 유전자에 영향</span>을 미칠 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아니요. 핵산백신(mRNA)는 체내에서 몇 시간 후에 분해됩니다. 주사로 주입된 mRNA는 우리 몸의 세포 내 유전 물질(DNA)이 포함되어 있는 세포핵으로 들어갈 수 없기 때문에 우리 몸의 유전자와 상호 작용할 수 없습니다
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a04" value = "4" onclick = "showView(this,'A_a04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19백신에 방부제</span>가 포함되어 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아니요, 현재 우리나라에서 사용 중인 코로나19 백신에는 방부제가 포함되어 있지 않습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a05" value = "5" onclick = "showView(this,'A_a05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 예방접종 후 면역획득</span>까지 얼마나 걸리나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        예방접종 후 방어항체가 형성되는 데는 2주~3주 이상 걸립니다.
+                                    </li>
+                                    <li>
+                                        최대 백신 효과를 위해서는 각 백신별 권장기간 내에 2차 접종을 완료하는 것이 매우 중요합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a06" value = "6" onclick = "showView(this,'A_a06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 예방접종 후 얼마나 면역</span>이 지속되나요? 인풀루엔자백신과 같이<span>매년 접종</span>을 해야하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        국내외에서 코로나19 백신의 면역 지속 기간 및 장기 면역원성에 대한 연구가 진행 중이며, 아직 연구가 충분하지는 않아 정확한 면역 지속 기간 및 장기 면역원성에 대해서는 알 수 없습니다
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a07" value = "7" onclick = "showView(this,'A_a07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 예방접종을 해도 코로나바이러슴감염증-19</span>에 걸릴 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종 후 면역이 형성되지 않거나 면역이 형성되기 전에 또는 시간이 흘러 형성된 면역의 효과가 떨어지면 코로나바이러스-19에 감염될 수 있습니다.
+                                    </li>
+                                    <li>
+                                        접종을 완료하였더라도 코로나바이러스-19 감염 예방을 위하여 마스크 착용, 손씻기, 거리두기 등 개인방역수칙을 준수해야 합니다.
+                                    </li>
+                                </ul>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a08" value = "8" onclick = "showView(this,'A_a08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>화이자 코로나19 백신</span>은 왜 흔들면 안 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        화이자 코로나19 백신은 mRNA백신으로, 코로나19 바이러스의 항원 단백질의 정보를 담고 있는 mRNA와 mRNA가 체내에서 세포내로 도입될 수 있도록 도와주는 역할을 하는 지질나노입자(Lipid nanoparticle)로 구성되어 있습니다.
+                                    </li>
+                                    <li>
+                                        핵산백신(mRNA)와 지질나노입자 모두 화학적으로 안전하고 단단한 결합이 아니므로 물리적인 힘에 의해 구조가 쉽게 분해될 수 있어 백신 취급 시 주의해야 하며, 흔들면 안됩니다.
+                                    </li>
+                                    * 출처: 코백스-화이자 코로나 19 백신특례수입 승인, 식품의약품안전처·질병관리청 보도자료, 2021.2.3
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a09" value = "9" onclick = "showView(this,'A_a09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 백신은 모두 1회 사용 형태</span>로 공급되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아니요, 코로나19 백신은 모두 다회 투여 용량 바이알(multi-dose vial)로 제공됩니다
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a10" value = "10" onclick = "showView(this,'A_a10')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>코로나19 백신 전처리부터 접종 준비과정 중에 육안으로 확인할 수 있는 약물 이상</span>(정상적이지 않은)은 무엇이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a10">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        화이자 코로나19 백신의 해동된 분산액은 흰색에서 미백색의 불투명한 무정형 입자를 포함할 수 있으며, 희석한 백신은 미립자가 보이지 않는 미백색 용액입니다. 미립자가 있거나 변색이 보이는 경우 희석된 백신은 사용을 금합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_a11" value = "11" onclick = "showView(this,'A_a11')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[코로나19 백신]</div>
+                            <div class = "question"><span>여러 바이알의 백신 잔량을 서로 섞어 한회 접종분량</span>을 만들어도 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_a11">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        안됩니다. 백신 잔량은 폐기해야 하며 절대 서로 섞어서는 안됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID/index.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">코로나19에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

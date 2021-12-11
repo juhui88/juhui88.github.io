@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_titles.css" rel = "stylesheet">
+    <title>접촉자 및 확진환자</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../index.html" id = "logo">
+                        <p>코로나19에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Pathogen_info.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pathogen_information">병원체정보</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Symptom.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Symptom">증상</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Test.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Test">검사</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Treatment_prevention.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Treatment_prevention">치료 및 예방</h4> 
+                        </div>
+                    </a>
+                    <a href = "e_COVID_Contacts.html" >
+                        <div class = "b_title" style = "background-color:#78A6A4">
+                            <h4 class = "two_lines" id = "contacts" >접촉자 및<br>확진환자</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Isolation.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Isolation">격리 및<br>격리해제</h4> 
+                        </div>
+                    </a>  
+
+                    <br>
+                    <a href = "g_COVID_Treatment_cost.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines"id = "Treatment_cost">격리입원<br>치료비</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Managemen.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Management">의사환자 및<br>조사대상<br>유증상자 관리</h4> 
+                        </div>
+                    </a>
+                    <a href = "i_COVID_Sanitize.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Sanitize">청소 및 소독</h4> 
+                        </div>
+                    </a>
+                    <a href = "j_COVID_Pregnant.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Pregnant">임신과 출산</h4> 
+                        </div>
+                    </a>
+                    <a href = "k_COVID_Quarantine_rule.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Quarantine_rule">방역수칙</h4> 
+                        </div>
+                    </a>
+                    <a href = "l_COVID_so_on.html" >
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line"id = "so_on">기타</h4> 
+                        </div>
+                    </a> 
+
+                    
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>접촉자 및 확진환자</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e01" value = "1" onclick = "showView(this,'A_e01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>접촉자 범위</span>는 어떻게 설정하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        접촉자의 범위는 시·도 즉각대응팀이 노출정도를 평가하여 판단하게 됩니다.
+                                    </li>
+                                    <li>
+                                        접촉자는 확진환자의 증상 및 마스크 착용 여부, 노출력(접촉 장소·접촉 기간 등) 등을 고려하여 증상발생 2일전(무증상자의 경우 검체 채취일 기준 2일 전)부터 접촉자 범위를 설정하고 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e02" value = "2" onclick = "showView(this,'A_e02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>마스크를 착용하지 않은 코로나19 환자를 진료 시 의료진은 개인보호구를 착용했는데 접촉자로 분류</span>되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        의료기관의 상황에 따른 개인보호구를 올바르게 착용하고 탈의하면 접촉자로 분류하지 않습니다.
+                                    </li>
+                                    <li>
+                                        접촉자 범위는 시‧도 즉각대응팀이 확진환자의 증상 및 마스크 착용 여부, 체류기간, 노출상황 및 시기 등을 고려하여 최종 결정합니다.
+                                    </li>
+                                    ▶ [부록 8] 코로나19 관련 개인보호구의 사용 참조
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e03" value = "3" onclick = "showView(this,'A_e03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>접촉자</span>가 되면 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        확진환자와 최종으로 접촉한 날로 부터 14일 동안 격리(자가, 시설, 병원)를 실시합니다. 
+                                    </li>
+                                    <li>
+                                        시·도지사 또는 시장·군수·구청장은 접촉자에게 격리통지서를 발부하고, 생활수칙을 안내하며, 1:1로 담당자를 지정하여 격리 해제 시까지 매일 2회 유선 연락하여 발열 또는 호흡기 증상여부를 확인합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e04" value = "4" onclick = "showView(this,'A_e04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>자가격리 시 주의할 사항</span>은 무엇인가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        자가격리 대상자는 독립된 공간에서 혼자 생활하며, 방문은 닫은 채로 창문을 열어 자주 환기시키고, 가능한 혼자만 사용할 수 있는 화장실과 세면대가 있는 공간을 사용하여야 합니다.
+                                    </li>
+                                    <li>
+                                        공용화장실, 세면대를 사용한다면, 사용 후 소독(락스 등 가정용소독제) 후 다른 사람이 사용하도록 합니다.
+                                    </li>
+                                    <li>
+                                        자가격리 대상자의 생활 준수사항으로는 개인용 수건, 식기류, 휴대전화 등 개인물품을 사용하도록 하고 있으며, 의복 및 침구류는 단독 세탁하고, 식사는 혼자서 하며, 식기류 등은 별도로 분리하여 깨끗이 씻기 전에 다른 사람이 사용하지 않도록 합니다. 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e05" value = "5" onclick = "showView(this,'A_e05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>자택 내 독립된 공간 확보가 안 될 경우</span> 어떻게 격리하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        자택 내 독립된 공간 확보가 어렵거나 추가적인 도움이 필요할 경우에는 지자체에서 적절한 격리 장소에 시설격리를 하도록 하고 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q"id ="Q_e06" value = "6" onclick = "showView(this,'A_e06')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>자가격리를 하면 생활지원</span>을 해 주나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e06">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        자가격리에 따른 생활지원, 유급휴가 등을 지원하고 있습니다. 자세한 사항은 관할 읍, 면, 동사무소에 문의하시기 바랍니다.
+                                    </li>
+                                    ▶ 단, 해외 입국자 격리 시 생활지원비는 미지원이나 격리기간 중 생필품 지원 등 최소생활이 보장될 수 있도록 지원 ([부록 14] 해외입국자 관리방안 안내 참조)
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_e07" value = "7" onclick = "showView(this,'A_e07')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>자가격리 중 외출한 사람들에 대한 법적 처벌기준</span>이 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e07">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        「감염병의 예방 및 관리에 관한 법률」제79조의3에 따라 1년 이하의 징역 또는 1천만원 이하의 벌금형에 처할 수 있습니다.
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q"id ="Q_e08" value = "8" onclick = "showView(this,'A_e08')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>외국인인데, 자가격리 중이지만 증상도 없고, 본국으로 돌아가고 싶습니다. 출국</span>할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e08">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        집이나 숙소에서 자가격리 중인 장기체류 외국인은 공익적·인도주의적 사유(임종·장례식) 등 해당 지자체장이 승인하는 사유에 해당하는 경우, 진단검사(입국 후 1일 이내 검사)에서 음성이면 출국 가능합니다.
+                                    </li>
+                                    <li>
+                                        임시생활시설에서 시설격리 중인 단기체류 외국인은 원칙적으로 중도 출국이 제한됩니다. 다만, 건강상의 이유나 인도주의적 사유(임종‧장례식) 등 인도적 사유 발생으로 국적국가 또는 출발국가로 출국하는 경우 시설 단장의 승인 하에 출국이 가능합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q"id ="Q_e09" value = "9" onclick = "showView(this,'A_e09')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name">[접촉자 및 확진환자]</div>
+                            <div class = "question"><span>확진환자의 이동경로</span>를 확인하고 싶습니다.</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_e09">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        2020년 2월 23일(일) 코로나19 위기경보를 ‘심각’ 단계로 격상함에 따라 확진환자 이동경로 동선 공개는 지자체 홈페이지에서 확인가능 합니다.
+                                    </li>
+                                    ▶ 질병관리청 홈페이지→ 코로나바이러스감염증-19→ 발생동향→ 시도별 발생동향→ 시도별 코로나 관련정보
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                
+                <li class = "q_item">
+                    <div class = "Q" id ="Q_e10" value = "10" onclick = "showView(this,'A_e10')" >
+                        <div class = "icon_Q">Q</div>
+                        <div class = "title_name">[접촉자 및 확진환자]</div>
+                        <div class = "question"><span>확진환자의 정보 중 거주지 공개 범위</span>는 어떻게 설정하나요?</div>
+                        <div class = "Q_btn">></div> 
+                    </div>
+                    <div class = "A" id = "A_e10" >
+                        <div class = "icon_A">A</div>
+                        <div class = "answer">
+                            <ul>
+                                <li>
+                                    확진환자의 거주지 세부정보는 개인을 특정할 수 있는 개인정보이므로 정보공개 대상에 해당하지 않습니다.
+                                </li>
+                                <li>
+                                    다만, 확진환자의 역학조사 및 정보공개 주체가 시·군·구인 점을 고려하여, 시·도 및 시·군·구 단위정보까지 공개 가능 합니다.
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID_Vaccine/COVID_Vaccine_main.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">예방접종에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

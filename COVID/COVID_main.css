@@ -1,0 +1,97 @@
+body {
+  background-color: #f8fefd; /* 배경 색*/
+}
+.container {
+  margin: 10px;
+}
+#A_B {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  /*모든 a태그 밑줄데코를 없앰*/
+}
+.main_text {
+  margin-top: 20px;
+}
+#logo {
+  color: #767171;
+  font-size: 100px;
+}
+p {
+  margin: 0;
+}
+.search_wrap {
+  margin-top: 10px;
+}
+.search {
+  display: inline-block; /*요소들을 한 줄에 출력하도록*/
+  border: 3px solid #78a6a4;
+  border-radius: 10px;
+}
+#search_text {
+  height: 1cm;
+  width: 400px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 25px;
+  color: #d9d9d9;
+  background: none;
+}
+::placeholder {
+  color: #d9d9d9;
+}
+#search_btn {
+  width: 30px;
+  font-size: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #78a6a4;
+  transform: scaleX(-1);
+}
+
+#C {
+  margin: 10px;
+}
+#title_wrap {
+  display: flex;
+}
+.c_title {
+  margin: 20px;
+  display: inline-block;
+  background-color: #ccdedd;
+  width: 6cm;
+  height: 5cm;
+  border-radius: 20px;
+  overflow: hidden;
+}
+h4 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: lighter;
+}
+.one_line {
+  margin-top: 68px;
+}
+.two_lines {
+  margin-top: 40px;
+}
+.three_lines {
+  margin-top: 10px;
+}
+#Consultation_info_and_COVID_Vaccine {
+  margin-top: 20px;
+}
+#Consultation_info {
+  float: left;
+}
+#COVID_Vaccine {
+  float: right;
+  font-size: 30px;
+}
+#COVID_Vaccine a {
+  color: #767171;
+}

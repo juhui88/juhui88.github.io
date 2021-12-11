@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_Vaccine_title.css" rel = "stylesheet">
+    <title>코로나19 예방접종 실시기준</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="../../COVID/COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "../COVID_Vaccine_main.html" id = "logo">
+                        <p>코로나 예방접종에</p>
+                        <p>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_Vaccine_Search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id ="B">
+                <div class = "title_wrap">
+                    <a href = "a_COVID_Vaccine_Vaccine.html">
+                        <div class = "b_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "one_line" id = "Vaccine">코로나19 백신</h4> 
+                        </div>
+                    </a>
+                    <a href = "b_COVID_Vaccine_Business.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Business">코로나19<br>예방접종 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "c_COVID_Vaccine_Standard.html">
+                        <div class = "b_title" style = "background-color: #78A6A4">
+                            <h4 class = "three_lines" id = "Standard">코로나19<br>예방접종<br>실시기준</h4> 
+                        </div>
+                    </a>
+                    <a href = "d_COVID_Vaccine_Side_Effect.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines" id = "Side_Effect">코로나19<br>예방접종 후<br>이상반응</h4> 
+                        </div>
+                    </a> 
+    
+                    <br>
+                    <a href = "e_COVID_Vaccine_Compensation.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Compensation">코로나19<br>예방접종 관련<br>피해보상</h4> 
+                        </div>
+                    </a>
+                    <a href = "f_COVID_Vaccine_Causality.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "three_lines"id = "Causality">인과성<br>불충분한 환자<br>의료비 지원 사업</h4> 
+                        </div>
+                    </a>
+                    <a href = "g_COVID_Vaccine_Institution.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "Institution">접종 기관<br>및 인력 관련</h4> 
+                        </div>
+                    </a>
+                    <a href = "h_COVID_Vaccine_System.html">
+                        <div class = "b_title" onmouseover = "colorChange(this, '#78A6A4')"
+                            onmouseout = "colorChange(this, '#ccdedd')">
+                            <h4 class = "two_lines" id = "System">시스템 및<br>예방접종 기록</h4> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <h3>코로나19 예방접종 실시기준</h3>
+            <div class = "FAQ">
+                <ul id = "q_list">
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c01" value = "1" onclick = "showView(this,'A_c01')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[예방접종 실시기준]</div>
+                            <div class = "question"><span>각 코로나19 백신의 예방접종 간격과 방법</span>은 어떻게 되나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c01">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        코로나19 예방접종은 아래와 같이 각 백신별 접종권고사항에 따라 실시됩니다.
+                                    </li>
+                                    <li>
+                                        접종권고사항
+                                    </li>
+                                    <table border = "1">
+                                        <thead>
+                                            <tr><th>백신명</th><th>코미나티주</th><th>모더나코비드-19<br>백신주</th><th>한국아스트라제네카<br>코비드-19 백신</th><th>코비드-19백신<br>얀센주</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>제조사</td>
+                                                <td>화이자 및<br>바이오엔텍</td>
+                                                <td>모더나</td>
+                                                <td>아스트라제네카</td>
+                                                <td>얀센</td>
+                                            </tr>
+                                            <tr>
+                                                <td>접종권고연령</td>
+                                                <td>12세 이상</td>
+                                                <td>18세 이상</td>
+                                                <td>50세 이상</td>
+                                                <td>(1) 50세 이상<br>
+                                                    (2) 30세 이상 중 <br>2회 접종완료가 어렵거나,<br>방역상황 고려하여<br> 조기 접종완료가 필요한 대상
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>접종횟수<br>,(권고간격)</td>
+                                                <td>2회, 21일</td>
+                                                <td>2회, 4주</td>
+                                                <td>2회, 8-12주</td>
+                                                <td>1회</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    * mRNA 백신(화이자, 모더나)의 경우, 국내 백신 공급 상황, 의료기관별 접종 여건, 개인사정(건강상태 등) 등에 따라 필요한 경우 6주 범위 내에서
+                                    <li>
+                                        허가사항
+                                    </li>
+                                    <table border = "1">
+                                        <thead>
+                                            <tr>
+                                                <th >백신명</th>
+                                                <th >코미나티주</th>
+                                                <th >모더나코비드-19 <br>백신주</th>
+                                                <th >한국아스트라제네카 코비드-19백신</th>
+                                                <th >코비드-19백신 <br>얀센주</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>제조사</td>
+                                                <td>화이자 및 바이오엔텍</td>
+                                                <td>모더나</td>
+                                                <td>아스트라제네카</td>
+                                                <td>얀센</td>
+                                            </tr>
+                                            <tr>
+                                                <td>허가연령</td>
+                                                <td>12세 이상</td>
+                                                <td>18세 이상</td>
+                                                <td>18세 이상</td>
+                                                <td>18세 이상</td>
+                                            </tr>
+                                            <tr>
+                                                <td>구성</td>
+                                                <td>다인용바이알<br>(1바이알=6도즈)</td>
+                                                <td>다인용바이알<br>(6.3㎖, 8.0㎖)</td>
+                                                <td>다인용바이알<br>(1바이알=10도즈)</td>
+                                                <td>다인용바이알<br>(1바이알=5도즈)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>접종 횟수(간격)</td>
+                                                <td>2회, 21일</td>
+                                                <td>2회, 4주</td>
+                                                <td>2회, 4-12주</td>
+                                                <td>1회</td>
+                                            </tr>
+                                            <tr>
+                                                <td>접종량 및 방법</td>
+                                                <td>희석된 백신 0.3㎖ 근육주사</td>
+                                                <td>0.5㎖ 근육주사</td>
+                                                <td>0.5㎖ 근육주사</td>
+                                                <td>0.5㎖ 근육주사</td>
+                                            </tr>
+                                            <tr>
+                                                <td>추가접종 간격 / 용량</td>
+                                                <td>기본접종 6개월 이후 / <br>0.3㎖</td>
+                                                <td>기본접종 6개월 이후 / <br>0.25㎖ (50μg)</td>
+                                                <td>기본접종 6개월 이후** / <br>0.5㎖</td>
+                                                <td>기본접종 2개월 이후 / <br>0.5㎖</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    ※ 임상시험 결과 등에 따라 추후 변동 가능
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c02" value = "2" onclick = "showView(this,'A_c02')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[예방접종 실시기준]</div>
+                            <div class = "question"><span>접종일에 열</span>이 납니다. 오늘 접종을 할 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c02">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        아니요, 37.5℃ 이상의 발열이 나는 경우는 열이 떨어지고 증상이 없어질 때까지 예방접종을 연기하도록 합니다.
+                                    </li>
+                                    <li>
+                                        이후 건강 상태가 좋은 날에 코로나19 예방접종을 예약한 접종기관(의료기관, 접종센터, 보건소 등)과 상의하여 가능한 다음 예방 접종일을 예약하고 접종을 진행하시기 바랍니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c03" value = "3" onclick = "showView(this,'A_c03')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[예방접종 실시기준]</div>
+                            <div class = "question"><span>코로나19 백신은 교차접종</span>이 가능한가요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c03">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        2회 접종이 필요한 코로나19 백신의 경우 1, 2차 접종은 동일한 백신으로 완료합니다.
+                                    </li>
+                                    <li>
+                                        다만, 다음의 상황에서 한시적으로 1차 접종 백신의 권고 간격에 맞춰 교차접종 가능합니다.
+                                    </li>
+                                    <li style = "list-style:none; font-size: 15px;">
+                                        1차 접종 후 금기대상*이 된 경우, 의사 소견에 따라 서로 다른 플랫폼의 백신으로 2차 접종 고려 가능<br>
+                                        * 아나필락시스 반응, 혈소판감소성 혈전증, 모세혈관<br>
+                                        해외에서 1차 접종한 백신이 국내 미승인 되었거나 없는 경우, 사용 가능한 백신으로 2차 접종 진행<br>
+                                        1차 접종 백신 종류를 모르는 경우, 사용 가능한 백신으로 12주 간격으로 2차 접종 진행<br>
+                                        1차 접종과 동일 백신이 국내에 없는 경우(공급 불가능), 1차 접종 백신이 연령제한 등으로 접종이 어려운 경우에는 사용 가능한 백신으로 2차 접종 진행<br>
+                                        의학적 사유로 인해 1차 접종 백신과 다른 백신 접종이 필요하다고 의사가 판단한 경우
+                                    </li>
+                                    <li>
+                                        만약 부주의로 허용되지 않는 교차접종을 한 경우 재접종은 권고하지 않음
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c04" value = "4" onclick = "showView(this,'A_c04')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[예방접종 실시기준]</div>
+                            <div class = "question"><span>기본 접종 후 언제부터 추가접종</span>을 받을 수 있나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c04">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        추가접종은 기본접종 완료 6개월 이후 접종을 권고하며, 가급적 기본접종 완료 후 8개월 내에 추가접종을 받으시길 권고합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class = "q_item">
+                        <div class = "Q" id ="Q_c05" value = "5" onclick = "showView(this,'A_c05')" >
+                            <div class = "icon_Q">Q</div>
+                            <div class = "title_name" style = "margin-top:3px;">[예방접종 실시기준]</div>
+                            <div class = "question"><span>추가접종은 어떤 백신</span>으로 접종을 시행하나요?</div>
+                            <div class = "Q_btn">></div> 
+                        </div>
+                        <div class = "A" id = "A_c05">
+                            <div class = "icon_A">A</div>
+                            <div class = "answer">
+                                <ul>
+                                    <li>
+                                        추가접종은 기본접종 백신 종류와 관계없이 mRNA 백신으로 접종하며 가급적 동일한 백신으로 접종받으시길 권고합니다. 다만 얀센 백신 기본 접종자는 얀센 백신으로도 추가접종이 가능합니다.
+                                    </li>
+                                    <li>
+                                        mRNA 백신에 대한 금기․연기 대상인 경우에는 의사의 판단 하에 다른 플랫폼의 백신으로 추가접종이 가능합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../../COVID/index.html"  onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">코로나19에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

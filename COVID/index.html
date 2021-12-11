@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="COVID_main.css" rel = "stylesheet">
+    <title>COVID_main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <script src="COVID.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div id = "A_B">
+            <div class = "item" id = "A">
+                <div class = "main_text">
+                    <a href = "index.html" id = "logo">
+                        <p>코로나19에<br>관한 모든 것</p>
+                    </a>
+                </div>
+                <div class = "search_wrap">
+                    <div class = "search">
+                        <form action="COVID_titles/COVID_search.html">
+                            <input type="text" id ="search_text" placeholder="검색어를 입력하세요" onclick = "this.style.color = '#3d5d5b'">
+                            <input id="search_btn" type="submit" value="⌕" onclick="passvalue();">
+                            
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class = "item" id = "B">
+                
+            </div>
+        </div>
+            
+        <div class = "item" id ="C">
+            <div class = "title_wrap">
+                <a href = "./COVID_titles/a_COVID_Pathogen_info.html">
+                    <div class = "c_title"  onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "one_line" id = "Pathogen_information">병원체정보</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_titles/b_COVID_Symptom.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "one_line" id = "Symptom">증상</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_titles/c_COVID_Test.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "one_line" id = "Test">검사</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_titles/d_COVID_Treatment_prevention.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "one_line" id = "Treatment_prevention">치료 및 예방</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_titles/e_COVID_Contacts.html" onmouseover = >
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "two_lines" id = "contacts" >접촉자 및<br>확진환자</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_titles/f_COVID_Isolation.html" onmouseover = >
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "two_lines"id = "Isolation">격리 및<br>격리해제</h4> 
+                    </div>
+                </a>  
+
+                <br>
+                <a href = "./COVID_titles/g_COVID_Treatment_cost.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "two_lines"id = "Treatment_cost">격리입원<br>치료비</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_titles/h_COVID_Managemen.html" >
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "three_lines"id = "Management">의사환자 및<br>조사대상<br>유증상자 관리</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_titles/i_COVID_Sanitize.html" >
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "one_line" id = "Sanitize">청소 및 소독</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_titles/j_COVID_Pregnant.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "one_line" id = "Pregnant">임신과 출산</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_titles/k_COVID_Quarantine_rule.html">
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "one_line" id = "Quarantine_rule">방역수칙</h4> 
+                    </div>
+                </a>
+                <a href = "./COVID_titles/l_COVID_so_on.html" >
+                    <div class = "c_title" onmouseover = "colorChange(this, '#78A6A4')"
+                        onmouseout = "colorChange(this, '#ccdedd')">
+                        <h4 class = "one_line"id = "so_on">기타</h4> 
+                    </div>
+                </a> 
+            </div>
+
+            <div id = "Consultation_info_and_COVID_Vaccine">
+                <div class = "item" id = "Consultation_info">
+                    상담안내: 보건소, 질병관리청 콜센터 1339, 지역번호 + 120
+                </div>
+                <div class = "item" id = "COVID_Vaccine">
+                    <a href = "../COVID_Vaccine/COVID_Vaccine_main.html" onmouseover = "this.style.color= 'black'"
+                    onmouseout = "this.style.color = '#767171'">예방접종에 관한 정보를 알고 싶다면?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class = "momentum">
+        <header>
+            <div class = "header-container" id = "todolist-string">To Do List</div>
+            <div class = "header-container" id = "login-wrap">
+                <form class = "hidden" id = "login-form">
+                    <input id = "login-input" required maxlength = "15" type = "text" placeholder = "이름을 입력해주세요"/>
+                </form>
+                <div id = "greeting" class = "hidden" ani_type="shake"></div>
+            </div>
+            <div class = "header_container" id = "date&clock">
+                <div id = "now_date"></div>
+                <div id="clock">00:00:00</div>
+            </div>
+        </header>
+        
+        <div class = "todo-wrap">
+            <form id = "todo-form">
+                <input id = "todo-input" required type="text" placeholder="Add task!">
+            </form>
+            
+            <ul id = "todo-list" class="hidden">
+            </ul>
+            
+                
+        </div>
+            
+        <div id="quote">
+            <span></span>
+            <br>
+            <span></span>
+        </div>
+        <div id ="weather">
+            <span></span>
+            <br>
+            <span></span>
+        </div>
+    
+    </div>
+    <script src = "js/clock.js"></script>
+    <script src = "js/greeting.js"></script>
+    <script src = "js/quotes.js"></script>
+    <script src = "js/background.js"></script>
+    <script src = "js/todo.js"></script>
+    <script src = "js/weather.js"></script>
+</body>
+</html>
